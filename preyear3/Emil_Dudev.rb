@@ -17,8 +17,12 @@ end
 # Can the program work if we remove it and along with it remove the closing?
 # Reply: Yes, the program will work fine without the reference to the file.
 # The reference is not crucial to the program.
-# Yet if it's removed, I think the file descriptor will remain open
-# until the execution ends, in which case either Ruby or the OS will take care of it.
+#####Yet if it's removed, I think the file descriptor will remain open
+#####until the execution ends, in which case either Ruby or the OS will take care of it.
+# I take that back after reviewing the docs
+# <<I/O streams are automatically closed when they are claimed by the garbage collector.>>
+# by http://www.ruby-doc.org/core-2.0.0/IO.html#method-i-close
+# So the GC will take care of the open file when the script exits.
 f.close
 puts c
 
