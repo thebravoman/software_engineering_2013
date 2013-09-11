@@ -15,6 +15,10 @@ end
 # 
 # Q2: Is the f reference really needed in this program. 
 # Can the program work if we remove it and along with it remove the closing?
+# Reply: Yes, the program will work fine without the reference to the file.
+# The reference is not crucial to the program.
+# Yet if it's removed, I think the file descriptor will remain open
+# until the execution ends, in which case either Ruby or the OS will take care of it.
 f.close
 puts c
 
