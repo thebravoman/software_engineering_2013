@@ -5,7 +5,7 @@ fn = File.open("#{filename}", "r")
 fn.each do |line|
 
 	if line=~ lookfor
-		count = +=1
+		count  +=1
 	end
 end
 
