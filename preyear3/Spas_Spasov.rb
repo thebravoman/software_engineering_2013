@@ -9,4 +9,4 @@ fn.each do |line|
 	end
 end
 
-puts "The number of subtitles is  : #{count}"
+puts count
