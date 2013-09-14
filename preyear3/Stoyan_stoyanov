@@ -1,0 +1,25 @@
+z = ""
+broqch = 0
+broqch_subtitri = 0
+ARGV.each do|argument|
+	z = argument
+end
+File.open(z, 'r') do |f|  
+	while red = f.gets  
+		puts red  
+		broqch = 0
+		broqch_simvoli = 0
+		a = 0
+		red.each_char do |r|
+			if r == '-'
+				a = 1
+			end
+			if a == 1
+				if r == '>'
+					broqch_subtitri = broqch_subtitri + 1
+				end
+			end
+		end
+	end  
+end  
+puts "subtitrite v faia sa #{broqch_subtitri}"
