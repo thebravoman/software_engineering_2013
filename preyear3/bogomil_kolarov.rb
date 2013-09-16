@@ -7,4 +7,4 @@ f.each do |line|
 	end
 end
 f.close
-puts "the number of subtitles is: #{count}"
+puts "#{count}"
