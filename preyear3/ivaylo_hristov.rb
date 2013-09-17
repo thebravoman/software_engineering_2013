@@ -9,7 +9,7 @@ elsif File.exists?(ARGV[0])
 			counter += 1
 		end
 	end
-	puts "The number of lines in the SRT File: #{counter}"
+	puts counter
 else
 	puts "Incorrect filename/Unexisting file"
 end
