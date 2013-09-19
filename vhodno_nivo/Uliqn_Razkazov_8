@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+
+do
+{
+scanf("%d",&x);
+}
+while(x<0)||(x>100)
+int a(10)
+do 
+{
+scanf("%d",&a); 
+}
+while (x>a)
+  

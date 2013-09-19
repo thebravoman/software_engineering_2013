@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+  int x,y,w,h;
+  while (x<=0 && y<=0 && w<=0 && h<=0){
+    cin>>x;
+    cin>>y;
+    cin>>w;
+    cin>>h;
+    }
+    int array_cordinati[10] = 0;
+    
