@@ -1,0 +1,19 @@
+#include stdio.h
+int main
+int x,m
+argnum:[10]
+
+
+arg(m) = [10]
+if x > 0 and <10 than arg(m) = x 
+else printf("false")
+
+if n > 0 and div x than printf("n")
+else printf("false")
+
+for sum = from  0 to N than arg(m) == sum 
+
+
+
+
+			
