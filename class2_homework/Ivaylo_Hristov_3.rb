@@ -1,5 +1,4 @@
 require 'csv'
-require 'date'
 dates = Array.new
 incomes = Array.new
 i = 0
