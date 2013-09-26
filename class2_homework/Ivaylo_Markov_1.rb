@@ -1,7 +1,6 @@
 require 'csv'
 require 'date'
 
-
 begd = Date.parse(ARGV[0])
 endd = Date.parse(ARGV[1])
 income = 0.00
@@ -14,4 +13,4 @@ CSV.foreach('bank.csv') do |line|
 		spent = spent + line[2].to_f
 	end
 end
-puts "#{income},#{spent},#{income - spent}"
+printf "%0.2f,%0.2f,%0.2f", income, spent, income-spent 
