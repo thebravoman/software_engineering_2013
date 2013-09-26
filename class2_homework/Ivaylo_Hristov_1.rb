@@ -11,4 +11,4 @@ CSV.foreach("bank.csv") do |row|
 		exp += row[2].to_f
 	end
 end
-puts inc,exp,inc-exp
+printf "%.2f,%.2f,%.2f", inc, exp, inc-exp
