@@ -1,4 +1,4 @@
-#!/urb/bin/ruby
+#!/usr/bin/ruby
 
 require 'csv'
 require 'date'
