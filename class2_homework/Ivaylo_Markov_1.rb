@@ -7,8 +7,6 @@ endd = Date.parse(ARGV[1])
 income = 0.00
 spent = 0.00
 
-#Dir.chdir(File.expand_path(File.dirname(File.dirname(__FILE__))))
-
 CSV.foreach('bank.csv') do |line| 
 	datec = Date.parse(line[0])
 	if datec >= begd && datec <= endd
