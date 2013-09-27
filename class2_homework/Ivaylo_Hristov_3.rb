@@ -12,3 +12,9 @@ CSV.foreach("bank.csv") do |row|
 	end
 end
 puts dates[incomes.index(incomes.max)]
+p = incomes.max
+incomes[incomes.index(incomes.max)] = -1.0
+while incomes.include?(p) == true
+	puts dates[incomes.index(p)]
+	incomes[incomes.index(p)] = -1.0
+end
