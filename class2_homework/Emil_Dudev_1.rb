@@ -8,6 +8,7 @@ e = Date.strptime( ARGV[1], '%d/%m/%Y' )
 c = 0.0
 d = 0.0
 CSV.foreach('bank.csv') do |r|
+	next if r.empty?
 	t = Date.strptime( r[0], '%d/%m/%Y' )
 	if t >= s && t <= e
 		d += r[1].to_f
