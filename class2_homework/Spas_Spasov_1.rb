@@ -1,16 +1,14 @@
 require 'csv'
 require 'date'
-
-s = Date.strptime( ARGV[0], '%d/%m/%Y' )
-e = Date.strptime( ARGV[1], '%d/%m/%Y' )
-c = 0.0
-d = 0.0
-CSV.foreach('bank.csv') do |r|
-	next if r.empty?
-	t = Date.strptime( r[0], '%d/%m/%Y' )
-	if t >= s && t <= e
-		d += r[1].to_f
-		c += r[2].to_f
+nachalo = Date.parse(ARGV[0])
+krai = Date.parse(ARGV[1])
+dohod = 0.00
+razhod = 0.00
+CSV.foreach("bank.csv") do |row|
+	data = Date.parse(row[0])
+	if data >= nachalo and d <= krai
+		dohod = dohod + row[1].to_f
+		razhod = razhod + row[2].to_f
 	end
 end
-printf "%.2f,%.2f,%.2f\n", d, c, d-c
+printf "%0.2f,%.2f,%.2f", dohod, razhod, dohod - razhod
