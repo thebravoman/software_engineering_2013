@@ -8,6 +8,7 @@ last_day=Date.strptime(ARGV[1], '%d/%m/%Y')
 
 income = 0.00
 expense = 0.00
+bal=0.00
 CSV.foreach("bank.csv") do |row|
 		day = Date.strptime(row[0], '%d/%m/%Y')
 	if day>=first_day && day <= last_day
@@ -19,9 +20,9 @@ CSV.foreach("bank.csv") do |row|
 end
 
 
+bal= incomes-expenses
 
 
-
-puts "#{income},#{expense}, #{income - expense}"
+printf "%.2f,%.2f,%.2f", income, expense, bal
 #puts expense
 #puts income - expense
