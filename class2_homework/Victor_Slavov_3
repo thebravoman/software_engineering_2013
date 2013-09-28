@@ -1,0 +1,27 @@
+require "csv"
+date_container = 0
+max = 0
+certain_date_income = 0
+date_with_max_income = 0
+
+CSV.foreach("bank.csv") do |row|
+	if date_container == 0 
+		date_container = row[0]
+	end
+	if row[0] == date_container
+		certain_date_income = certain_date_income + row[1].to_f
+	else
+		if max < certain_date_income
+			max = certain_date_income
+			date_with_max_income = date_container;
+		end
+		certain_date_income = 0
+		date_container = row[0]
+		certain_date_income = row[1].to_f
+	end
+end
+if max < certain_date_income
+	max = certain_date_income
+	date_with_max_income = date_container;
+end
+puts date_with_max_income
