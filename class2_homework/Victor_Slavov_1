@@ -1,0 +1,69 @@
+require "csv"
+income = 0.00
+expense = 0.00
+trigger = 0
+listener = 0
+
+if (ARGV[0][6] + ARGV[0][7] + ARGV[0][8] + ARGV[0][9]).to_f > (ARGV[1][6] + ARGV[1][7] + ARGV[1][8] + ARGV[1][9]).to_f
+ 	first_argument_to_use = ARGV[1]
+	second_argument_to_use = ARGV[0]
+else
+	if (ARGV[0][6] + ARGV[0][7] + ARGV[0][8] + ARGV[0][9]).to_f == (ARGV[1][6] + ARGV[1][7] + ARGV[1][8] + ARGV[1][9]).to_f
+		if (ARGV[0][3] + ARGV[0][4]).to_f > (ARGV[1][3] + ARGV[1][4]).to_f
+			first_argument_to_use = ARGV[1]
+			second_argument_to_use = ARGV[0]
+		else
+			if (ARGV[0][3] + ARGV[0][4]).to_f == (ARGV[1][3] + ARGV[1][4]).to_f
+				if (ARGV[0][0] + ARGV[0][1]).to_f > (ARGV[1][0] + ARGV[1][1]).to_f
+					first_argument_to_use = ARGV[1]
+					second_argument_to_use = ARGV[0]
+				else
+					first_argument_to_use = ARGV[0]
+					second_argument_to_use = ARGV[1]
+				end
+			else
+			 	first_argument_to_use = ARGV[0]
+				second_argument_to_use = ARGV[1]
+			end
+		end
+	else
+		first_argument_to_use = ARGV[0]
+		second_argument_to_use = ARGV[1]
+	end
+end
+
+
+CSV.foreach("bank.csv") do |row|
+	if trigger == 0
+		if row[0] == first_argument_to_use
+			trigger = 1
+			income=income+row[1].to_f
+			expense=expense+row[2].to_f
+		end
+	else
+		if row[0] != second_argument_to_use
+			if listener == 2
+				break
+			else
+				if listener != 1
+					listener = 1
+				end
+			end
+		else
+			if listener != 2
+				listener = 2
+			end
+		end
+		if listener == 1
+			income=income+row[1].to_f
+			expense=expense+row[2].to_f
+		else
+			if listener == 2
+				income=income+row[1].to_f
+				expense=expense+row[2].to_f
+			end
+		end
+	end
+			
+end
+puts income.to_s + ',' + expense.to_s + ',' + (income - expense).to_s
