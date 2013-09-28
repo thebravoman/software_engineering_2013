@@ -20,7 +20,7 @@ CSV.foreach("bank.csv") do |row|
 end
 
 
-bal= incomes-expenses
+bal= income-expense
 
 
 printf "%.2f,%.2f,%.2f", income, expense, bal
