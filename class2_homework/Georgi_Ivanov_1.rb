@@ -14,4 +14,4 @@ CSV.foreach("bank.csv") do |row|
 	end
 end
 
-print "#{income}, #{expense}, #{income - expense}"
+printf "%.2f,%.2f,%.2f\n", income, expense, income-expense
