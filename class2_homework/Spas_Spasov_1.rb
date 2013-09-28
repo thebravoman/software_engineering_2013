@@ -6,7 +6,7 @@ dohod = 0.00
 razhod = 0.00
 CSV.foreach("bank.csv") do |row|
 	data = Date.parse(row[0])
-	if data >= nachalo and d <= krai
+	if data >= nachalo && d <= krai
 		dohod = dohod + row[1].to_f
 		razhod = razhod + row[2].to_f
 	end
