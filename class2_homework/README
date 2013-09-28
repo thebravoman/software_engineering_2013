@@ -1,0 +1,14 @@
+Run the tests as
+
+Task1:
+
+	ruby test_class2_homework1.rb "300.00,163.00,137.00"
+
+where "300.00,163.00,137.00" is the correct answer
+
+
+Task3:
+
+	ruby test_class2_homework3.rb "03/10/13"
+
+where "03/10/13" is the correct answer
