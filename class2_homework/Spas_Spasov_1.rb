@@ -11,4 +11,4 @@ CSV.foreach("bank.csv") do |row|
 		razhod = razhod + row[2].to_f
 	end
 end
-printf "%.2f,%.2f,%.2f", dohod, razhod, dohod - razhod
+printf "%0.2f,%.2f,%.2f", dohod, razhod, dohod - razhod
