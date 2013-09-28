@@ -2,12 +2,23 @@ require "csv"
 
 max = 0.00
 max_date = ''
+prev_date = ''
+income = 0.00
 CSV.foreach("bank.csv") do |row|
 	row[1] = row[1].to_f
+	if prev_date == row[0]
+		income += row[1]
+		prev_date = row[0]
+		next 
+	elsif income > max
+		max = income
+		max_date = prev_date
+		income = 0.00
+	end
 	if row[1] > max
 		max = row[1]
 		max_date = row[0]
 	end
+	prev_date = row[0]
 end
 puts max_date
-# Why does the readme say that the correct answer is 03/10/13 when 13/10/13 has a higher income (105.00 compared to 103.00)?
