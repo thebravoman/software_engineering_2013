@@ -5,7 +5,7 @@ i1 = Date.strptime( ARGV[0], '%d/%m/%Y' )
 i2 = Date.strptime( ARGV[1], '%d/%m/%Y' )
 credit = 0.0
 debit = 0.0
-CSV.foreach('bankDSK.csv') do |r|
+CSV.foreach('bank.csv') do |r|
 	next if r.empty?
 	t = Date.strptime( r[0], '%d/%m/%Y' )
 	if t >= i1 && t <= i2
