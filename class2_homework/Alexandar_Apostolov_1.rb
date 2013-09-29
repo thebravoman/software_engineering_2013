@@ -1,10 +1,15 @@
 require "csv"
+require "date"
+
+f_date = DateTime.strptime(ARGV[0], "%d/%m/%y")
+s_date = DateTime.strptime(ARGV[1], "%d/%m/%y")
 
 inc = 0.00
 exp = 0.00
 
 CSV.foreach("bank.csv") do |row|
-    if ( row[0].to_i >= ARGV[0].to_i ) && ( row[0].to_i <= ARGV[1].to_i )
+	curr_date = DateTime.strptime(row[0], "%d/%m/%y")
+    if ( curr_date >= f_date ) && ( curr_date <= s_date )
         inc = inc + row[1].to_f
         exp = exp + row[2].to_f
     end
