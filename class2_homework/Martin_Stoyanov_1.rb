@@ -3,7 +3,7 @@ require "date"
 
 date1=DateTime.strptime(ARGV[0], '%d/%m/%Y')
 date2=DateTime.strptime(ARGV[1], '%d/%m/%Y')
-       incomes=0.00
+       income=0.00
        expense=0.00
 CSV.foreach("bank.csv") do |row|
 	currentdate=DateTime.strptime(row[0], '%d/%m/%Y')
