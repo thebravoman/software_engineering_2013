@@ -1,0 +1,18 @@
+require 'csv'
+require 'date'
+max = 0.00
+data = ''
+databig = ''
+CSV.foreach("bank.csv") do |row| 
+	data = row[0]
+		
+		if data==databig
+			max = max + row[1].to_f
+			databig = data
+		elsif 
+			row[1].to_f>max 
+			max = row[1].to_f
+			databig = data
+		end
+	end
+	
