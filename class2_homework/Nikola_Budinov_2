@@ -1,0 +1,8 @@
+require 'csv'
+
+	M1 = 0.00
+	CSV.foreach("bank.csv") do |row|
+		M1 = M1 + row[1].to_f
+	end
+
+print M1
