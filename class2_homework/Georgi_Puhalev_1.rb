@@ -15,6 +15,6 @@ if ARGV[0] != nil
 		end
 	end
 end
-puts "#{income},#{expense},#{income-expense}"
+puts "#{income}0,#{expense}0,#{income-expense}0"
 #puts "%.2f,%.2f,%.2f\n", income, expense, income-expense
 
