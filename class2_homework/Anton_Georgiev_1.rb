@@ -9,4 +9,4 @@ CSV.foreach("bank.csv") do |row|
    y=y+row[2].to_f
    end
 end
-print x,",",y,",",x-y,"\n"
+printf "%.2f,%.2f,%.2f\n",x,y,x-y
