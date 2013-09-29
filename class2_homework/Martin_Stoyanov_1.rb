@@ -7,7 +7,7 @@ date2=DateTime.strptime(ARGV[1], '%d/%m/%Y')
        expense=0.00
 CSV.foreach("bank.csv") do |row|
 	currentdate=DateTime.strptime(row[0], '%d/%m/%Y')
-		if(current>=date1)and(current<=date2)
+		if(current>=date1)&&(current<=date2)
 			income=income+row[1].to_f	
 			expense=expense+row[2].to_f
 		end
