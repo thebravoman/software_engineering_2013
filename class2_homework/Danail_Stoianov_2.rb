@@ -1,7 +1,7 @@
 require 'csv'
 
 m1 = 0.0
-CSV.foreach( 'bankDSK.csv' )  do |row|
+CSV.foreach( 'bank.csv' )  do |row|
 	m1 += row[1].to_f 
 	end
 

@@ -1,9 +1,11 @@
 require 'csv'
 
-m1 = 0.00
+m_one= 00
 
 CSV.foreach("bank.csv") do |row|
-	m1 += row[1].to_f
+	
+	m_one = m_one + row[1].to_f
+
 end
 
-puts m1
+puts m_one

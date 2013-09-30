@@ -4,7 +4,7 @@ income = 0.00
 expense = 0.00
 balance = 0.00
 broqch = 0
-CSV.foreach("text_file.csv") do |row|
+CSV.foreach("bank.csv") do |row|
 	if row[0] == ARGV[0]
 		broqch = 1
 	end
@@ -17,4 +17,4 @@ CSV.foreach("text_file.csv") do |row|
 	end
 end
 balance = income - expense
-printf "#{income.to_f} #{expense.to_f} #{balance.to_f}"
+printf("%0.2f,%0.2f,%0.2f", income, expense, balance)
