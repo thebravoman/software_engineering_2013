@@ -17,4 +17,4 @@ CSV.foreach("text_file.csv") do |row|
 	end
 end
 balance = income - expense
-printf "#{income.to_f} #{expense.to_f} #{balance.to_f}"
+printf("%0.2f,%0.2f,%0.2f", income, expense, balance)
