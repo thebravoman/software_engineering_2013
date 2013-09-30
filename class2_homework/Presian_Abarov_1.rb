@@ -20,3 +20,4 @@ CSV.foreach('bank.csv') do |row|
 end
 
 printf "%.2f,%.2f,%.2f\n", debit, credit, debit-credit
+

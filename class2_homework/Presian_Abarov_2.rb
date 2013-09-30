@@ -7,3 +7,4 @@ CSV.foreach('bank.csv') do |row|
 end
 
 printf ".2f\n",m1
+
