@@ -7,7 +7,7 @@ dnevno = 0.00
 dnevnomax = 0.00
 data = ''
 poslednadata = ''
-CSV.foreach("text_file.csv") do |row|
+CSV.foreach("bank.csv") do |row|
 	if poslednadata != row[0].to_s
 		dnevno = 0.00
 		poslednadata = row[0].to_s
