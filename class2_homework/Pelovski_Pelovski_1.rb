@@ -4,7 +4,7 @@ income = 0.00
 expense = 0.00
 balance = 0.00
 broqch = 0
-CSV.foreach("text_file.csv") do |row|
+CSV.foreach("bank.csv") do |row|
 	if row[0] == ARGV[0]
 		broqch = 1
 	end
