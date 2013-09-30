@@ -5,4 +5,4 @@ CSV.foreach("bank.csv") do |row|
 	m1 +=  row[1].to_f
 end
 	
-p m1
+puts m1
