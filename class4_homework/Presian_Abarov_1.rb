@@ -4,7 +4,7 @@ require 'csv'
 
 all = {}
 
-CSV.foreach(ARGV[0] + "eval.csv") do |row|
+CSV.foreach(ARGV[0] + "Evaluation 2013-2014 - Sheet2.csv") do |row|
 	next if row[0].to_s.length != 1
 	next if row[3].nil?
 	all[row[3]] = [row[1] + " " + row[2]]
