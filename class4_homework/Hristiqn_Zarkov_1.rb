@@ -6,7 +6,7 @@ CSV.foreach(File.join(ARGV[0],"Evaluation 2013-2014 - Sheet2.csv")) do |row|
                 if (row[3] == nil)
                         row[3] = " "
                 end
-                names[row[3]] = row[1].to_s + row[2].to_s
+                names[row[3]] = row[1].to_s + " " + row[2].to_s
         end
 end
 first_results = {}
