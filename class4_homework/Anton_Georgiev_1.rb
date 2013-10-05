@@ -47,7 +47,7 @@ end
 
 all = all.sort {|a,b| a[0] <=> b[0] }
 
-CSV.open("results.csv", "w") do |csv|
+CSV.open("results1.csv", "w") do |csv|
   all.each do |element|
   csv << element
 end
