@@ -10,7 +10,7 @@ CSV.foreach(File.join(ARGV[0],"Evaluation 2013-2014 - Sheet2.csv")) do |row|
         end
 end
 first_results = {}
-CSV.foreach("results1.csv") do |row|
+CSV.foreach(File.join(ARGV[0],"results1.csv")) do |row|
         name = row[0].split("_")[0..1]
         name = name[0].to_s + " " + name[1].to_s
         if (row[2] == "true")
@@ -21,7 +21,7 @@ CSV.foreach("results1.csv") do |row|
 end
 
 second_results = {}
-CSV.foreach("results1.csv") do |row|
+CSV.foreach(File.join(ARGV[0],"results3.csv")) do |row|
         name = row[0].split("_")[0..1]
         name = name[0].to_s + " " + name[1].to_s
         if (row[2] == "true")
