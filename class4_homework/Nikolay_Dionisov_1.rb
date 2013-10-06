@@ -28,7 +28,7 @@ result.each do |entry|
 end
 translated = translated.sort_by { |k,v| k }
 
-CSV.open(Dir.pwd + "/" + ARGV[0] + "/results1.csv", "w") do |csv|
+CSV.open(Dir.pwd + "/results1.csv", "w") do |csv|
     translated.each do |element|
         csv << [element[0], element[1][0], element[1][1]]
     end
