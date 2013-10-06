@@ -30,7 +30,6 @@ CSV.foreach(File.join(ARGV[0],"results3.csv")) do |row|
 end
 
 h = h.sort {|a,b| a[0] <=> b[0] }
-puts h
 
 CSV.open("results1.csv", "w") do |csv|
 	h.each do |std|
