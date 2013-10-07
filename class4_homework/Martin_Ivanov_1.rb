@@ -7,8 +7,13 @@ require "csv"
 		if row[0].to_s.length != 1
 			next
 		end
-		unless row[1].nil? && row[2].nil?
-			name = row[1].to_s + " " + row[2].to_s
+
+		name = row[1].to_s.strip + " " + row[2].to_s.strip
+
+		if row[3].to_s != 0 
+			names[row[3]] = [name,0,0]
+		else
+			row[3] = name
 			names[row[3]] = [name,0,0]
 		end
 
