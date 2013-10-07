@@ -4,9 +4,12 @@ all = []
 
 names = []
 
-CSV.foreach(File.join(ARGV[0],"names.csv")) do |row|
-  names << [row[0],row[1]]
-  all << [row[1], 0, 0]
+CSV.foreach(File.join(ARGV[0],"Evaluation 2013-2014 - Sheet2.csv")) do |row|
+  next if row[0].to_s.length != 1
+  row[1] = row[1].strip << ' ' << row[2].strip
+  row[3] = row[1] if row[3].nil?
+  names << [row[1],row[3]]
+  all << [row[3], 0, 0]
 end
 
 CSV.foreach(File.join(ARGV[0],"results1.csv")) do |row|
