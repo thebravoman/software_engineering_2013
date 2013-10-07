@@ -26,8 +26,6 @@ require "csv"
 		
 		if names.has_key?(name) && row[2] == "true"
 			names[name][1] = 1
-		elsif names.has_key?(name) && row[2] == "false"
-			names[name][1] = 0
 		end
 
 	end
@@ -39,8 +37,6 @@ require "csv"
 		
 		if names.has_key?(name) && row[2] == "true"
 			names[name][2] = 1
-		elsif names.has_key?(name) && row[2] == "false"
-			names[name][2] = 0
 		end
 
 	end
