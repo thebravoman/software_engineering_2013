@@ -6,6 +6,14 @@ zad3=Hash.new
 
 
 CSV.foreach(File.join(ARGV[0],"Evaluation 2013-2014 - Sheet2.csv")) do |row|
+    
+    if (row[0].to_s.length != 1)
+	next 
+    end
+
+    if row[3]==nil
+        row[3]=row[1].to_s + " " + row[2].to_s
+    end
 
     bg_names[row[3]]=row[1].to_s + " " + row[2].to_s
 
@@ -33,9 +41,13 @@ end
 writer = CSV.open('results1.csv', 'w') 
     bg_names.sort_by {|a,b| b}.each do |row|
 
-	if(zad1[row[0]]==nil) 
-	    next
-	end
+	if (!zad1[row[0]])
+            zad1[row[0]] = 0
+        end
+
+        if (!zad3[row[0]])
+             zad3[row[0]] = 0
+        end
 
     writer << [row[1],zad1[row[0]],zad3[row[0]]]
 
