@@ -31,7 +31,7 @@ CSV.foreach(File.join(ARGV[0],"results3.csv")) do |row|
         end
 end
 
-CSV.open("results1.csv", "w") do |csv|
+CSV.open("test_execution/results1.csv", "w") do |csv|
         names.sort_by {|a,b| b}.each do |row|
                 if (!first_results[row[0]])
                         first_results[row[0]] = 0
