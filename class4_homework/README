@@ -1,0 +1,5 @@
+Run the test for first task as
+
+	ruby test_class4_homework1.rb 
+
+This will produce a new file results1.csv that will contain your name, the difference between the exected result and the produce result and true/false if the result is correct or not
