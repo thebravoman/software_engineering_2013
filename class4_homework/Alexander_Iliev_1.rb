@@ -1,15 +1,14 @@
 require 'csv'
 	names = Hash.new("")
-	CSV.foreach(File.join(ARGV[0], "evaluation.csv")) do |row|
+	CSV.foreach(File.join(ARGV[0], "Evaluation 2013-2014 - Sheet2.csv")) do |row|
 		if row[0].to_s.length != 1
 			next
 		else
-			if row[1].match(" ") || row[2].match(" ")
-				name = row[1].to_s + row[2].to_s
-			else
-				name = row[1].to_s + " " + row[2].to_s
+				name = row[1].strip + " " + row[2].strip
+				if row[3] == nil
+					row[3] = name 
+				end
 				names[row[3]] = [name,0,0]
-			end
 		end
 	end
 	CSV.foreach(File.join(ARGV[0], "results1.csv")) do |row|
