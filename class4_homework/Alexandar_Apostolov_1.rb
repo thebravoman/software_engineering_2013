@@ -45,7 +45,7 @@ CSV.open("results2.csv", "w") do |csv|
 	end
 	i = 2
 	while i < unnamed do
-		csv << ["Pedal"]
+		csv << ["No name",nil,nil]
 		i += 1
 	end
 end
