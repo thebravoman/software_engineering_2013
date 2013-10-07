@@ -2,7 +2,7 @@ require "csv"
 
 names = {}
 CSV.foreach(File.join(ARGV[0],"Evaluation 2013-2014 - Sheet2.csv")) do |row|
-        if (row[0].to_s.length <= 1)
+        if (row[0].to_s.length == 1)
                 if (row[3] == nil)
                         row[3] = " "
                 end
@@ -36,10 +36,9 @@ CSV.open("results1.csv", "w") do |csv|
                 if (!first_results[row[0]])
                         first_results[row[0]] = 0
                 end
-                if (!(second_results[row[0]]))
-                        (second_results[row[0]]) = 0
+                if (!second_results[row[0]])
+                        second_results[row[0]] = 0
                 end
                         csv << [row[1],first_results[row[0]],second_results[row[0]]]
-                end
        end
 end
