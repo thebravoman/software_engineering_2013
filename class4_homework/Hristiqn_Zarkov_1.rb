@@ -33,7 +33,12 @@ end
 
 CSV.open("results1.csv", "w") do |csv|
         names.sort_by {|a,b| b}.each do |row|
-                if ((first_results[row[0]]) || (second_results[row[0]]))
+                if (!first_results[row[0]])
+                        first_results[row[0]] = 0
+                end
+                if (!(second_results[row[0]]))
+                        (second_results[row[0]]) = 0
+                end
                         csv << [row[1],first_results[row[0]],second_results[row[0]]]
                 end
        end
