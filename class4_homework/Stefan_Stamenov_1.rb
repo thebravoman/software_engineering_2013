@@ -3,11 +3,8 @@ require 'csv'
 h={}
 
 CSV.foreach(File.join(ARGV[0],"Evaluation 2013-2014 - Sheet2.csv")) do |row|
-	if row[0].to_s.length!=1
-	  next
-	else 
 	  name=row[1].to_s+" "+row[2].to_s
-		next	if row[3].nil?
+		row[3]=name	if row[3].nil?
 	  h[row[3]]=[name,0,0]
 	end
 end
