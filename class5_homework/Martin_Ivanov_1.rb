@@ -6,7 +6,7 @@ require "time"
 
 	end_date = DateTime.parse( 'Mon Sep 30 16:00:00 2013 +0300' )
 
-	CSV.foreach(ARGV[0]+"/"+"Evaluation 2013-2014 - Sheet2.csv") do |row|
+	CSV.foreach(ARGV[0]+"Evaluation 2013-2014 - Sheet2.csv") do |row|
 
 		if row[0].to_s.length != 1
 			next
@@ -23,7 +23,7 @@ require "time"
 
 	end
 
-	Dir.glob(ARGV[0]+"/"+"*_1.rb").each do |file|
+	Dir.glob(ARGV[0]+"*_1.rb").each do |file|
 		
 		result = `git log #{file}`
 		lines = result.lines.to_a
@@ -40,7 +40,7 @@ require "time"
 
 	end
 
-	Dir.glob(ARGV[0]+"/"+"*_3.rb").each do |file|
+	Dir.glob(ARGV[0]+"*_3.rb").each do |file|
 		
 		result = `git log #{file}`
 		lines = result.lines.to_a
