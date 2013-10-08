@@ -28,8 +28,6 @@ require "time"
 		result = `git log #{file}`
 		lines = result.lines.to_a
 		date = DateTime.parse(lines[2].gsub("Date :","").strip)
-		#puts date
-		#dates format tested, there is no problems with it 		
 	
 		two_names = file.split("_")[0..1]
 		key = two_names[0] + " " + two_names[1]
@@ -45,8 +43,6 @@ require "time"
 		result = `git log #{file}`
 		lines = result.lines.to_a
 		date = DateTime.parse(lines[2].gsub("Date :","").strip)
-		#puts date
-		#dates format tested, there is no problems with it 		
 	
 		two_names = file.split("_")[0..1]
 		key = two_names[0] + " " + two_names[1]
