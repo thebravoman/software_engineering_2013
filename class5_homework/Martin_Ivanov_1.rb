@@ -1,3 +1,5 @@
+# DONT COPY THIS ! ALL RIGHTS RESERVED ! 
+
 require "csv"
 require "date"
 require "time"
