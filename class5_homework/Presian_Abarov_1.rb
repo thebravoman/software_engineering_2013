@@ -14,29 +14,25 @@ CSV.foreach("../class4_homework/test_data/Evaluation 2013-2014 - Sheet2.csv") do
 end
 
 all.each do |name, value|
-
-	p name, value
 	filename = '../class2_homework/' + name.gsub(' ', '_')
 	filenames = [filename+"_1.rb", filename+"_3.rb"]
 	
 	lastdate = DateTime.new()
-	rescued = 0
+	hasAllFiles = 1
 	filenames.each do |fname|
 		begin
-			rescued = 0
 			cmd = `git log #{fname}`
 			lines = cmd.lines.to_a
-			next if lines[1] =~ /fatal/
 			date = DateTime.parse(lines[2].gsub("Date:","").strip)
 			lastdate = lastdate < date ? date:lastdate
 		rescue
-			rescued = 1
+			hasAllFiles = 0
 		end
 	end
 	
 	next if lastdate.nil?
 	all[name][1] = lastdate
-	next unless lastdate < deadline && rescued == 0
+	next unless lastdate < deadline && hasAllFiles == 1
 	all[name][2] = 1
 	
 end
