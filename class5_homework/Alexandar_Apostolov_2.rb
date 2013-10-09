@@ -1,6 +1,3 @@
-require 'time'
-require 'bigdecimal'
-
 filename = ARGV[0]
 line = []
 time = []
@@ -26,7 +23,8 @@ File.open(filename).each do |line|
 			0.1*line[9].to_f + 
 			0.01*line[10].to_f + 
 			0.001*line[11].to_f
-#			puts (time[0].to_f).round(3)
+
+			time[0] = (time[0].to_f).round(3)
 
 		end
 		last_line = line
@@ -46,7 +44,7 @@ time[1] = time[1].to_f +
 	0.1*last_line[26].to_f + 
 	0.01*last_line[27].to_f + 
 	0.001*last_line[28].to_f
-#puts (time[1].to_f).round(3)
+
+time[1] = (time[1].to_f).round(3)
 
 puts (time[1].to_f - time [0].to_f)*1000000000
-
