@@ -50,6 +50,6 @@ all = all.sort_by { |key,value| key[1][0] <=> value[1][0] }
 
 CSV.open("results2.csv","wb") do |csv|
 	all.each do |key,value|
-		csv << [all[k][0],all[k][3]]
+		csv << [all[k][0],all[k][2],all[k][3]]
 	end
 end
