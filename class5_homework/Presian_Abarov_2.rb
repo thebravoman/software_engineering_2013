@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 first = ""
 last = ""
 File.foreach(ARGV[0]) do |line|
