@@ -2,7 +2,7 @@ require "csv"
 
 names = {}
 CSV.foreach(File.join(ARGV[0],"Evaluation 2013-2014 - Sheet2.csv")) do |row|
-        if (row[0].to_s.length <= 1)
+        if (row[0].to_s.length == 1)
                 if (row[3] == nil)
                         row[3] = " "
                 end
@@ -31,10 +31,14 @@ CSV.foreach(File.join(ARGV[0],"results3.csv")) do |row|
         end
 end
 
-CSV.open("results1.csv", "w") do |csv|
+CSV.open("test_execution/results1.csv", "w") do |csv|
         names.sort_by {|a,b| b}.each do |row|
-                if ((first_results[row[0]]) || (second_results[row[0]]))
-                        csv << [row[1],first_results[row[0]],second_results[row[0]]]
+                if (!first_results[row[0]])
+                        first_results[row[0]] = 0
                 end
+                if (!second_results[row[0]])
+                        second_results[row[0]] = 0
+                end
+                        csv << [row[1],first_results[row[0]],second_results[row[0]]]
        end
 end
