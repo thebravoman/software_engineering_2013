@@ -1,4 +1,4 @@
-require 'date'
+﻿require 'date'
 require 'csv'
 
 
@@ -58,11 +58,12 @@ Dir.glob("*_3.rb")do |file|
 end
 
 results = results.sort {|a,b| a[0] <=> b[0] }
-CSV.open("resultс2.csv","w") do |row|
+CSV.open("results2.csv","w") do |row|
 		results.each do |ime|
 			row << ime[1]
 		end
 end
+
 
 
 
