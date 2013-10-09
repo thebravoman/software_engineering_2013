@@ -11,7 +11,7 @@ CSV.foreach("#{ARGV[0]}/Evaluation 2013-2014 - Sheet2.csv") do |line|
 	next if line[3] == nil
 	next if line[3].empty?
 	next if line[3] == "Name English"
-	val[0] = line[1] << " " << line[2]
+	val[0] = line[1] << " " << line[2].encode('utf-8')
 	names[line[3].encode('utf-8')] = val.dup
 end
 CSV.foreach("#{ARGV[0]}/results1.csv") do |line|
