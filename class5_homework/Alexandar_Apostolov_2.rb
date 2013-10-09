@@ -47,4 +47,4 @@ time[1] = time[1].to_f +
 
 time[1] = (time[1].to_f).round(3)
 
-puts (time[1].to_f - time [0].to_f)*1000000000
+puts ((time[1].to_f - time [0].to_f)*1000000000).to_i
