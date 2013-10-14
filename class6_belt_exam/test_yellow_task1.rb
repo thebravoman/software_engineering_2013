@@ -1,20 +1,33 @@
 require 'csv'
 
 CSV.open("results1.csv", "w") do |csv|
-	Dir.glob("Bozhidar_Nikolov_1.rb") do |file|
+	`mkdir test_execution`
+	`cp bank.csv test_execution`
+	Dir.glob("*_1.rb") do |file|
+		`cp #{file} test_execution`
+		Dir.chdir "test_execution"
 		begin
-			`mkdir test_execution`
-			`cp #{file} test_execution`
-			`cd test_execution && ruby #{file} ../bank.csv EUR`
-			puts `ls test_execution`
-			result = `diff test_execution/bank.csv_result.csv test_data1/bank_expected.csv`
-			result = result.gsub(/[\n\r]/,"")
-			`rm test_execution/ -r`
+			result = system "ruby #{file} bank.csv EUR"
+			if result
+				result_file = Dir.glob("bank*_result.csv")[0]
+				#~ puts result_file
+				puts File.read(result_file)
+				result = `diff #{result_file} ../test_data1/bank_expected.csv`
+				puts "Start"
+				puts result
+				puts "End"
+				result = result.gsub(/[\n\r]/,"")
+			end
 			csv << [file, result, result == ""]
-		rescue
+		rescue Exception => e
+			p e
 			result = "Exception for #{file}"
 			csv << [file, result, false]
 		end
+		Dir.chdir ".."
+		`rm -f test_execution/*_1.rb`
+		`rm -f test_execution/*_result*.csv`
 	end
+	`rm -f test_execution/ -r`
 end
 
