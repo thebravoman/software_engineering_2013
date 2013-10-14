@@ -10,12 +10,8 @@ CSV.open("results1.csv", "w") do |csv|
 			result = system "ruby #{file} bank.csv EUR"
 			if result
 				result_file = Dir.glob("bank*_result.csv")[0]
-				#~ puts result_file
 				puts File.read(result_file)
 				result = `diff #{result_file} ../test_data1/bank_expected.csv`
-				puts "Start"
-				puts result
-				puts "End"
 				result = result.gsub(/[\n\r]/,"")
 			end
 			csv << [file, result, result == ""]
