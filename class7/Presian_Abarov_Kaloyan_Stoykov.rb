@@ -12,12 +12,12 @@ File.open(ARGV[0]).each do |line|
 		strips = []
 		strips << line[0..12].to_s.strip
 		strips << line[17..-1].to_s.strip
-		structure[i.to_s] = strips
+		structure[i] = strips
 	elsif isint(line)
 		i = line
 		next
 	else
-		structure[i.to_s] << line
+		structure[i] << line
 	end
 end
 
