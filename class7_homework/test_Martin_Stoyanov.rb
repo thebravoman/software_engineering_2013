@@ -5,13 +5,13 @@ CSV.open("result.txt", "wb") do |csv|
 		`cp #{file} Martin_Stoyanov_Test_Data`
 		Dir.chdir "Martin_Stoyanov_Test_Data"
 		begin
-    		`ruby #{file} subs.srt #{file.gsub(".rb", ".txt")}` 	
-    		result = `diff #{file.gsub(".rb", ".txt")} subs_expected.txt`  
-    		result = result.gsub(/[\n\r]/,"")
-    		csv << [file, result == " "] 
+    			`ruby #{file} subs.srt #{file.gsub(".rb", ".txt")}` 	
+    			result = `diff #{file.gsub(".rb", ".txt")} subs_expected.txt`  
+    			result = result.gsub(/[\n\r]/,"")
+    			csv << [file, result == " "] 
 		rescue
-    		result = "Exception for #{file}"
-    		csv << [file, false]
+    			result = "Exception for #{file}"
+    			csv << [file, false]
 		end
 		Dir.chdir ".."
 		`rm -f Martin_Stoyanov_Test_Data/*_1.txt`
