@@ -10,7 +10,9 @@ f.seek(0, IO::SEEK_SET)
 
 
 def pack_sub(f, i, lines)
-	n = f.readline()
+	return [lines + 1,[0,0,0,0]] if i >= lines
+	n = f.readline().to_i
+		
 	timestamp = f.readline()
 	tstart, tend = timestamp.split(" --> ")
 	start_h = tstart.gsub(/:\d+:\d+,\d+$/, "")
@@ -30,7 +32,7 @@ def pack_sub(f, i, lines)
 			 end_s.to_i * 1000 + end_ms.to_i
 			 
 			 
-	i+=2
+	i+=3
 	
 	text = ""
 	new_line = f.readline
@@ -46,8 +48,17 @@ end
 i = 0
 text = ""
 
-i, last_sub = pack_sub(f,i,line)
-begin
-	
-rescue
+i, last_sub = pack_sub(f,i,lines)
+
+wf = File.open(ARGV[1], "w")
+wf << last_sub[3].gsub("\n", "")
+while i < lines do
+	i,new_sub = pack_sub(f,i,lines)
+	if new_sub[1] - last_sub[2] > 3000
+		wf << "\n"
+	else
+		wf << " "
+	end
+	wf << new_sub[3].gsub("\n", "")
+	last_sub = new_sub
 end
