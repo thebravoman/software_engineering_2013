@@ -1,0 +1,291 @@
+1
+00:00:07,655 --> 00:00:14,783
+As a result of this video we will develop a new block that's called DistanceMove,
+
+2
+00:00:14,783 --> 00:00:19,609
+where we can specify the distance in milimeters,
+
+3
+00:00:19,609 --> 00:00:24,982
+that we would like our robot to move for example 200 milimeters and the power.
+
+4
+00:00:25,259 --> 00:00:31,665
+And our robot will move exactly 200 milimeters.
+
+5
+00:00:32,880 --> 00:00:37,312
+You can of course find this program in the material section,
+
+6
+00:00:37,312 --> 00:00:41,211
+where you can directly download it and use it in your robots.
+
+7
+00:00:44,627 --> 00:00:52,796
+First I need a new move block and I will configure it to use rotations
+
+8
+00:00:52,796 --> 00:00:55,435
+the number of rotations we want
+
+9
+00:00:55,435 --> 00:01:00,351
+and the motors are connected on ports A and B.
+
+10
+00:01:00,351 --> 00:01:04,431
+Let's check how it works.
+
+11
+00:01:11,416 --> 00:01:16,307
+Next we should check the radius of the tires, that this robot use
+
+12
+00:01:16,307 --> 00:01:21,272
+and as you can see the radius is 28 mm so we will use this value.
+
+13
+00:01:22,964 --> 00:01:29,670
+In our program what we would like to achieve is to somehow specify the distance,
+
+14
+00:01:29,670 --> 00:01:33,991
+that we would like to move in mm, for example 200.
+
+15
+00:01:33,991 --> 00:01:37,579
+Then we will do a small mathematical calculation
+
+16
+00:01:37,579 --> 00:01:40,920
+where we will divide this number 200
+
+17
+00:01:40,920 --> 00:01:46,615
+to the number of milimeters in the circumference of the tire.
+
+18
+00:01:46,615 --> 00:01:54,453
+So its 176 and we will use the result of this mathematical block to pass to the
+
+19
+00:01:54,453 --> 00:01:59,052
+move block and it goes like this.
+
+20
+00:01:59,052 --> 00:02:04,846
+We add this variable where we write the numerical value of 200
+
+21
+00:02:04,846 --> 00:02:11,627
+then we take another variable block, where we read the value of the distance,
+
+22
+00:02:11,627 --> 00:02:22,132
+so we should select read and then we pass this value of 200 to the mathematical block.
+
+23
+00:02:22,132 --> 00:02:32,505
+We choose the operation divide so we divide the number of 200 to 176, which will give us the number of rotation,
+
+24
+00:02:32,505 --> 00:02:39,103
+that this robot should do in order to move 200 mm forward.
+
+25
+00:02:39,103 --> 00:02:41,924
+Than we take the result of the operation,
+
+26
+00:02:41,924 --> 00:02:43,641
+right here
+
+27
+00:02:43,641 --> 00:02:47,866
+and we pass the result to the move block.
+
+28
+00:02:47,866 --> 00:02:50,977
+Okay, let's see how it works.
+
+29
+00:02:55,997 --> 00:03:03,044
+Оur next step is to move this whole logic in a new block that will be called DistanceMove,
+
+30
+00:03:03,044 --> 00:03:07,426
+where we can specify the distance and the power of the motors
+
+31
+00:03:07,426 --> 00:03:09,851
+and we will see the whole robot
+
+32
+00:03:09,851 --> 00:03:12,482
+move the specified distance.
+
+33
+00:03:12,482 --> 00:03:17,149
+We select all the blocks,
+
+34
+00:03:17,149 --> 00:03:23,408
+we open tools, then myBlock builder
+
+35
+00:03:23,408 --> 00:03:30,407
+we would like to call this new MyBlock DistanceMove
+
+36
+00:03:30,407 --> 00:03:34,199
+and we will choose an icon for this DistanceMove
+
+37
+00:03:34,199 --> 00:03:39,206
+for example this one and we would like to have two parameters for this block
+
+38
+00:03:39,206 --> 00:03:45,502
+the first parameter is called Distance in mm
+
+39
+00:03:45,502 --> 00:03:50,950
+and it will be a number with default value of 0.
+
+40
+00:03:50,950 --> 00:03:54,771
+It will have an icon for example, this one.
+
+41
+00:03:54,771 --> 00:03:59,543
+The secon parameter is the power of the motors
+
+42
+00:03:59,543 --> 00:04:03,286
+we have the second parameter, called power.
+
+43
+00:04:03,286 --> 00:04:10,472
+It's again number with default value of 75
+
+44
+00:04:10,479 --> 00:04:13,674
+and let's choose an icon for power.
+
+45
+00:04:13,674 --> 00:04:18,529
+The icon for power is for example this one.
+
+46
+00:04:19,719 --> 00:04:22,847
+Okay and we are finished.
+
+47
+00:04:22,927 --> 00:04:30,858
+Now we have our distancemove block, where we will remove this variable distance
+
+48
+00:04:30,858 --> 00:04:33,854
+and these are our input parameters for the block.
+
+49
+00:04:33,854 --> 00:04:37,350
+The first input parameter is the number
+
+50
+00:04:37,350 --> 00:04:41,449
+of milimeters we would like to move,
+
+51
+00:04:41,449 --> 00:04:44,726
+we will pass this to the mathematical block.
+
+52
+00:04:44,726 --> 00:04:48,890
+The second parameter is the power of the motors,
+
+53
+00:04:48,890 --> 00:04:53,858
+we will pass this to both motors
+
+54
+00:04:53,858 --> 00:05:00,297
+and we will add this program right here.
+
+55
+00:05:00,297 --> 00:05:04,239
+As a result we have new block it is a myblock
+
+56
+00:05:04,239 --> 00:05:06,193
+it receives two parameters
+
+57
+00:05:06,203 --> 00:05:08,780
+the distance in milimeters and the power
+
+58
+00:05:08,780 --> 00:05:12,361
+and we can use this distancemove block in our program.
+
+59
+00:05:12,361 --> 00:05:17,545
+For example I will move this here just to show you,
+
+60
+00:05:17,545 --> 00:05:21,556
+it is located right here in myblocks,
+
+61
+00:05:21,556 --> 00:05:23,137
+I'll delete it.
+
+62
+00:05:23,137 --> 00:05:25,275
+I will take new distancemove
+
+63
+00:05:25,275 --> 00:05:32,368
+and I would like to see my robot move for example a 150 milimeters
+
+64
+00:05:32,368 --> 00:05:34,848
+with the power of 75.
+
+65
+00:05:34,848 --> 00:05:37,495
+Let's download and run it
+
+66
+00:05:44,495 --> 00:05:46,657
+Let's do a number of tests here,
+
+67
+00:05:46,657 --> 00:05:48,424
+as we have the distancemove,
+
+68
+00:05:48,424 --> 00:05:52,044
+we will move forward for a 150 milimiters
+
+69
+00:05:52,044 --> 00:05:59,707
+and then a new block to move backward with the power of -75
+
+70
+00:05:59,707 --> 00:06:02,402
+for a 100 milimeters
+
+71
+00:06:02,402 --> 00:06:05,556
+and then we will again move forward
+
+72
+00:06:08,366 --> 00:06:11,112
+for 50 milimeters.
+
+73
+00:06:11,722 --> 00:06:13,812
+Let's see how this program works.
