@@ -30,7 +30,7 @@ File.readlines(ARGV[0]).each do |line|
         end
 end
 
-f = File.open('Stanislav_Beregov.txt', 'w')
+f = File.open('Asen_Panayotov.txt', 'w')
 
         subtitles.each do |o|
                 w_object = o
