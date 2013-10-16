@@ -64,9 +64,7 @@ else
 	end
 end
 
-	puts i
 i, last_sub = pack_sub(f,i,lines)
-	puts i
 output(last_sub[3].gsub("\n", ""))
 while i < lines do
 	i,new_sub = pack_sub(f,i,lines)
