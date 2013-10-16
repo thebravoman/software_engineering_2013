@@ -34,6 +34,6 @@ File.open(ARGV[0]).each do |line|
 end 
 
 
-File.open("#{ARGV[0].chomp(".srt")}_result.txt","w") do |file|
+File.open("Kaloian_Pavlov.txt","w") do |file|
 	file.write(arr)
 end
