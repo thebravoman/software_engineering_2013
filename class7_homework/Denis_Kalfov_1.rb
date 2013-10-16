@@ -18,3 +18,4 @@ end
 File.open("sub.txt","w") do |txt|
 	txt << sub
 end
+
