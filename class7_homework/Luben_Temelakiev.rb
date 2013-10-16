@@ -25,7 +25,7 @@ while i != time1.length do
 		file.write "\n"
 		i+=1
 	else
-		file.printf srt[i].chomp
+		file.printf srt[i].chomp + " "
 		i+=1
 	end
 end
