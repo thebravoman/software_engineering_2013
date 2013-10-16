@@ -25,11 +25,8 @@ File.readlines(ARGV[0]).each do |line|
                 end
         end
 end
-f = File.open('Stanislav_Beregov.txt', 'w')
 subs.each do |o|
         obj = o
-        f.write(obj[2].to_s)
-        f.write("\n") if !(o.equal? subs.last)
-        f.write("\n")
+	puts obj[2].to_s
+	puts "\n" if !(o.equal? subs.last)
 end
-f.close
