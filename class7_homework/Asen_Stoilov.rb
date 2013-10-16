@@ -1,4 +1,3 @@
-
 i=0
 a=0
 timenom=Array.new
@@ -11,7 +10,7 @@ if (line =~ / --> /)
 if (i==0)
 timenom[0] = line[24..29].to_i
 i=1
-timenom[1] = line[24..29].to_i
+timenom[1] = timenom[0]
 else  
 timenom[1] = line[7..12].to_i
 i=0
