@@ -34,7 +34,7 @@ File.readlines(ARGV[0]).each do |line|
         end
         if newsub
                 if !cattext
-                        obj[2] = ' ' + line.chomp
+                        obj[2] = line.chomp
                         subs <<  obj.dup
                 else
                         obj[2] +=  ' ' + line.chomp
