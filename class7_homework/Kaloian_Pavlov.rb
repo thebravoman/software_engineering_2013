@@ -1,5 +1,5 @@
 arr = String.new
-y = 0 ; i = 0;x = 0;bool = true; blip = true ;
+i = 0; x = 0; y = false; bool = true; blip = true ;
 arr2 = Array.new
 
 
@@ -18,10 +18,10 @@ File.open(ARGV[0]).each do |line|
 		
 		if arr1 != nil
 			blip = arr1 - arr2[x-2] < 3
-		end		
+		end	
+		y = true	
 		i=0		
-	elsif i == 1 or i == 2
-		y+=1	
+	elsif i > 0 && y == true	
 		if line!="\n"
 			if blip == true
 				arr += line.gsub(/\n/,'')
@@ -31,6 +31,9 @@ File.open(ARGV[0]).each do |line|
 		end
 	end	
 	i+=1	
+	if line == "\n" 
+		y = false
+	end
 end 
 
 
