@@ -36,7 +36,13 @@ def pack_sub(f, i, lines)
 	text = ""
 	new_line = f.readline
 	while i < lines - 1 do
-		break if new_line =~ /^$/
+		#general purpose dummy
+		break if new_line == ""
+		#unix
+		break if new_line =~ /^\n/
+		#win == Ruby (h)
+		break if new_line =~ /^\n\r/
+		puts new_line
 		text += new_line
 		new_line = f.readline
 		i += 1
@@ -58,8 +64,9 @@ else
 	end
 end
 
+	puts i
 i, last_sub = pack_sub(f,i,lines)
-
+	puts i
 output(last_sub[3].gsub("\n", ""))
 while i < lines do
 	i,new_sub = pack_sub(f,i,lines)
