@@ -8,12 +8,12 @@ File.open(ARGV[0]).each do |line|
 		line = line.split("-->")[0..1]		
 		if bool == false
 			a = line[0].split(":")[0..2]	
-			arr1 = a[0].strip.to_f*60*60+ a[1].to_f*60 + a[2].gsub(",",".").to_f			
+			arr1 =  a[2].gsub(",",".").to_f	
 		else
 			bool = false
 		end
 		b = line[1].split(":")[0..2]
-		arr2[x] = b[0].strip.to_f*60*60 + b[1].to_f*60 + b[2].gsub(",",".").to_f	
+		arr2[x] =  b[2].gsub(",",".").to_f
 		x+=1
 		
 		if arr1 != nil
