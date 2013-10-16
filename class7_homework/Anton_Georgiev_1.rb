@@ -10,6 +10,8 @@ File.open(ARGV[0]).each do |line|
 		first_time=Time.parse(line.split(" --> ")[0])
 		if second_time - first_time>=3 && j!=0
 			sub_control="\n"
+		else
+			sub_control=String.new
 		end
 		second_time=Time.parse(line.split(" --> ")[1])
 		j=1
