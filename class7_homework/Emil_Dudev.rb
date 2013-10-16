@@ -29,5 +29,13 @@ File.foreach( ARGV[0] ) do |l|
 	end
 	
 end
-puts lastsub[2] unless lastsub[2].empty?
+if type == 2
+	if sub[1][0] - lastsub[1][1] < 3000
+		lastsub[2] << ' ' << sub[2]
+		puts lastsub[2]
+	else
+		puts lastsub[2] unless lastsub[2].empty?
+	end
+end
+
 

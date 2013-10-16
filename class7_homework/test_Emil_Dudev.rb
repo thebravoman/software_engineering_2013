@@ -35,7 +35,15 @@ File.foreach( ARGV[0] ) do |l|
 	end
 	
 end
-bigreg << lastsub[2] << '[\n\r]+' unless lastsub[2].empty?
+if type == 2
+	if sub[1][0] - lastsub[1][1] < 3000
+		lastsub[2] << ' ' << sub[2]
+		bigreg << lastsub[2] << '[\n\r]+'
+	else
+		bigreg << lastsub[2] << '[\n\r]+' unless lastsub[2].empty?
+	end
+end
+bigreg[-1] = '*'
 bigreg << '$'
 puts( Regexp.new( bigreg ) =~ testdata ? true : false )
 
