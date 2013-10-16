@@ -11,8 +11,7 @@ structure = Hash.new([])
 i = 1
 File.open(ARGV[0]).each do |line|
 	if line =~ /-->/
-		strips = [line[0..12].to_s.strip, line[17..-1].to_s.strip]
-		structure[i] = strips
+		structure[i] = [line[0..12].to_s.strip, line[17..-1].to_s.strip]
 	elsif isint(line)
 		i = line.to_i
 		next
