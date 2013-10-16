@@ -41,8 +41,10 @@ def pack_sub(f, i, lines)
 		#unix
 		break if new_line =~ /^\n/
 		#win == Ruby (h)
-		break if new_line =~ /^\n\r/
-		puts new_line
+		break if new_line =~ /^[\n\r]/
+		#losing sigh of what I'm doing
+		break if new_line.empty?
+		
 		text += new_line
 		new_line = f.readline
 		i += 1
@@ -65,7 +67,7 @@ else
 end
 
 i, last_sub = pack_sub(f,i,lines)
-output(last_sub[3].gsub("\n", ""))
+output(last_sub[3].gsub(/[\n\r]/, ""))
 while i < lines do
 	i,new_sub = pack_sub(f,i,lines)
 	if new_sub[1] - last_sub[2] > 3000
@@ -73,6 +75,6 @@ while i < lines do
 	else
 		output(" ")
 	end
-	output(new_sub[3].gsub("\n", ""))
+	output(new_sub[3].gsub(/[\n\r]/, ""))
 	last_sub = new_sub
 end
