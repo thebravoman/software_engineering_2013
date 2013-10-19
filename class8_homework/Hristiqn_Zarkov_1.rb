@@ -2,7 +2,7 @@ require 'csv'
 require 'digest/md5'
 
 array = Array.new
-test_date = "Hristiqn_Zarkov_test_date"
+test_date = "Hristiqn_Zarkov_test_data"
 files_folder = "../class7_homework"
 if (ARGV[0])
         files_folde = ARGV[0]
