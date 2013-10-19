@@ -57,7 +57,7 @@ if (Digest::MD5.hexdigest(files) == "53415c10bfe45610de863621fde69d38") #When I 
 end
 `rm -f programs -r`
 
-CSV.open("results.csv","w") do |csv|
+CSV.open("results1.csv","w") do |csv|
         array.sort_by{|array| array[1]}.each do |element|
                 csv << element
         end
