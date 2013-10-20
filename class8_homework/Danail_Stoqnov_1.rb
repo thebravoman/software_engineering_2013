@@ -1,6 +1,6 @@
 require 'csv'
 
-CSV.open("result1.csv", "wb") do |csv|
+CSV.open("results1.csv", "wb") do |csv|
 	Dir.glob("*_1.rb") do |file|
 		`copy #{file} Danail_Stoqnov_test_data`
 		Dir.chdir "Danail_Stoqnov_test_data"
