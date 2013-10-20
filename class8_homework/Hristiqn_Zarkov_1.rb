@@ -33,7 +33,7 @@ if (Digest::MD5.hexdigest(files) == "53415c10bfe45610de863621fde69d38") #When I 
                         name = real_file.split("_")[0..1]
                         if (output_file == "")
                                 is_ok = 0
-                                #array << ["#{name[0]} #{name[1]}","No output File.",is_ok]
+                                #array << ["#{name[0]} #{name[1]}","Code Problem:No output File.",is_ok]
                                 array << ["#{name[0]} #{name[1]}","",1]
                                 next
                         elsif (output_file == "ARGV[1]")
@@ -43,7 +43,7 @@ if (Digest::MD5.hexdigest(files) == "53415c10bfe45610de863621fde69d38") #When I 
                         #if (File.file?(File.join("programs",output_file)))
                         #        problem = `cd programs && diff ../#{expected_test_file} #{output_file}`
                         #else
-                        #        array << ["#{name[0]} #{name[1]}","Compilation Fail",0]
+                        #        array << ["#{name[0]} #{name[1]}","Program problem:No output file",0]
                         #        next
                         #end
                         problem = `cd programs && diff ../#{expected_test_file} #{output_file}`
