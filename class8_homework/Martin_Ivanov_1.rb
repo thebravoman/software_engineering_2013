@@ -69,7 +69,7 @@ expected_result = ARGV[2] # The expected result
 
 	`rm -rf programs`
 
-	CSV.open("result1.csv","wb") do |csv|
+	CSV.open("results1.csv","wb") do |csv|
 		output_arr.each do |elem|
 			csv << elem
 		end
