@@ -24,7 +24,7 @@ if (Digest::MD5.hexdigest(files) == "53415c10bfe45610de863621fde69d38") #When I 
                         `cp #{file} programs/#{real_file}`
                         output_file = ""
                         File.open(File.join("programs",real_file)).each do |row|
-                                if (row =~ /"w"/)
+                                if ((row =~ /"w"/) ||(row =~ /"wb"/))
                                         row = row.split(",")[0]
                                         row = row.split("(")[1]
                                         output_file = row
