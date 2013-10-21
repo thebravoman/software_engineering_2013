@@ -49,12 +49,13 @@ require 'time'
 						sub_to_check=file_home.read
 						csv << [name,sub_to_check==sub_check ? '' : sub_to_check,sub_to_check==sub_check ? 1 : 0]
 					end
+					`rm -f 28_result.txt`
 				end
+				`rm -f #{file}`
+				Dir.chdir("../../class7_homework")
 			end
-			`rm -f #{file}`
-			`rm -f 28_result.txt`
-			Dir.chdir("..")
 		end
 	end
+	Dir.chdir("../class8_homework")
 	`rm -f testing_folder/28.srt`
 	`rm -f testing_folder/ -r`
