@@ -1,11 +1,8 @@
 
 file = ARGV[0]
 f = File.open(file)
-lines = 0
+lines = f.lines.count
 i = 0
-f.each do |l|
-	lines+=1
-end
 f.seek(0, IO::SEEK_SET)
 
 def pack_sub(f, i, lines)
@@ -30,24 +27,15 @@ def pack_sub(f, i, lines)
 			 end_m.to_i * 60 * 1000 +
 			 end_s.to_i * 1000 + end_ms.to_i
 			 
-			 
-	i+=3
-	
+			
+	i+=2
+
 	text = ""
-	new_line = f.readline
-	while i < lines - 1 do
-		#general purpose dummy
-		break if new_line == ""
-		#unix
-		break if new_line =~ /^\n/
-		#win == Ruby (h)
-		break if new_line =~ /^[\n\r]/
-		#losing sigh of what I'm doing
-		break if new_line.empty?
-		
-		text += new_line
+	while i < lines do
 		new_line = f.readline
+		text += new_line
 		i += 1
+		break if new_line =~ /^[\n\r]/
 	end
 	return [i, [n, starttime, endtime, text]]
 end
