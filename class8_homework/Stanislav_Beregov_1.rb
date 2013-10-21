@@ -37,12 +37,12 @@ File.readlines("../preyear3/28.srt").each do |line|
         end
 	cattext = true #dat fix
 end
-names = Dir["../class7_homework/*.rb"].reject{|n| File.basename(n) =~ /^test_.*/}
 students = {}
+FileUtils.mkdir "Stanislav_Beregov_test_dir"
+FileUtils.chdir("Stanislav_Beregov_test_dir")
+names = Dir["../../class7_homework/*.rb"].reject{|n| File.basename(n) =~ /^test_.*/}
 names.each do |name|
-	FileUtils.mkdir "Stanislav_Beregov_test_dir"
-	FileUtils.cp(name, "./Stanislav_Beregov_test_dir")
-	FileUtils.chdir("Stanislav_Beregov_test_dir")
+	FileUtils.cp(name, ".")
 	`ruby #{File.basename(name)} ../../preyear3/28.srt > testoutput.out` 
 	outpfiles = Dir["./*"].reject{|n| (File.basename(n) == File.basename(name)) }
 	flag = false
@@ -59,9 +59,10 @@ names.each do |name|
 	reg[0] = flag
 	reg[1] = File.readlines(fname)
 	students[File.basename(name, ".rb").split("_")[0] + " " + File.basename(name, ".rb").split("_")[1]] = reg.dup
-	FileUtils.chdir("..")
-	FileUtils.rmtree "Stanislav_Beregov_test_dir"
+	FileUtils.rmtree "."
 end
+FileUtils.chdir("..")
+FileUtils.rmtree "Stanislav_Beregov_test_dir"
 f = CSV.open("results1.csv", "wb")
 students.each do |student, result|
 	f << [student, result[0] ? '' : String(result[1].reduce(:+)), result[0] ? 1 : 0]
