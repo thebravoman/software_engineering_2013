@@ -1,0 +1,336 @@
+1
+00:00:08,474 --> 00:00:14,150
+In this episode of the basic tutorial series I will go through the Touch sensor.
+
+2
+00:00:14,150 --> 00:00:18,545
+By the end of this tutorial you will know how does the Touch sensor works.
+
+3
+00:00:18,545 --> 00:00:24,900
+How to program it, how to attach it to the robot and last but not least how you can use it.
+
+4
+00:00:28,815 --> 00:00:36,138
+So let's begin with looking at the programming possibilities of the Touch sensor.
+
+5
+00:00:36,138 --> 00:00:43,742
+First I have the yellow block then I have the orange block.
+
+6
+00:00:43,742 --> 00:00:49,923
+And of course we can you the Touch sensor as condition of the loop.
+
+7
+00:00:51,702 --> 00:00:54,750
+And of the switch block.
+
+8
+00:00:56,129 --> 00:01:00,369
+In all four cases I have the same settings.
+
+9
+00:01:00,369 --> 00:01:04,459
+First we have to chose on which port the sensor is connected.
+
+10
+00:01:04,459 --> 00:01:08,551
+And then we have to chose from the three actions.
+
+11
+00:01:08,551 --> 00:01:12,622
+Pressed, Released and Bumped.
+
+12
+00:01:12,622 --> 00:01:20,299
+Now let's take a look at a program which will help us to understand the differences between the three states of
+
+13
+00:01:20,299 --> 00:01:22,279
+the Touch sensor.
+
+14
+00:01:23,639 --> 00:01:26,460
+So let's go to the view menu.
+
+15
+00:01:26,460 --> 00:01:33,948
+There we chose the Touch sensor and I have connected my Touch sensor on port 1 so I chose port 1.
+
+16
+00:01:33,948 --> 00:01:37,449
+As you can see the screen is shown 0.
+
+17
+00:01:37,449 --> 00:01:41,604
+If I pres the touch sensor it will become 1.
+
+18
+00:01:41,604 --> 00:01:47,999
+So the touch sensor has only two states Pressed and Released or 1 and 0.
+
+19
+00:01:49,419 --> 00:01:53,858
+But in the setting we have three states Pressed, Released and Bumped.
+
+20
+00:01:55,108 --> 00:01:58,626
+So how do we get three states?
+
+21
+00:01:58,626 --> 00:02:03,600
+If we take a look at the orange block of the Touch sensor.
+
+22
+00:02:05,600 --> 00:02:16,294
+What happens actually is that if we take the Pressed option the robot will wait until the touch sensor is Pressed.
+
+23
+00:02:16,294 --> 00:02:22,475
+If we take the Released option the robot will wait until the Touch sensor is Released.
+
+24
+00:02:22,475 --> 00:02:27,544
+Which means that at the beginning the Touch sensor must be Pressed.
+
+25
+00:02:28,804 --> 00:02:40,502
+And if we go to the Bumped option. We have the robot waiting for the Touch sensor.
+
+26
+00:02:40,502 --> 00:02:43,777
+to be Pressed and afterwards Released.
+
+27
+00:02:43,777 --> 00:02:51,388
+So actually if in the beginning I have the Touch sensor Pressed then the robot will wait to be Released.
+
+28
+00:02:51,388 --> 00:02:53,970
+Then Pressed and Released again.
+
+29
+00:02:53,970 --> 00:02:57,432
+We got familiar with the basic settings of the Touch sensor.
+
+30
+00:02:58,102 --> 00:03:01,248
+Now let's see how does the touch sensor work.
+
+31
+00:03:02,908 --> 00:03:11,623
+Let's say I have a battery .
+Тhis was an ugly one.
+
+32
+00:03:11,623 --> 00:03:13,119
+So I have a battery.
+
+33
+00:03:14,969 --> 00:03:24,461
+And we take a paper clip which will connect the + and the - sides of the battery.
+
+34
+00:03:25,321 --> 00:03:27,865
+What will happen with the paper clip?
+
+35
+00:03:27,865 --> 00:03:35,259
+Well it will get hotter, that is because electricity will flow through the paper clip.
+
+36
+00:03:35,259 --> 00:03:39,320
+But now let's break the paperclip in two pieces.
+
+37
+00:03:42,130 --> 00:03:43,531
+Here for instance.
+
+38
+00:03:44,597 --> 00:03:52,193
+Now electricity won't flow anymore through the paper clip and the paper clip will get cooler.
+
+39
+00:03:53,682 --> 00:04:00,009
+But if we have another paper clip and connect the two pieces with it.
+
+40
+00:04:03,999 --> 00:04:07,111
+The paper clip will get hotter again.
+
+41
+00:04:07,111 --> 00:04:12,701
+So we can make a switch that can connect and disconnect the two pieces.
+
+42
+00:04:14,201 --> 00:04:17,547
+On similar basis works the Touch sensor.
+
+43
+00:04:17,547 --> 00:04:29,771
+There is a plate connected to the orange button which when the button is pressed closes the circuit and electricity flows.
+
+44
+00:04:30,561 --> 00:04:36,733
+In that way the brick understands that the touch sensor is Pressed.
+
+45
+00:04:37,653 --> 00:04:43,485
+If we Release the orange button of the Touch sensor a spring pushes back the sensor
+
+46
+00:04:43,485 --> 00:04:50,072
+and the plate disconnects the circuit and electricity does not flow anymore.
+
+47
+00:04:51,242 --> 00:04:57,751
+So basically this is the principle on which works the Touch sensor.
+
+48
+00:04:58,181 --> 00:05:03,320
+Now let's see several programs to see how we can use the Touch sensor.
+
+49
+00:05:03,320 --> 00:05:06,579
+So let's begin with the simplest program possible.
+
+50
+00:05:08,069 --> 00:05:11,820
+I will make my robot stop when it hits a wall.
+
+51
+00:05:13,500 --> 00:05:21,857
+First I take a move block which will move unlimited until the Touch sensor is Pressed.
+
+52
+00:05:21,857 --> 00:05:30,946
+I cannot chose Released or Bumped because the sensor of the robot will be Released from the beginning.
+
+53
+00:05:30,946 --> 00:05:38,979
+And with Bumped the problem is that the robot waits for the Touch sensor to be Pressed and then Released.
+
+54
+00:05:38,979 --> 00:05:45,384
+And when the robot hits the wall the Touch sensor will be only Pressed.
+
+55
+00:05:46,714 --> 00:05:52,779
+So after the Touch sensor is Pressed I take another Move block and make my robot to stop.
+
+56
+00:05:53,579 --> 00:05:58,643
+So let's download and see how it works.
+
+57
+00:05:58,643 --> 00:06:04,914
+So I use the five minute bot which can be found in episode 0.
+
+58
+00:06:04,914 --> 00:06:08,164
+And I have attache a Touch sensor to it.
+
+59
+00:06:09,554 --> 00:06:16,826
+The Touch sensor is on port 1 and the motors are on port B and C.
+
+60
+00:06:17,826 --> 00:06:20,930
+So let's run the program.
+
+61
+00:06:21,970 --> 00:06:25,599
+And imagine that my hand is a wall.
+
+62
+00:06:26,889 --> 00:06:29,024
+And I start the program.
+
+63
+00:06:29,454 --> 00:06:30,890
+And the robot stops.
+
+64
+00:06:30,890 --> 00:06:34,949
+Now let's take our program one step further.
+
+65
+00:06:35,619 --> 00:06:47,320
+I want the robot to start when the Touch sensor is Pressed and afterwards stop when the Touch sensor is Pressed.
+
+66
+00:06:47,980 --> 00:06:55,736
+So the only difference I should make is to put a Touch sensor in the beginning.
+
+67
+00:06:56,496 --> 00:07:01,109
+With the same option and download our program.
+
+68
+00:07:01,109 --> 00:07:03,899
+So let's run the program.
+
+69
+00:07:03,899 --> 00:07:09,757
+I started and the robot isn't moving I Press the Touch sensor.
+
+70
+00:07:10,467 --> 00:07:17,961
+And unfortunately the robot does not start, but the program finished.
+
+71
+00:07:19,751 --> 00:07:30,108
+What actually happened is that my touch of the Touch sensor has been detected twice.
+
+72
+00:07:30,108 --> 00:07:36,244
+Because the microcontroller inside the Brick is way faster than my hand.
+
+73
+00:07:37,334 --> 00:07:39,140
+How I can fix this?
+
+74
+00:07:39,140 --> 00:07:44,944
+Well it is simply by choosing Bumped option on the first Touch sensor.
+
+75
+00:07:45,554 --> 00:07:49,490
+Now the robot will wait until I Release my hand.
+
+76
+00:07:49,490 --> 00:07:55,820
+And afterwards it will start moving until the Touch sensor is pressed.
+
+77
+00:07:56,200 --> 00:07:59,292
+Let's see how does the program work this time.
+
+78
+00:08:00,012 --> 00:08:03,133
+So now the program should work.
+
+79
+00:08:03,133 --> 00:08:08,936
+I started it and the robot is waiting the Touch sensor to be Bumped.
+
+80
+00:08:08,936 --> 00:08:16,496
+If I Press the Touch sensor the robot won't start moving until it is Released.
+
+81
+00:08:16,496 --> 00:08:24,398
+So when I Release it, it will start and then stop when the Touch sensor is Pressed.
+
+82
+00:08:24,398 --> 00:08:27,633
+This was the tutorial about the Touch sensor .
+
+83
+00:08:27,633 --> 00:08:33,611
+In the next tutorial from the series I will show you more about the Sound sensor.
+
+84
+00:08:33,611 --> 00:08:38,024
+Meanwhile you can check other videos at fllcasts.com
