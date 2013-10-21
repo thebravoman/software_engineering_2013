@@ -18,6 +18,7 @@ Dir.glob("*.rb").each do |current_file|
 	print array
 	file_name = current_file.split("_")[0]
 	if file_name.to_s != "test"
+		#Hristiqn Zarkov gave me the right to use his folder with test data
 		Dir.chdir("../class8_homework/Hristiqn_Zarkov_test_data")
 		`mkdir test_program`
 		`cp #{current_file} ../class8_homework/Hristiqn_Zarkov_test_data/test_program`
