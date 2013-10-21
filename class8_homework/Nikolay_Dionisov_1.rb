@@ -34,7 +34,7 @@ Dir.glob(dir_path + "/*.rb") do |file|
 end
 
 require 'csv'
-CSV.open("results.csv", "w") do |csv|
+CSV.open("results1.csv", "w") do |csv|
 	data.each do |row|
 		csv << [row[0], row[1] == "1" ? "" : row[1], row[1] == "1" ? 1 : 0]
 	end
