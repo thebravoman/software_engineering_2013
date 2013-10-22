@@ -7,7 +7,7 @@ CSV.foreach(ARGV[0]) do |row|
 	info[row[0].gsub("champ_","").gsub("_"," ")] = row[1]
 end
 info = info.sort_by {|a,b| b}.reverse
-CSV.open("champs_result.csv","w") do |csv|
+CSV.open(ARGV[0].split('.csv')[0] + '_result.csv',"w") do |csv|
 	info.each do |a,b|
 		csv << [a,b]
 	end
