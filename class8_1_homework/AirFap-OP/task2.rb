@@ -7,7 +7,7 @@ CSV.foreach(ARGV[0]) do |row|
 	end
 end
 info = info.sort_by {|a,b| a}
-CSV.open("champs_result.csv","w") do |csv|
+CSV.open(ARGV[0].split('.csv')[0] + '_result.csv',"w") do |csv|
 	info.each do |a,b|
 		csv << [a,b]
 	end
