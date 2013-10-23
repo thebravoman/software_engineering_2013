@@ -17,8 +17,8 @@ CSV.foreach(ARGV[0],"r") do |row|
 end
 name = name.sort_by { |name,date| date }
 CSV.open("#{ARGV[0].chomp(".csv")}_result.csv","w") do |csv|
-		name.each() do |el|
-        	csv << el
-		end
+	name.each() do |el|
+	   	csv << el
+	end
 end
 
