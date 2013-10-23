@@ -121,23 +121,39 @@ def test_6
 	diff(res1,cmd)
 end
 
+def test_7
+	info = Hash.new {0.0}
+	CSV.foreach("champs.csv") do |row|
+		info[row[0].gsub("champ_","").gsub("_"," ")] = row[2].gsub("date_","")
+	end
+	CSV.open("champs_result_exp.csv","w") do |csv|
+		csv << info.min_by {|a,b| b}
+		csv << info.max_by {|a,b| b}
+	end
+	cmd = "ruby #{ARGV[0]} champs.csv"
+	res1 = system "#{cmd}"
+	diff(res1,cmd)
+end
+
 `mkdir Exec`
 `cp #{ARGV[0]} Exec`
 `cp champs.csv Exec`
 Dir.chdir("Exec")
 
-if ARGV[0] =~ /1/
+if ARGV[0] =~ /_1.rb/
 	test_1
-elsif ARGV[0] =~ /2/
+elsif ARGV[0] =~ /_2.rb/
 	test_2
-elsif ARGV[0] =~ /3/
+elsif ARGV[0] =~ /_3.rb/
 	test_3
-elsif ARGV[0] =~ /4/
+elsif ARGV[0] =~ /_4.rb/
 	test_4
-elsif ARGV[0] =~ /5/
+elsif ARGV[0] =~ /_5.rb/
 	test_5
-elsif ARGV[0] =~ /6/
+elsif ARGV[0] =~ /_6.rb/
 	test_6
+elsif ARGV[0] =~ /_7.rb/
+	test_7
 else
 	p "Wrong filename for #{ARGV[0]}"
 end
