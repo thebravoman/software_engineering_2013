@@ -6,11 +6,7 @@ def diff(res,cmd)
 	if res
 		`#{cmd}`
 		res2 = `diff -N champs_result.csv champs_result_exp.csv`
-		if res2 == ""
-			p "true"
-		else
-			p "false"
-		end
+		p res2 == ""
 	else
 		p "Can't compile program #{ARGV[0]}"
 	end
