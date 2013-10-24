@@ -4,6 +4,7 @@ require 'csv'
 
 def do_task( input, output1, output2 )
 	a = CSV.read( input )
+	a.map! { |e| e.take( 3 ) }
 	a.sort_by! { |e| [e[1].to_i, e[2].to_i, e[0].to_i] }
 	avg = 0.0
 	a.each { |e| avg += e[1].to_f }
