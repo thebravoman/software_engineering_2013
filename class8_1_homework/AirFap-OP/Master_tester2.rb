@@ -1,6 +1,7 @@
 require 'csv'
 def file_comp(rightf,margv1,margv2) 
 	CSV.open("Result_#{ARGV[0].gsub(".rb",".csv")}","w") do |csv|	
+	
 		begin
 		@stname = ARGV[0].split("_")[0..1]
 		@name = @stname[0] + " " + @stname[1]
