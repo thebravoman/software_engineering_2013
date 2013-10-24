@@ -14,14 +14,18 @@ def do_task( input )
 end
 
 def do_test( input )
-	r = true
-	FILES.each do |f|
-		exp = do_task( f )
-		`ruby #{input} #{f} out.csv`
-		r = exp == CSV.read( 'out.csv' )
-		break unless r
+	begin
+		r = true
+		FILES.each do |f|
+			exp = do_task( f )
+			`ruby #{input} #{f} out.csv`
+			r = exp == CSV.read( 'out.csv' )
+			break unless r
+		end
+		r
+	rescue
+		false
 	end
-	r
 end
 
 puts do_test( ARGV[0] )

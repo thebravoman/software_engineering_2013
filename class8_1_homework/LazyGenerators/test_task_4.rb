@@ -16,18 +16,22 @@ def do_task( input, id )
 end
 
 def do_test( input, count )
-	r = true
-	FILES.each do |f|
-		count.times do
-			c = rand(176189)
-			exp = do_task( f, c )
-			`ruby #{input} #{f} #{c} out.csv`
-			r = exp == CSV.read( 'out.csv' )
+	begin
+		r = true
+		FILES.each do |f|
+			count.times do
+				c = rand(176189)
+				exp = do_task( f, c )
+				`ruby #{input} #{f} #{c} out.csv`
+				r = exp == CSV.read( 'out.csv' )
+				break unless r
+			end
 			break unless r
 		end
-		break unless r
+		r
+	rescue
+		false
 	end
-	r
 end
 
 puts do_test( ARGV[0], TIMES )
