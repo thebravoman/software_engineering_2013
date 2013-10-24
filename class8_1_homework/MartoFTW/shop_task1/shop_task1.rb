@@ -1,0 +1,30 @@
+require "csv"
+
+factorer = ARGV[1]
+out_arr = []
+
+
+	CSV.foreach(ARGV[0]) do |row|
+
+		if row[1] == ARGV[1]
+			
+			out_arr << row
+
+		end	
+
+	end
+
+	out_arr.each do |elem|
+		elem[2] = elem[2].to_f
+	end
+
+	out_arr = out_arr.sort_by{|a,b,c,d| c}
+	out_arr.reverse!
+
+	CSV.open("shop_task1_result.csv","w") do |csv|
+		out_arr.each do |elem|
+			csv << elem
+		end
+	end
+
+
