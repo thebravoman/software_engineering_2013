@@ -45,7 +45,7 @@ else
 	a << [dist.to_s+" km",money.to_s+" lv"]
 end
 
-CSV.open("FName_LName_12.csv","w") do |csv|
+CSV.open("FName_LName_11.csv","w") do |csv|
 	a.each do |element|
 		csv << element
 	end
