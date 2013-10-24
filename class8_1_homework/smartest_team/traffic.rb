@@ -3,7 +3,7 @@ a = []
 
 CSV.foreach(ARGV[0]) do |row|
 time = row[1] + ":" + row[2]
-a << [row[0],time] if row[1].include? ARGV[1]
+a << [row[0],time] if row[1] == ARGV[1]
 end
 
 
