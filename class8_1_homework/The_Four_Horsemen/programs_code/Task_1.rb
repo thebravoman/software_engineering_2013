@@ -10,7 +10,6 @@ CSV.foreach(ARGV[0]) do |row|
                 grade_sum += grade.to_f
                 p grade_sum
         end
-        p "xaxa"
                 grades = grade_sum / (row.length - 3)
         student[name] = grades
 end
