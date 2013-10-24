@@ -27,15 +27,6 @@ def file_comp(rightf,margv1,margv2)
 	end
 end
 
-def write_to_file(num,arr_name)
-	arr_name.gsub('"',"")
-	CSV.open("testf_#{num}.csv","w") do |csv|
-		arr_name.each do |element|
-			csv << element
-		end
-	end
-end
-
 number = ARGV[0].split("_")[2].gsub(".rb","").to_i
 p number
 
