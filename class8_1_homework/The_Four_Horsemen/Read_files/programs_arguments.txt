@@ -1,1 +1,9 @@
 1 -->input_files/Task_1_2_3_input.csv output.csv-> output.csv ->Task_1_result_expected.csv
+2-->input_files/Task_1_2_3_input.csv output.csv-> output.csv ->Task_2_result_expected.csv
+3-->input_files/Task_1_2_3_input.csv b->output_3.csv-> Task_3_result_expected.csv
+4-->input_files/Task_4_input.csv output.csv->output.csv->Task_4_result_expected.csv
+5-->input_files/Task_5_6_input.csv Domati output.csv->output.csv->Task_5_result_expected.csv
+6-->input_files/Task_5_6_input.csv Billa output.csv->output.csv->Task_6_result_expected.csv
+7-->input_files/Task_7_input.csv 27/09/2013 output.csv->output.csv->Task_7_result_expected.csv
+8-->.jpeg->output_8.csv->Task_8_result_expected.csv
+9-->input_files/Task_9_input.csv Read_files/passwords.csv->wrong.csv->Task_9_result_expected.csv
