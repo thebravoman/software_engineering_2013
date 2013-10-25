@@ -18,7 +18,7 @@ end
 country=country.sort_by{|a,b,c,d|b}
 
 
-CSV.open("sales2_results.csv","w") do |csv|
+CSV.open("#{ARGV[0].chomp(".csv")}_results.csv","w") do |csv|
 		country.each do |a,b|
   	  csv << [b,a]
  		end
