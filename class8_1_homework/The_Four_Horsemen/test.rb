@@ -65,9 +65,9 @@ else
 end
 `rm -f program -r`
 `rm -f #{output_file}`
-name = file_name.split(".")[-2]
-name = name.split("/")[-1]
-name = name.split("_")[0..1]
-puts "Name:#{name[0]} #{name[1]}"
-puts "Problem: #{problem}"
+#name = file_name.split(".")[-2]
+#name = name.split("/")[-1]
+#name = name.split("_")[0..1]
+#puts "Name:#{name[0]} #{name[1]}"
+#puts "Problem: #{problem}"
 puts "#{is_ok}"
