@@ -26,15 +26,15 @@ File.open(programs_arguments_file,"r").each do |line|
                 program_info = program[1]
         end
 end
-output_file = program_info.split("->")[1].strip
-expected_file = "expected_files/"+program_info.split("->")[2].strip
+output_file = "output_"+file_name.split("_")[-1].split(".")[0]+".csv"
+expected_file = "expected_files/"+"Task_"+file_name.split("_")[-1].split(".")[0]+"_result_expected.csv"
 arguments = program_info.split("->")[0];
 `mkdir program`
 `cp #{file_name} program/test.rb`
 `ruby program/test.rb #{arguments}`
 if(!File.file?(output_file))
         File.open("test.rb","r").each do |row|
-                if (row =~ /#{program_info.split("->")[1]}/)
+                if (row =~ /#{output_file}/)
                         problem = "Output file was created but test can't found it."
                 else
                         problem = "Not created or wrong name for output file."
