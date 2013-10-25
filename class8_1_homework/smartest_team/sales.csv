@@ -1,0 +1,29 @@
+Transaction_date,Price,Payment_Type,Country
+06:17,1,Mastercard,United Kingdom
+09:02,2,Visa,Canada
+08:34,3,Visa,United States
+04:16,4,Visa,Ireland
+08:52,5,Visa,United States
+07:26,6,Mastercard,Netherlands
+19:12,7,Diners,United States
+12:41,8,Mastercard,United States
+05:05,9,Mastercard,Canada
+13:54,10,Mastercard,Australia
+21:35,11,Visa,Australia
+23:41,12,Visa,France
+04:11,13,Visa,Czech Republic
+02:08,14,Amex,United States
+11:50,15,Visa,Switzerland
+06:18,16,Mastercard,Switzerland
+05:20,17,Amex,United States
+08:27,18,Visa,Czech Republic
+08:31,19,Visa,Hungary
+07:13,20,Amex,United Kingdom
+09:00,22,Mastercard,United States
+06:20,23,Amex,United States
+06:01,24,Amex,United States
+18:20,25,Amex,United States
+01:11,26,Amex,United States
+04:20,27,Amex,United States
+00:20,28,Amex,United States
+00:00,29,Amex,United States
