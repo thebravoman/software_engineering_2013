@@ -6,7 +6,7 @@ bukva=ARGV[1].to_s
 i=0
 
  CSV.foreach(ARGV[0],"r") do |row|
-row[0].to_s
+
 
  
 i=row[0].to_s.count(bukva)
