@@ -1,0 +1,10 @@
+BMW = 
+19
+Renault = 
+18
+Volkswagen = 
+27
+Vuvedena marka 
+Opel
+broi avtomobili 
+12
