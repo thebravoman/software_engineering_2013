@@ -18,7 +18,7 @@ end
 card=card.sort_by{|a,b,c,d|b}
 
 
-CSV.open("sales3_results.csv","w") do |csv|
+CSV.open("#{ARGV[0].chomp(".csv")}_results.csv","w") do |csv|
 		card.each do |a,b|
   	  csv << [b,a]
  		end
