@@ -1,29 +1,23 @@
 require 'csv'
-all=Array.new(0)
+require 'time'
+
+all=[]
 splitter=0
 splitter_min=0
+time=0
+time_check=Time.parse(ARGV[1])
 
-CSV.foreach(ARGV[0]) do |row|	
-next if row[0]=="Transaction_date"
-
-	splitter=row[0]
-	splitter_min=splitter.split(":")[1] 
-	splitter=splitter.split(":")[0]	
-	
-	if ((splitter.to_i<=06) && (splitter_min.to_i<=20))
+CSV.foreach(ARGV[0]) do |row|
+	time=Time.parse(row[0])
+	if time<=time_check
 	 	all<< [row[0],row[1],row[2],row[3]]
-	else
-		next
 	end
 end
 
-all=all.sort_by{|a,b,c,d|a}
+all=all.sort {|a,b| a[0] <=> b[0]}
 
-CSV.open("sales_results.csv","w") do |csv|
-	all.each do |row|
-	 	csv << [row[0],row[1],row[2],row[3]]
+CSV.open("#{ARGV[0].chomp(".csv")}_results.csv","w") do |csv|
+	all.each do |element|
+	 	csv << element
 	 end
 end
-
-
-
