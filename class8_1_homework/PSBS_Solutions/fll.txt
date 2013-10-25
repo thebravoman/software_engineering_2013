@@ -1,0 +1,59 @@
+﻿FIRST Lego League
+
+The FIRST LEGO League (also known by the acronym FLL) is an international competition organized by FIRST for elementary and middle school students (ages 9–14 in the USA and Canada, 9–16 elsewhere).
+In September each year, a new challenge is announced that focuses on a different real-world topic related to the sciences. Each challenge within the competition then revolves around that theme. The robotics part of the competition revolves around designing and programming Lego Robots to complete tasks. The students work out solutions to the various problems they are given and then meet for regional tournaments to share their knowledge, compare ideas, and display their robots.
+FIRST Lego League is a partnership between FIRST and the Lego Group. It also has a scaled-down robotics program for children ages 6–9 called Junior FIRST Lego League.
+Competition details
+There are four main sections of the competition. Firstly, in the Core Values Session, students are interviewed by a panel of judges or participate in a teamwork exercise. Secondly, in the Robot Design Executive Summary, or technicals, the students must demonstrate that the robot they built is designed appropriately for the tasks given (effective design, use of sensors, etc.). Thirdly, in the research project, the students must do a research project and give a short presentation to a panel of judges on the innovative problem-solving they completed. Finally, the students must use the robots they designed and built to autonomously complete a set of tasks on a playing field.
+Table performance
+
+Robot from 2007 'Power Puzzle' season.
+The robots made by the teams perform at this event. The robot is autonomous and completes missions on a mat or board (where the missions are set up). The robot then has two and a half minutes to complete those missions. Two members of the team are allowed at the board during a match; however, they can switch out if needed. In the case of a serious problem, such as the entire robot breaking down, the entire team is allowed at the board for as long as the problem persists. Only one robot is allowed per team at the table; otherwise the team is disqualified. Members are not permitted to bring board items from other practice tables to the board during competition.
+The robot starts in an area marked as 'base'. This is a white area in the corner or to one side of the table. In base, two team members are allowed to touch the robot and start programs. If the team touches the robot while it is outside of base (a 'rescue' or 'retrieve'), thetouch penalty objects are removed from play. These are mission models that are worth points without manipulation, providing an incentive to not rescue the robot. The robot is not required to return to base; some teams have completed all their missions without returning to base during the time allowed to complete the missions. In fact, in the 2008-09, 2009-10, 2011-2012, and 2012-13 challenges, points were awarded if the robot was in one of two specified areas, not including base, at the end of the two and a half minute match.
+
+
+Participants build robots with kits such as these.
+FIRST Lego League teams use Lego Mindstorms kits to construct their robots. The robots are programmed using one of two graphical based programming languages: NXT-G, the programming software that comes with the current kit, or Robolab, a software language built around Labview. Each robot is only allowed to use up to four sensors total (which ones and how many depend on the year) and up to 3 motors.
+Due to the large number of perfect scores in the 2007-08 season, the level of difficulty increased dramatically for the 2008-09 season. There were still a few perfect scores, so the difficulty was once again drastically increased for the 2009-10 season, in which navigation was made tough by forcing sharp twists and turns, as well as obstacles and straight driving, something that is surprisingly hard. In the 2011-12 season, the difficulty increased again making the theoretical maximum score unobtainable. By including a time intensive repeated task, the designer made it impossible to get a "perfect" score within the time limits of the game. This task created a virtual "soft" maximum score that challenges teams to get as many iterations of the task as possible within the time limit. Table performance is worth 16% of the total mark.
+Robot Design Executive Summary
+Each team has a timed interview (usually 5 to 10 minutes) with a team of judges to discuss the design and operation of their robot. Judges look for teams whose work stands out because of its innovation and/or navigational consistency. To assess innovation, the judges watch the robots work, looking for actions that impress them. They also interview team members to reveal the less obvious unique and inventive ideas. To assess navigational consistency, the judges interview the teams to learn what solid principles and best practices were used to reduce variability and errors. Robot design is worth 16% of the final mark.
+Project presentation
+Prior to the competition, the teams complete research related to the topic of the year. For example, in 2007 the teams researched alternative energy, which included an energy audit on a building in their area and possible improvements to its existing systems. The teams then present this information during a timed presentation to the judges. This is followed up by a timed question and answer period (typically, these are 5 minutes each). The teams can use props in their presentation, such as models or PowerPoints. The project is worth 33% of the final mark.
+Core Values
+Observation judges watch each team in action and also interview the team to discuss how the team functioned. Judges identify teams that best demonstrate enthusiasm, spirit, partnership, respect to their own teammates and others, and gracious professionalism. Core values is worth 33% of the final mark.
+Events
+Teams in different parts of the world have different times allotted to complete the construction of the robot, due to the varying date of qualifying tournaments. They go on to compete in FLL tournaments, similar to the FIRST Robotics Competition regionals. In the 2006–07 season, nearly 90,000 students on 8,846 teams from around the world competed. Each team has to compete in a local/regional qualifying tournament before advancing to the state/provincial tournaments.
+The largest single-day regional qualifying tournament is hosted by First State Robotics and First State FIRST Lego League in Wilmington, Delaware. Taking place every January, this event holds Junior FIRST Lego League (Jr.FLL; grades K-3), FIRST LEGO League (FLL; grades 4–8), FIRST Tech Challenge (FTC; grades 9–12), FIRST Robotics Competition(FRC; grades 9–12), and robot sumo competitions under one roof at the University of Delaware's Bob Carpenter Center. Teams from Eastern Pennsylvania, Southern New Jersey, Delaware, and Maryland (among other regions) attend this tournament to make it the largest single-day FIRST event in the world.
+The first place Champions Award winners from each state/provincial tournament (only if that state/provincial tournament has won the lottery to send teams) is then invited to theFLL World Festival. In 2007, 96 teams competed in the FLL World Festival in Atlanta, Georgia on April, 27th–30th. The 2007–08 Power Puzzle FLL World Festival and the 2008–09 FLL World Festival on Climate Connections were held again in the Georgia Dome and Georgia World Congress Center. Starting with the 2010-11, FLL World Festival is held at the Edward Jones Dome and America's Center in St. Louis.
+Additionally, the Champions Award winners from each state/provincial tournament may participate in one of the Open Championships which are organized by FLL Partners. The eligibility criteria may differ.
+Awards
+
+
+Trophies made of Lego blocks for First Lego League 2005 regional winners.
+Awards are intended to be spread equitably among deserving teams. As such, teams are normally allowed to win only one core (judged) award. Teams can win an additional award based on their robot's performance during the robot game competition portion of the tournament. The following are FIRST's recommended awards:
+FLL Core Awards (potentially 1st, 2nd, and 3rd place for each, based on tournament size)
+Champion’s Award – this award is optional for qualifying tournaments
+Robot Design Award
+Robot Performance Award
+Project Award
+Teamwork Award
+Optional Awards
+Against All Odds Award
+Rising Star Award
+Team Spirit Award
+Judges’ Award
+Local Awards (also see below)
+Special Recognition Awards
+Outstanding Volunteer Award
+Adult Coach/Mentor Award
+Young Adult Mentor Award
+Additionally, some tournaments may offer additional awards that are not specified by FIRST. These can include:
+Programming Award
+Innovative Design Award
+Research Quality Award
+Innovative Solution Award
+Creative Presentation Award
+Rookie-Team-of-the-Year Award
+Outstanding Costumes
+Good sportsmanship award
+IEEE award (money and only in some competitions)
