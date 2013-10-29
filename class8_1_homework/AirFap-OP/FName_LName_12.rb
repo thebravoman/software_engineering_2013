@@ -1,49 +1,52 @@
 require 'csv'
-k = 0
-bl = 0
-kl = 0
-arr = []
-a=[]
+money = 0
+h = 0
+min = 0
+dist = 0
+i = 0
+CSV.foreach("#{ARGV[0]}") do |row|
+	money+=row[5].gsub(" lv","").to_i
+	hmin= row[4].split(":")[0..1]
+	h+= hmin[0].to_i
+	min+= hmin[1].to_i
+	if min > 60
+		h+=1
+		min-=60
+	end
+	dist+=row[3].gsub(" km","").to_i
+end
+
+randnum = 0
+
 CSV.foreach("#{ARGV[1]}") do |row|
-	bl+=row[0].to_i
-	kl+=row[1].to_i
-	k+= 1
-	break if k == 10
+	if i == 6 
+		randnum = row[0].to_i
+		break
+	end
+	i+=1
+end
+pr = true
+k = 0
+
+for i in 1..randnum
+	if randnum%i == 0
+	    if k ==3
+			pr = false 
+			break
+		end		
+		k+=1  
+	end 
 end
 
 a = []
-ournum = bl - kl
-
-CSV.foreach("#{ARGV[0]}") do |row|
-	if row[1] != nil
-		for i in 0..5
-			row[i] = row[i].strip
-		end	
-	else 
-		a = row
-		next
-	end
-	row[3]= row[3].gsub(" km","")
-	row[3] = row[3].to_i
-	arr << row
+if pr == true
+	a << [h.to_s+":"+min.to_s,money.to_s+" lv"]
+else
+	a << [dist.to_s+" km",money.to_s+" lv"]
 end
-
-
-if ARGV[2].to_i > ournum
-	 arr = arr.sort{|a,b| a[1] <=> b[1]}
-	arr << a 	
-else 
-	 arr = arr.sort{|a,b| a[3] <=> b[3]}	
-end
-
 
 CSV.open("FName_LName_12.csv","w") do |csv|
-	arr.each do |element|	
-		element[3] = element[3].to_s
-		element[3] = element[3] + " km"
+	a.each do |element|
 		csv << element
 	end
 end
-
-
-

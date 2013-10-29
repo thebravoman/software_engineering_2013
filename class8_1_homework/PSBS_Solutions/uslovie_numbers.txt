@@ -1,0 +1,14 @@
+﻿Да се създаде програма, която приема като аргумент от командния ред фаила fll.txt 
+Програмата трябва да създаде фаил с името result_numbers.csv, който да съдържа информация за числата/цифрите в текста, например ако даденият текст е:
+
+The FIRST LEGO League (also known by the acronym FLL) is an international competition organized by FIRST for elementary and middle school students (ages 9-14 in the USA and Canada, 9-16 elsewhere)
+Due to the large number of perfect scores in the 2007-08 season, the level of difficulty increased dramatically for the 2008-09 season.
+
+Програмата трябва да запише:
+1, 9 14 9 16
+2, 2007 08 2008 09
+
+Колона първа – номерът на реда, на който е открито числото/цифрата
+Колона втора - числата, намерени на реда, разделени едно от друго с шпация (space)
+
+Програмата трябва да е именувана по модела ПървоИме_Фамилия_n.rb

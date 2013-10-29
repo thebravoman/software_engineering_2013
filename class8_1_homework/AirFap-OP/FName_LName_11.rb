@@ -1,29 +1,40 @@
 require 'csv'
-i = 0
-arr = []
-CSV.foreach("#{ARGV[1]}") do |row|
-	i+=row[0].to_i+row[1].to_i
-end
+tow = []
+
 CSV.foreach("#{ARGV[0]}") do |row|
-	if row[1] != nil
-		row[1] = row[1].gsub("_"," ")
+
+	gohmin = row[2].strip.split(":")[0..1]
+	needhmin = row[4].split(":")[0..1]
+	min = gohmin[1].to_i + needhmin[1].to_i
+	h = gohmin[0].to_i + needhmin[0].to_i
+
+	if min >= 60 
+		min-=60
+		h+=1
 	end
-	if i%2 == 0
-		if row[0].to_i%2 ==0
-			arr << row if row[3].strip.gsub(" km","").to_i > 200
-		end
-	else
-		if row[0].to_i%2 !=0
-			arr << row if row[3].strip.gsub(" km","").to_i > 200
-		end
+
+	if h>=24
+		h-=24
 	end
+
+	if min < 10 
+	min = min.to_s
+	min = "0"+min
+	end
+	
+	if h<10
+		h = h.to_s
+		h = "0" + h
+		tow << [row[1].strip.gsub("_"," "),h+":"+min.to_s]
+	elsif h<16
+		tow << [row[1].strip.gsub("_"," "),h.to_s+":"+min.to_s]
+	end
+
 end
-arr = arr.sort{|a,b| a[2] <=> b[2]}
+
 CSV.open("FName_LName_11.csv","w") do |csv|
-	arr.each do |element|
-		for i in 0..5
-			element[i] = element[i].strip
-		end		
+	tow.each do |element|
 		csv << element
 	end
 end
+	
