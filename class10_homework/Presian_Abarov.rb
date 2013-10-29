@@ -43,7 +43,7 @@ unless ARGV.length.odd? || ARGV.length < 2
 	addpoint(grid[1], 0, 300)
 
 	args = []
-	ARGV.each_slice(2) {|a| args << [a[0].to_i, a[1].to_i] }
+	ARGV.each_slice(2) {|a| args << [-a[0].to_i, -a[1].to_i] }
 	args.each do |arg|
 		line = createline(el_svg)
 		snaptogrid(line, arg)
