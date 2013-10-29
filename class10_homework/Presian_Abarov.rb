@@ -13,15 +13,17 @@ def addpoint(line, x, y)
 end
 
 def snaptogrid(line, arg)
-	y = arg[0]*(-300)+arg[1]
-	addpoint(line, -300, y) if y.between?(-300,300)
-	y = arg[0]*(300)+arg[1]
-	addpoint(line, 300, y) if y.between?(-300,300)
+	[-300, 300].each do |x|
+		y = arg[0]*x + arg[1]
+		addpoint(line, x, y) if y.between?(-300,300)
+	end
+
 	return if arg[0] == 0
-	x = (300 - arg[1])/arg[0]
-	addpoint(line, x, 300) if x.between?(-300,300)
-	x = (-300 - arg[1])/arg[0]
-	addpoint(line, x, -300) if x.between?(-300,300)
+
+	[-300, 300].each do |y|
+		x = (y - arg[1])/arg[0]
+		addpoint(line, x, y) if x.between?(-300,300)
+	end
 end
 
 unless ARGV.length.odd? || ARGV.length < 2
