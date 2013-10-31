@@ -14,17 +14,17 @@ doc=REXML::Document.new
 el_svg=doc.add_element "svg"
 el_svg.attributes["version"]="1.1"
 el_svg.attributes["xmlns"]="http://www.w3.org/2000/svg"
-line(el_svg,50,650,600,600)
-line(el_svg,350,350,300,900)
+line(el_svg,300,900,350,350)
+line(el_svg,600,600,50,650)
 
 c=ARGV[1]
 i=0
 while c!=nil
-	x1=ARGV[i].to_i/ARGV[i+1].to_i
-	y1=0
-	x2=0
-	y2=ARGV[i+1].to_i
-	line(el_svg,x1+450,x2+250,y1+700,y2+500,red=i+1,green=(i+1)*10,blue=(i+1)*50)
+	y1=150
+	x2=-150
+	x1=(-ARGV[i+1].to_i+y1)/ARGV[i].to_i
+	y2=(ARGV[i].to_i*x2)+ARGV[i+1].to_i
+	line(el_svg,x1+600,x2+600,350-y1,350-y2,red=i+1,green=(i+1)*10,blue=(i+1)*50)
 	i+=2
 	c=ARGV[i+1]
 end
