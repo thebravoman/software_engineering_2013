@@ -29,14 +29,13 @@ if ARGV.length != 0 && ARGV.length.even?
     end
   end
   
-  
   count = ARGV.length / 2
   count.times do |i|
-    y1 = 350
-    x2 = -180
-    x1 = (arr[i*2+1]+y1)/arr[i*2]
-    y2 = (arr[i*2]*x2)+arr[i*2+1]
-    line(el_svg,x1+x_,y_-y1,x2+x_,y_-y2,rand(255),rand(255),rand(255))
+    a = arr[i*2]
+    b = arr[i*2+1]
+    x = -b/a
+    y = b
+    line(el_svg,x_+x,y_,x_,y_-y,rand(255),rand(255),rand(255))
   end
 
   File.open("Mihail_Kirilov.svg","w") do |f|
