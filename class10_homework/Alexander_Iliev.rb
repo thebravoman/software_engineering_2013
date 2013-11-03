@@ -1,6 +1,6 @@
 require 'rexml/document'
 
-def line(parent,x1,x2,y1,y2,red=0,green=0,blue=255)
+def line(parent,x1,x2,y1,y2,red=0,green=0,blue=0)
 	l=parent.add_element "line"
 	l.attributes["x1"]=x1
 	l.attributes["x2"]=x2
