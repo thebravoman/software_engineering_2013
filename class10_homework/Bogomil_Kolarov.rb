@@ -43,4 +43,6 @@ unless ARGV.length.odd? || ARGV.length < 1
 	File.open("Bogomil_Kolarov.svg", "w") do |f|
         f.write(doc.to_s)
 	end
+else
+	puts "Something wrong with your arguments\n"
 end
