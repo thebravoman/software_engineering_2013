@@ -19,14 +19,15 @@ line(el_svg,600,600,0,1200)
 
 arguments = ARGV[1]
 i = 0
+color = 50
 while (arguments !=nil)
-y1 = 500
-x1 = (-ARGV[i+1].to_i+ y1)/ARGV[i].to_i
-x2 = -500
-y2 = (ARGV[i].to_i*x2) + ARGV[i+1].to_i
-i+=2
-arguments = ARGV[i+1]
-line(el_svg,x1+600,x2+600,350-y1,350-y2,red=i+5,green=i+55,blue=i+15)
+	y1 = 500
+	x1 = (-ARGV[i+1].to_i+ y1)/ARGV[i].to_i
+	x2 = -500
+	y2 = (ARGV[i].to_i*x2) + ARGV[i+1].to_i
+	i+=2
+	arguments = ARGV[i+1]
+	line(el_svg,x1+600,x2+600,350-y1,350-y2,red=i+color,green=i+color,blue=i+color)
 end
 File.open("Kaloyan_Stoykov.svg","w") do |svg|
         svg.write(doc.to_s)
