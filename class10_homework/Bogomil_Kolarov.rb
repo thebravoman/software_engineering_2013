@@ -13,11 +13,11 @@ end
 def draw_line(svg, x1, y1, x2, y2)
 	line = svg.add_element "line"
 	line.attributes["x1"] = x1 + 600
-	line.attributes["y1"] = y1 + 350
+	line.attributes["y1"] = 350 - y1
 	line.attributes["x2"] = x2 + 600
-	line.attributes["y2"] = y2 + 350
+	line.attributes["y2"] = 350 - y2
 	line.attributes["stroke-width"] = "2"
-	line.attributes["stroke"] = "rgb(#{rand(255)},#{rand(255)},#{rand(255)})"
+	line.attributes["stroke"] = "rgb(#{rand(255)}, #{rand(255)}, #{rand(255)})"
 end
 
 unless ARGV.length.odd? || ARGV.length < 1
