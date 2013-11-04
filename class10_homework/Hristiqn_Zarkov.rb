@@ -52,6 +52,7 @@ ARGV.each do |row|
                 y1 = first.to_i * x1 + row.to_i
                 y2 = first.to_i * x2 + row.to_i
                 color = [rand(255),rand(255),rand(255)]
+                #color = next_color(color)
                 line(el_svg,x1,y1,x2,y2,color)
                 first = "empty"
         end
