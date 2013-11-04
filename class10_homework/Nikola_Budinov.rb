@@ -67,7 +67,7 @@ i+=2
 
 
 end
-File.open("Nikola Budinov.svg", "w") do |f|
+File.open("Nikola_Budinov.svg", "w") do |f|
 f.write(doc.to_s)
 	
 end
