@@ -26,7 +26,7 @@ x2 = -500
 y2 = (ARGV[i].to_i*x2) + ARGV[i+1].to_i
 i+=2
 arguments = ARGV[i+1]
-line(el_svg,x1+600,x2+600,350-y1,350-y2,red=i+5,green=(i+5)*5,blue=(i+5)*5)
+line(el_svg,x1+600,x2+600,350-y1,350-y2,red=i+5,green=i+55,blue=i+15)
 end
 File.open("Kaloyan_Stoykov.svg","w") do |svg|
         svg.write(doc.to_s)
