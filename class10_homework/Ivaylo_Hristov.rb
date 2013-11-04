@@ -61,9 +61,7 @@ if ARGV.length.even? and ARGV.length >= 2
 		count+=2
 		arg=ARGV[count+1]
         end
-
-		
-	
+        
 	File.open(__FILE__.gsub('.rb','.svg'), "w") do |f|
 		f.write(doc.to_s)
 	end
