@@ -77,7 +77,7 @@ class ChartDrawer
 	private 
 	def loop_months data
 		months = data[0].length - 1
-		colors = ["black", "red", "green", "orange"]
+		colors = ["orange","green","red","black"]
 		months.times do |n|
 			yield n,months,colors[n]
 		end
