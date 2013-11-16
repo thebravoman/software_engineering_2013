@@ -98,8 +98,8 @@ class MathDrawer
 	
 	def graph
 		a = 1
-		b = 2
-		c = -6
+		b = 3
+		c = -4
 		d = ((b*b) - (4*a*c))
 		vruh_x = (-b.to_f/(2*a.to_f))
 		vruh_y = (-d.to_f/(4*a.to_f))
