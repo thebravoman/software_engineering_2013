@@ -88,21 +88,12 @@ class ChartDrawer
         @maxY = 0
         @maxX = 0
     end
-
     
     def columns_chart data
         draw_columns data
         draw_legend data
+        draw_scale
     end
-    
-    def mX
-        return @maxX
-    end
-    def mY
-        return @maxY
-    end
-    
-    
     
     private
     
@@ -113,7 +104,14 @@ class ChartDrawer
             yield n
         end
      end
-    
+     
+    def draw_scale
+        0.step(@maxY, 20) do |c| 
+            @drawer.text c, -50, c-5
+            @drawer.setclr 0
+            @drawer.line -20,c,@maxX,c
+        end
+    end
     
     def draw_columns data
         loop_months(data) do |n|
@@ -135,24 +133,9 @@ end
 
 d = Drawer.new "chart.svg", 400, 400
 d.start
-
 d.setclr 0
 d.cs
 chart_drawer = ChartDrawer.new d
-
-
-
 array_of_vals = CSV.read('data.csv')
-
 chart_drawer.columns_chart array_of_vals
-
-
-
-0.step(chart_drawer.mY, 20) do |c| 
-    d.text c, -50, c-5
-    d.setclr 0
-    d.line -20,c,chart_drawer.mX,c
-end
-
-
 d.finish
