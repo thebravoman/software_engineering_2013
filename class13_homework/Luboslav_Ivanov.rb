@@ -93,7 +93,7 @@ class MathDrawer
 		x = (-b)/(2*a)
 		i = x + 5
 		while i+ 10 > x
-			y = (a*(i**2) + (b*i) + c)*20
+			y = (a*(i**2) + (b*i   ) + c)*20
 			@drawer.line i*20,y,(i+0.15)*20,(y+0.15) 
 			i = i - 0.001
 		end
@@ -103,12 +103,11 @@ class MathDrawer
 	
 end
 
-d = Drawer.new "Luboslav_Ivanov.svg", 350,300
+d = Drawer.new "Luboslav_Ivanov.svg", 650,300
 d.start
 d.cs
-
+ 
 m = MathDrawer.new d
-m.quadratic_equation 5,5,5
-
+m.quadratic_equation 2,1,-2
 d.finish
 
