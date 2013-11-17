@@ -97,12 +97,11 @@ class ChartDrawer
         		if i.odd? == false 
         			y+=30
         			@drawer.text (i*25).to_s,y,i*25
-        		else
-        			y-=30
+        		
         		end
 			@drawer.line -20,i*25,y,i*25
 			i+=1
-			
+			y-=30
 		end
 	@drawer.line -20,0,-20,300
 	@drawer.text data[1][0].to_s,-10,-20	
