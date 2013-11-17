@@ -89,9 +89,8 @@ def quadratic x, a, b, c
     return a*(x-h)*(x-h) + k
 end
 
-def draw a, b, c, drawer
+def draw a, b, c
     -1200.upto 1200 do |x|
-          drawer.setclr x
           if a == 0 
              y1 = linear x,   b, c
              y2 = linear x+1, b, c
@@ -99,7 +98,7 @@ def draw a, b, c, drawer
               y1 = quadratic x,   a, b, c
               y2 = quadratic x+1, a, b, c
           end
-          drawer.line x,y1,x+1,y2
+          yield x,y1,x+1,y2
     end
 end
 
@@ -109,7 +108,9 @@ d.setclr 0
 d.cs
 #draw -0.001, 1, 100, d
 ARGV.each_slice(3) do |arg|
-
-        draw arg[0].to_f, arg[1].to_f, arg[2].to_f, d
+        draw(arg[0].to_f, arg[1].to_f, arg[2].to_f) do |x1,y1,x2,y2|
+            d.setclr x1
+            d.line x1,y1,x2,y2
+        end
 end
 d.finish
