@@ -36,7 +36,7 @@ class ChartDrawer
 				rown = true
 			end
 		end
-		0.step(maxY, 20) do |step|
+		0.step(maxY, 50) do |step|
 			@drawer.line -100, step, maxX, step
 			@drawer.text step.to_s, -130, step
 		end
