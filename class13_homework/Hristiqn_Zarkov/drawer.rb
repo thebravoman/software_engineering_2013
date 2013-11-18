@@ -74,7 +74,7 @@ class Drawer
 	
 	def path x1,y1,mid_x,mid_y,x2,y2
 	        l = @el_svg.add_element "path"
-	        l.attributes["d"] = "M #{self.x + x1} #{self.y - y1}  q #{mid_x - x1} #{-mid_y - y1} #{x2-x1} #{-y2-y1}" 
+	        l.attributes["d"] = "M #{self.x + x1} #{self.y - y1}  q #{mid_x - x1} #{-mid_y} #{x2-x1} #{-y2-y1}" 
 	        l.attributes["stroke"]="blue" 
 	        l.attributes["stroke-width"] ="5" 
 	        l.attributes["fill"] = "none" 
