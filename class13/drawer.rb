@@ -34,6 +34,11 @@ class Drawer
 		c.attributes["stroke-width"] = "2"
 		c.attributes["fill"] = "red"
 	end
+	def polyline(arr)
+		pl = @el_svg.add_element "polyline"
+		pl.attributes["points"] = arr  
+		pl.attributes["style"] = "fill:none;stroke:black;stroke-width:3"
+	end
 	
 	def start
 		@doc = REXML::Document.new
