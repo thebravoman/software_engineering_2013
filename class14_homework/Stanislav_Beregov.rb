@@ -83,58 +83,65 @@ end
 
 class ChartDrawer
 
-    def initialize d
-        @drawer = d
-        @maxY = 0
-        @maxX = 0
-    end
+	def initialize d
+		@drawer = d
+		@maxY = 0
+		@maxX = 0
+        
+	end
     
-    def columns_chart data
-        draw_columns data
-        draw_legend data
-        draw_scale
-    end
+	def columns_chart data
+		draw_columns data
+        	draw_legend data
+        	draw_scale
+    	end
     
-    private
+    	private
     
-    def loop_months data
-        months = data[0].size - 1
-        months.times do |n|
-             @drawer.setclr data[1][n+1].to_i
-            yield n
-        end
-     end
+    	def loop_months data
+		months = data[0].size - 1
+        	months.times do |n|
+			@drawer.setclr data[1][n+1].to_i
+			yield n
+		end
+	end
      
-    def draw_scale
-        0.step(@maxY, 20) do |c| 
-            @drawer.text c, -50, c-5
-            @drawer.setclr 0
-            @drawer.line -20,c,@maxX,c
-        end
-    end
+    	def draw_scale
+		0.step(@maxY, 20) do |c| 
+			@drawer.text c, -50, c-5
+            		@drawer.setclr 0
+            		@drawer.line -20,c,@maxX,c
+		end
+	end
     
-    def draw_columns data
-        loop_months(data) do |n|
-            @drawer.rect 20, data[1][n+1].to_i, n*30, 0
-            @maxY = @maxY <  data[1][n+1].to_i ? data[1][n+1].to_i : @maxY
-        end
-        @maxX = (data[0].size-1)*30
-    end
+	def draw_columns data
+		(data.size-1).times do |line|
+			loop_months(data) do |n|
+				@drawer.rect 20, data[line+1][n+1].to_i, n*30+(line)*(data[0].size-1)*30, 0
+				@maxY = @maxY <  data[line+1][n+1].to_i ? data[line+1][n+1].to_i : @maxY
+			end
+			@maxX = (data[0].size-1)*30*(line+1)
+		end
+	end
     
-    def draw_legend data
-        @drawer.text data[1][0].to_s,5,-15
-        loop_months(data) do |n|
-            @drawer.rect 10,10,@maxX+5,n*30
-            @drawer.text data[0][n+1].to_s,@maxX+20,n*30
-        end
-    end
+	def draw_legend data
+		(data.size-1).times do |line|
+			@drawer.text data[line+1][0].to_s,5+(data[0].size-1)*30*(line),-15
+			@drawer.setclr 0
+			@drawer.line (data[0].size-1)*30*(line)-5,0,(data[0].size-1)*30*(line)-5,@maxY
+		end
+		loop_months(data) do |n|
+			@drawer.rect 10,10,@maxX+5,n*30
+			@drawer.text data[0][n+1].to_s,@maxX+20,n*30
+		end
+	end
     
 end
 
 d = Drawer.new "chart.svg", 400, 400
 d.start
 d.setclr 0
-d.cs
+#d.cs
 chart_drawer = ChartDrawer.new d
 array_of_vals = CSV.read('data.csv')
 chart_drawer.columns_chart array_of_vals
