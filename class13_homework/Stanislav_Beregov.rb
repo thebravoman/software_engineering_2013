@@ -80,26 +80,26 @@ class Drawer
 end
 
 def linear x, a, b
-    return a*x + b
+	return a*x + b
 end
 
 def quadratic x, a, b, c
-    h = (-b)/(2*a)
-    k = a*h*h + b*h + c
-    return a*(x-h)*(x-h) + k
+	h = (-b)/(2*a)
+	k = a*h*h + b*h + c
+	return a*(x-h)*(x-h) + k
 end
 
 def draw a, b, c
-    -1200.upto 1200 do |x|
-          if a == 0 
-             y1 = linear x,   b, c
-             y2 = linear x+1, b, c
-          else
-              y1 = quadratic x,   a, b, c
-              y2 = quadratic x+1, a, b, c
-          end
-          yield x,y1,x+1,y2
-    end
+	-1200.upto 1200 do |x|
+		if a == 0 
+			y1 = linear x,   b, c
+			y2 = linear x+1, b, c
+		else
+			y1 = quadratic x,   a, b, c
+			y2 = quadratic x+1, a, b, c
+		end
+		yield x,y1,x+1,y2
+	end
 end
 
 d = Drawer.new "Stanislav_Beregov.svg", 400, 400
@@ -108,9 +108,9 @@ d.setclr 0
 d.cs
 #draw -0.001, 1, 100, d
 ARGV.each_slice(3) do |arg|
-        draw(arg[0].to_f, arg[1].to_f, arg[2].to_f) do |x1,y1,x2,y2|
-            d.setclr x1
-            d.line x1,y1,x2,y2
-        end
+	d.setclr arg[1].to_i*3.14+arg[2].to_i*2.71+arg[3].to_i/1.337+42
+	draw(arg[0].to_f, arg[1].to_f, arg[2].to_f) do |x1,y1,x2,y2|
+		d.line x1.to_i,y1.to_i,x2.to_i,y2.to_i
+	end
 end
 d.finish
