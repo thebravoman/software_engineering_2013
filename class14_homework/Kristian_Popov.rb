@@ -18,7 +18,7 @@ class ChartDrawer
         private
         def loop_months data
                 months = data[0].length-1
-                colors = ["red","green","lightgray","orange"]
+                colors = ["lightgray","green","red","orange"]
                 months.times do |n|
                         yield n,months,colors[n]
                 end
@@ -27,32 +27,31 @@ class ChartDrawer
         def draw_column_names data
                 loop_months(data) do |n,months,color|
                         @drawer.set_fill color
-                        @drawer.rect 20,20,(months*40)+100,n*51
-                        @drawer.text data[0][n+1],(months*40)+100+41,n*51
+                        @drawer.rect 20,20,(months*40)+100,-n*51+(data[0].size-1)*51
+                        @drawer.text data[0][n+1],(months*40)+100+41,-n*51+(data[0].size-1)*51
                 end
         end
         
         def draw_columns data
-			          colors_bg = ["lightgray","green","red","orange"]
                 loop_months(data) do |n,months,color|
-                        @drawer.set_fill colors_bg[n]
+                        @drawer.set_fill color
                         @drawer.rect 40,data[1][n+1].to_i,(n*50),0
                 end
         end
 
-	      def draw_rows data
-			          @drawer.line -100,0,200,0
-			          @drawer.text "0",-100,0			
-		  	        loop_months(data) do |n,months,color|
+	def draw_rows data
+		@drawer.line -100,0,200,0
+		@drawer.text "0",-100,0			
+		loop_months(data) do |n,months,color|
                         @drawer.set_fill "black"
-                        @drawer.line -100,data[1][n+1].to_i,200,data[1][n+1].to_i
-				                @drawer.text data[1][n+1],-100,data[1][n+1].to_i
+                        @drawer.line -100,data[1][n+1].to_i,n*50,data[1][n+1].to_i
+			@drawer.text data[1][n+1],-100,data[1][n+1].to_i
                 end
-	      end
+	end
 
-	      def draw_Bulgaria
-			          @drawer.text "BULGARIA",-100,-50
-	      end
+	def draw_Bulgaria
+		@drawer.text "BULGARIA",-100,-50
+	end
 end
 
 d = Drawer.new "chart.svg", 300,350
