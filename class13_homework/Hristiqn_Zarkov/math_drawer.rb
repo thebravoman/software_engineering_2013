@@ -20,6 +20,7 @@ class MathDrawer
 	                x2 = x1
 	        elsif (d < 0)
 	                d = -d;
+	                mid_y = -mid_y;
 	                x1 = (-b - Math.sqrt(d).to_i)/(2*a)
 	                y1 = a*x1*x1 + b*x1 + c
 	                x2 = (-b + Math.sqrt(d).to_i)/(2*a)
