@@ -64,7 +64,7 @@ class MathDrawer
 			y3=(x3*x3*a)+(x3*b)+c
 			@drawer.path x1,y1,x2-x1,(y1-y2)*2,x3-x1,0
 		else
-			puts False
+			puts "Not a quadratic equation"
 		end
 	end
 end
