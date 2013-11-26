@@ -36,15 +36,15 @@ class Drawer
         end
 
         def cs
-                line(50,self.y,550,self.y)
-                line(self.x,50,self.x,550)
+                line(150,self.y,450,self.y)
+                line(self.x,150,self.x,450)
         end
 
         def path x1,y1,x2,y2,x3,y3
                 p=@el_svg.add_element "path"
                 p.attributes["d"]="M #{self.x+x1} #{self.y-y1} q #{x2} #{y2} #{x3} #{y3}"
                 p.attributes["fill"]="none"
-                p.attributes["stroke"]="red"
+                p.attributes["stroke"]="blue"
                 p.attributes["strike-width"]="2"
         end
 end
@@ -64,12 +64,12 @@ class MathDrawer
                         y3=(x3*x3*a)+(x3*b)+c
                         @drawer.path x1,y1,x2-x1,(y1-y2)*2,x3-x1,0
                 else
-                        puts "False quadratic equation"
+                        puts "That isn't a quadratic equation!"
                 end
         end
 end
 
-d=Drawer.new "Nikola_Budinov.svg",300,300
+d=Drawer.new "math.svg",300,300
 d.start
 d.cs
 
