@@ -51,7 +51,8 @@ class GraphDrawer
 	end
 	
 end
-
+d = Drawer.new
+d.start
 graph = GraphDrawer.new d
 v1 = Vertex.new("172.16.18.13")
 v2 = Vertex.new("172.16.18.11")
