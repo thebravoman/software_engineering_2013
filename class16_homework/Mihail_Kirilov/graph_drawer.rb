@@ -29,7 +29,7 @@ class GraphDrawer
 	
 	private 
 	def calculate_positions
-		p inc = (360/vs.length).degrees
+		inc = (360/vs.length).degrees
 		angle =90 - 2*inc
 		vs.each_index do |n|
 			vs[n].x = 150*Math.cos(angle)
