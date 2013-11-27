@@ -1,7 +1,8 @@
 require_relative "drawer"
 require_relative "vertex"
 
-
+d = Drawer.new "graph.svg", 300, 350
+d.start
 
 class GraphDrawer
 	
@@ -18,25 +19,16 @@ class GraphDrawer
 		calculate_positions
 		draw_vertexes
 		draw_edges
-	end
-	
-	def add_vertex name
-		el = Vertex.new(name)
-		self.vs << el
 	end	
-	
-	def add_edge source,target
-		edges << [vs[source], vs[target]]
-	end
 	
 	private
 	def calculate_positions
-		step = (Math::PI*2.0)/vs.size
-		curr = 0
+		r = 42
+		space_points = (2 * Math::PI) / vs.length
+		
 		vs.each_index do |n|
-			vs[n].x = Math.cos(curr)*200
-			vs[n].y = Math.sin(curr)*200
-			curr += step
+			vs[n].x = r * Math.cos(n * space_points)
+			vs[n].y = r * Math.sin(n * space_points)	
 		end
 	end
 	
@@ -55,3 +47,28 @@ class GraphDrawer
 	end
 	
 end
+
+graph = GraphDrawer.new d
+v1 = Vertex.new("1")
+v2 = Vertex.new("2")
+v3 = Vertex.new("3")
+v4 = Vertex.new("4")
+v5 = Vertex.new("5")
+v6 = Vertex.new("6")
+v7 = Vertex.new("7")
+v8 = Vertex.new("8")
+v9 = Vertex.new("9")
+
+graph.vs << v1
+graph.vs << v2
+graph.vs << v3
+graph.vs << v4
+graph.vs << v5
+graph.vs << v6
+graph.vs << v7
+graph.vs << v8
+graph.vs << v9
+
+graph.draw
+
+d.finish
