@@ -9,7 +9,7 @@ d.start
 #8.times do
 #	graph.vs << Vertex.new("#{rand(255)}.#{rand(255)}.#{rand(255)}.#{rand(255)}")
 #end
-#n=0
+
 #graph.vs.each_index do |n|
 #	graph.connections << [graph.vs[n],graph.vs[n+1]]
 #	n+=1
