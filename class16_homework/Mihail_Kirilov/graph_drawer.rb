@@ -4,6 +4,12 @@ require_relative "drawer"
 d = Drawer.new "graph.svg", 300,350
 d.start
 
+class Numeric
+  def degrees
+    self * Math::PI / 180
+  end
+end
+
 class GraphDrawer
 	
 	attr_accessor :vs
@@ -23,14 +29,14 @@ class GraphDrawer
 	
 	private 
 	def calculate_positions
-		inc = (2*Math::PI)/vs.length
-		angle = 90 - 2*inc
+		p inc = (360/vs.length).degrees
+		angle =90 - 2*inc
 		vs.each_index do |n|
 			vs[n].x = 150*Math.cos(angle)
 			vs[n].y = 150*Math.sin(angle)
 			angle -= inc
 		end
-		@drawer.line 0,0,vs[-1].x-15,vs[-1].y-15
+		@drawer.line 0,0,vs[-1].x,vs[-1].y-15
 		@drawer.line 0,0,vs[0].x,vs[0].y
 	end
 	
