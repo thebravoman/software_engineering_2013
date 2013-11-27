@@ -1,0 +1,1 @@
+puts (Math.cos(120))

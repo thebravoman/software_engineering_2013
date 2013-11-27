@@ -14,17 +14,24 @@ class Drawer
 		self.y = y
 	end
 	
-	def rect w, h
+	def set_fill color
+		@fill_color = color
+	end
+	
+	def rect w, h, x, y
 		r= @el_svg.add_element "rect"
 		r.attributes["width"] = w
 		r.attributes["height"] = h
-		r.attributes["x"] = self.x
-		r.attributes["y"] = self.y-h
+		r.attributes["x"] = self.x + x
+		r.attributes["y"] = self.y - y - h
 		r.attributes["stroke"] = "black"
 		r.attributes["stroke-width"] = "2"
-		r.attributes["fill"] = "red"
+		r.attributes["fill"] = @fill_color
 	end
 	
+	
+
+
 	def circle x,y,r
 		c = @el_svg.add_element "circle"
 		c.attributes["cx"] = self.x + x
@@ -34,11 +41,18 @@ class Drawer
 		c.attributes["stroke-width"] = "2"
 		c.attributes["fill"] = "red"
 	end
-	def polyline(arr)
-		pl = @el_svg.add_element "polyline"
-		pl.attributes["points"] = arr  
-		pl.attributes["style"] = "fill:none;stroke:black;stroke-width:3"
-	end
+
+
+		def circle_orange x,y,r
+			c = @el_svg.add_element "circle"
+			c.attributes["cx"] = self.x + x
+			c.attributes["cy"] = self.y - y
+			c.attributes["r"] = r
+			c.attributes["stroke"] = "black"
+			c.attributes["stroke-width"] = "1"
+			c.attributes["fill"] = "#FF6600"
+		end
+
 	
 	def start
 		@doc = REXML::Document.new
@@ -56,6 +70,16 @@ class Drawer
 	  l.attributes["style"] = "stroke:black;stroke-width:2"
 	end
 	
+		def line_green x1,y1,x2,y2
+		  l = @el_svg.add_element "line"
+		  l.attributes["x1"] = x1+self.x
+		  l.attributes["x2"] = x2+self.x
+		  l.attributes["y1"] = self.y - y1
+		  l.attributes["y2"] = self.y - y2
+		  l.attributes["style"] = "stroke:#339900;stroke-width:2"
+		end
+
+
 	def cs
 		line(0,200,0,-200)
 		line(200,0,-200,0)

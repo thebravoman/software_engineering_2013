@@ -14,15 +14,19 @@ class Drawer
 		self.y = y
 	end
 	
-	def rect w, h
+	def set_fill color
+		@fill_color = color
+	end
+	
+	def rect w, h, x, y, fill = "red"
 		r= @el_svg.add_element "rect"
 		r.attributes["width"] = w
 		r.attributes["height"] = h
-		r.attributes["x"] = self.x
-		r.attributes["y"] = self.y-h
+		r.attributes["x"] = self.x+x
+		r.attributes["y"] = self.y-y-h
 		r.attributes["stroke"] = "black"
 		r.attributes["stroke-width"] = "2"
-		r.attributes["fill"] = "red"
+		r.attributes["fill"] = @fill_color
 	end
 	
 	def circle x,y,r
@@ -32,12 +36,7 @@ class Drawer
 		c.attributes["r"] = r
 		c.attributes["stroke"] = "black"
 		c.attributes["stroke-width"] = "2"
-		c.attributes["fill"] = "red"
-	end
-	def polyline(arr)
-		pl = @el_svg.add_element "polyline"
-		pl.attributes["points"] = arr  
-		pl.attributes["style"] = "fill:none;stroke:black;stroke-width:3"
+		c.attributes["fill"] = "none"
 	end
 	
 	def start
@@ -47,20 +46,24 @@ class Drawer
 		@el_svg.attributes["xmlns"] = "http://www.w3.org/2000/svg"
 	end
 	
+	def set_stroke_width width
+		@stroke_width = width.to_i
+	end
+	
 	def line x1,y1,x2,y2
 	  l = @el_svg.add_element "line"
 	  l.attributes["x1"] = x1+self.x
 	  l.attributes["x2"] = x2+self.x
 	  l.attributes["y1"] = self.y - y1
 	  l.attributes["y2"] = self.y - y2
-	  l.attributes["style"] = "stroke:black;stroke-width:2"
+	  l.attributes["style"] = "stroke:black;stroke-width:#{@stroke_width}"
 	end
 	
 	def cs
 		line(0,200,0,-200)
 		line(200,0,-200,0)
 	end
-
+	
 	def text value, x, y
 		t = @el_svg.add_element "text"
 		t.attributes["x"] = x + self.x
@@ -68,8 +71,8 @@ class Drawer
 		t.text = value
 	end
 	
-	def point x,y
-		circle x,y,5
+	def point x, y
+		circle x, y, 5
 	end
 	
 	def finish
@@ -79,3 +82,15 @@ class Drawer
 	end
 	
 end
+
+
+
+
+
+
+
+
+
+
+
+

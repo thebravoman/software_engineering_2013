@@ -14,30 +14,29 @@ class Drawer
 		self.y = y
 	end
 	
-	def rect w, h
+	def set_fill color
+		@fill_color = color
+	end
+	
+	def rect w, h, x, y
 		r= @el_svg.add_element "rect"
 		r.attributes["width"] = w
 		r.attributes["height"] = h
-		r.attributes["x"] = self.x
-		r.attributes["y"] = self.y-h
+		r.attributes["x"] = self.x + x
+		r.attributes["y"] = self.y - y - h
 		r.attributes["stroke"] = "black"
 		r.attributes["stroke-width"] = "2"
-		r.attributes["fill"] = "red"
+		r.attributes["fill"] = @fill_color
 	end
 	
-	def circle x,y,r
+	def circle x,y,r,fill
 		c = @el_svg.add_element "circle"
 		c.attributes["cx"] = self.x + x
 		c.attributes["cy"] = self.y - y
 		c.attributes["r"] = r
 		c.attributes["stroke"] = "black"
 		c.attributes["stroke-width"] = "2"
-		c.attributes["fill"] = "red"
-	end
-	def polyline(arr)
-		pl = @el_svg.add_element "polyline"
-		pl.attributes["points"] = arr  
-		pl.attributes["style"] = "fill:none;stroke:black;stroke-width:3"
+		c.attributes["fill"] = fill
 	end
 	
 	def start
@@ -69,7 +68,7 @@ class Drawer
 	end
 	
 	def point x,y
-		circle x,y,5
+		circle x,y,5,"red"
 	end
 	
 	def finish

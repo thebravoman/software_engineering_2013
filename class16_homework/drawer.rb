@@ -30,14 +30,9 @@ class Drawer
 		c.attributes["cx"] = self.x + x
 		c.attributes["cy"] = self.y - y
 		c.attributes["r"] = r
-		c.attributes["stroke"] = "black"
+		c.attributes["stroke"] = "red"
 		c.attributes["stroke-width"] = "2"
 		c.attributes["fill"] = "red"
-	end
-	def polyline(arr)
-		pl = @el_svg.add_element "polyline"
-		pl.attributes["points"] = arr  
-		pl.attributes["style"] = "fill:none;stroke:black;stroke-width:3"
 	end
 	
 	def start
@@ -70,6 +65,10 @@ class Drawer
 	
 	def point x,y
 		circle x,y,5
+	end
+
+	def point1 x,y
+		circle x,y,20
 	end
 	
 	def finish
