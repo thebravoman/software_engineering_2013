@@ -1,6 +1,6 @@
 require "./Kaloian_Pavlov/graph_drawer.rb"
 vert_count = rand(1..15)
-d = Drawer.new "graph.svg", 300, 350
+d = Drawer.new "Kaloian_Pavlov.svg", 300, 350
 graph = GraphDrawer.new d
 
 d.start
