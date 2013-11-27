@@ -1,5 +1,5 @@
 require_relative 'Martin_Stoyanov/graph_drawer'
-require_relative 'Martin_Stoynaov/vertex'
+require_relative 'Martin_Stoyanov/vertex'
 require_relative 'Martin_Stoyanov/drawer'
 
 d = Drawer.new "Martin_Stoyanov.svg", 300,350
