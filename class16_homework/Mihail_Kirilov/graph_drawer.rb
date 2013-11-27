@@ -23,21 +23,15 @@ class GraphDrawer
 	
 	private 
 	def calculate_positions
-		vs_length = vs.length
-		
 		inc = (2*Math::PI)/vs.length
 		angle = 90 - 2*inc
-		p Math::PI
-		p Math::PI*2
-		p vs.length
-		p inc
-
-		radius = 200 
 		vs.each_index do |n|
-			vs[n].x = 100*Math.cos(angle)
-			vs[n].y = 100*Math.sin(angle)
+			vs[n].x = 150*Math.cos(angle)
+			vs[n].y = 150*Math.sin(angle)
 			angle -= inc
 		end
+		@drawer.line 0,0,vs[-1].x-15,vs[-1].y-15
+		@drawer.line 0,0,vs[0].x,vs[0].y
 	end
 	
 	def draw_vertexes
@@ -61,29 +55,29 @@ class GraphDrawer
 end
 
 graph_drawer = GraphDrawer.new d
-v1 = Vertex.new("1")
+v1 = Vertex.new("1 - The")
 graph_drawer.vs << v1
-v2 = Vertex.new("2")
+v2 = Vertex.new("2 - clock")
 graph_drawer.vs << v2
-v3 = Vertex.new("3")
+v3 = Vertex.new("3 - shows")
 graph_drawer.vs << v3
-v4 = Vertex.new("4")
+v4 = Vertex.new("4 - the")
 graph_drawer.vs << v4
-v5 = Vertex.new("5")
+v5 = Vertex.new("5 - time")
 graph_drawer.vs << v5
-v6 = Vertex.new("6")
+v6 = Vertex.new("6 - when")
 graph_drawer.vs << v6
-v7 = Vertex.new("7")
+v7 = Vertex.new("7 - I")
 graph_drawer.vs << v7
-v8 = Vertex.new("8")
+v8 = Vertex.new("8 - solved")
 graph_drawer.vs << v8
-v9 = Vertex.new("9")
+v9 = Vertex.new("9 - the")
 graph_drawer.vs << v9
-v10 = Vertex.new("10")
+v10 = Vertex.new("10 - problem!")
 graph_drawer.vs << v10
 v11 = Vertex.new("11")
 graph_drawer.vs << v11
-v12 = Vertex.new("12")
+v12 = Vertex.new("12 - Gimmie' a Break.")
 graph_drawer.vs << v12
 
 #graph_drawer.connections << [v1,v2]
