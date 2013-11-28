@@ -2,8 +2,10 @@ require_relative 'vertex'
 require_relative 'drawer'
 require_relative 'edge'
 
-d = Drawer.new "graph.svg",300,350
+d = Drawer.new "Luboslav_Ivanov.svg",600,350
 d.start
+
+
 
 class GraphDrawer
 	attr_accessor :vs
@@ -26,46 +28,29 @@ class GraphDrawer
 	private
 	
 	def calculate_positions		
-#		vs.each_index do |n|
-#			if n.even?
-#				vs[n].x = 50 +50*n 
-#				vs[n].y = 50 +50*n
-#			else
-#				if n > vs.length/2
-#					vs[n].x = 70 +50*n 
-#					vs[n].y = 50 +50*n
-#				else					
-#					vs[n].x = 50 +50*n 
-#					vs[n].y = 40 +50*n
-#				end
-#			end
-#		end	
-				vs[0].x = 110  #192.168.0.1 middle left
-				vs[0].y = 50
-				
-				vs[1].x = 150 #192.168.0.100 top-semi-middle left 
-				vs[1].y = 150	
-				
-				vs[2].x = 250 #192.168.0.101 top
-				vs[2].y = 190	
-				
-				vs[3].x = 350 #192.168.0.102 top-semi-middle right
-				vs[3].y = 150	
-				
-				vs[4].x = 390 #192.168.0.103 middle right
-				vs[4].y = 50	
-			
-				vs[5].x = 350 #192.168.0.104 Bottom-semi-middle right
-				vs[5].y = -50
-				
-				vs[6].x = 250 #192.168.0.105 Bottom
-				vs[6].y = -90		
-				
-				vs[7].x = 150 #192.168.0.106 Bottom-semi-middle left 
-				vs[7].y = -50
+		angle = (3.14*2)/vs.length # 
+		p angle
+		r =vs.length*15
+		vs.each_index do |n|
+				vs[n].x = Math.cos(angle*n)*r 
+				vs[n].y = Math.sin(angle*n)*r
 
+		end	
 
-
+#			vs[1].x = Math.cos(edge*1)*r 
+#			vs[1].y = Math.sin(edge*1)*r
+#			vs[2].x = Math.cos(edge*2)*r 
+#			vs[2].y = Math.sin(edge*2)*r
+#			vs[3].x = Math.cos(edge*3)*r 
+#			vs[3].y = Math.sin(edge*3)*r
+#			vs[4].x = Math.cos(edge*4)*r 
+#			vs[4].y = Math.sin(edge*4)*r
+#			vs[5].x = Math.cos(edge*5)*r 
+#			vs[5].y = Math.sin(edge*5)*r
+#			vs[6].x = Math.cos(edge*6)*r
+#			vs[6].y = Math.sin(edge*6)*r
+#			vs[7].x = Math.cos(edge*7)*r
+#			vs[7].y = Math.sin(edge*7)*r
 	end
 		
 	def draw_vertexes
@@ -99,7 +84,6 @@ v5 = Vertex.new("192.168.0.103")
 v6 = Vertex.new("192.168.0.104")
 v7 = Vertex.new("192.168.0.105")
 v8 = Vertex.new("192.168.0.106")
-
 
 graph_drawer.vs << v1
 graph_drawer.vs << v2
