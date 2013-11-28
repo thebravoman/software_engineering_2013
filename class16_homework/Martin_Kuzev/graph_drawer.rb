@@ -1,7 +1,7 @@
 require_relative "drawer"
 require_relative "vertex"
 
-d = Drawer.new "graph.svg", 250, 200
+d = Drawer.new "Martin_Kuzev.svg", 250, 200
 d.start
 
 class GraphDrawer
