@@ -1,6 +1,6 @@
 require_relative "graph_drawer"
 
-d = Drawer.new "graph.svg", 300, 350
+d = Drawer.new "Ivan_Zorov.svg", 300, 350
 d.start
 
 graph = GraphDrawer.new d
