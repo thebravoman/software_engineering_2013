@@ -140,7 +140,7 @@ class ChartDrawer
 end
 
 
-d = Drawer.new "chart.svg", 300,500
+d = Drawer.new "Luboslav_Ivanov.svg", 300,500
 d.start
 
 chart_drawer = ChartDrawer.new d

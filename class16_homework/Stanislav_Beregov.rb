@@ -1,6 +1,6 @@
 require_relative "Stanislav_Beregov/graph_drawer.rb"
 
-d = Drawer.new "graph.svg", 300, 350
+d = Drawer.new "Stanislav_Beregov.svg", 300, 350
 d.start
 graph = GraphDrawer.new d
 if ARGV[0].nil?
