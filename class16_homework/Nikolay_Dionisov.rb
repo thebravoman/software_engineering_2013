@@ -1,6 +1,6 @@
 require_relative 'Nikolay_Dionisov/graph_drawer.rb'
 
-d = Drawer.new "graph.svg", 300, 350
+d = Drawer.new "Nikolay_Dionisov.svg", 300, 350
 d.start
 
 graph = GraphDrawer.new d
@@ -16,6 +16,9 @@ graph.vs << Vertex.new("172.16.18.3")
 graph.vs << Vertex.new("172.16.18.4")
 graph.vs << Vertex.new("172.16.18.6")
 graph.vs << Vertex.new("172.16.18.7")
+100.times do |i|
+	graph.vs << Vertex.new("172.16.18.8")
+end
 graph.edges << [v1,v2]
 graph.edges << [v2,v3]
 graph.draw
