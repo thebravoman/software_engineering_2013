@@ -2,7 +2,7 @@
 
 require_relative 'Emil_Dudev/graph_drawer.rb'
 
-d = Drawer.new "graph.svg", 300, 350
+d = Drawer.new 'Emil_Dudev.svg', 300, 350
 d.start
 
 graph = GraphDrawer.new d
