@@ -1,7 +1,7 @@
 require_relative "vertex"
 require_relative "drawer"
 
-d = Drawer.new "Alexander_Iliev.svg", 300,350
+d = Drawer.new "Nedelcho_Delchev.svg", 300,350
 d.start
 
 class GraphDrawer
@@ -23,16 +23,15 @@ class GraphDrawer
 	
 	private 
 	def calculate_positions
-		if vs.size == 1
-			vs[0].x = 0
-			vs[0].y = 0
-		else
-			degree = 360/vs.size
-			r = vs.size*6
-			vs.each_index do |n|
-				vs[n].x = Math.sin((degree*n)*3.14 / 180)*r - 10
-				vs[n].y = Math.cos((degree*n)*3.14 / 180)*r - 10
-			end
+		sum = 90
+		radius = 200
+		step = 360 / vs.length
+		vs.each_index do |n|
+			sum += step
+			sum_in_rad = sum *(Math::PI)/ 180
+			vs[n].x = radius * (Math.cos(sum_in_rad))
+			vs[n].y = radius * (Math.sin(sum_in_rad))
+			
 		end
 	end
 	
@@ -57,42 +56,23 @@ class GraphDrawer
 end
 
 graph_drawer = GraphDrawer.new d
-v1 = Vertex.new("")
+v1 = Vertex.new("172.16.18.15")
+v2 = Vertex.new("172.16.18.10")
+v3 = Vertex.new("172.16.18.222")
+v4 = Vertex.new("172.16.18.213")
+v5 = Vertex.new("172.16.18.175")
+
 graph_drawer.vs << v1
-v2 = Vertex.new("")
 graph_drawer.vs << v2
-v3 = Vertex.new("")
 graph_drawer.vs << v3
-v4 = Vertex.new("")
 graph_drawer.vs << v4
-v5 = Vertex.new("")
 graph_drawer.vs << v5
-v6 = Vertex.new("")
-graph_drawer.vs << v6
-v7 = Vertex.new("")
-graph_drawer.vs << v7
-v8 = Vertex.new("")
-graph_drawer.vs << v8
-v9 = Vertex.new("")
-graph_drawer.vs << v9
-
-
 
 graph_drawer.connections << [v1,v2]
 graph_drawer.connections << [v2,v3]
 graph_drawer.connections << [v3,v4]
 graph_drawer.connections << [v4,v5]
-graph_drawer.connections << [v6,v5]
-graph_drawer.connections << [v6,v7]
-graph_drawer.connections << [v7,v8]
-graph_drawer.connections << [v8,v9]
-graph_drawer.connections << [v1,v9]
-
-
-#1 - [3,7,4,1,3,3]
-#2 - [[3,7],[4,1],[3,3]]
-#3 - 	[v1, [v2,v3,v4]]
-#			[v3, [v1,v4]]
+graph_drawer.connections << [v5,v1]
 
 graph_drawer.draw
 
