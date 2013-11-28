@@ -1,7 +1,7 @@
 require"drawer"
 require"vertex"
 
-d = Drawer.new "graph.svg", 550, 350
+d = Drawer.new "Stefan_Stamenov.svg", 550, 350
 d.start
 
 class GraphDrawer
