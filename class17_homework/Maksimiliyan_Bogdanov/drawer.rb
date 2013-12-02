@@ -36,7 +36,7 @@ class Drawer
 		c.attributes["r"] = r
 		c.attributes["stroke"] = "black"
 		c.attributes["stroke-width"] = "2"
-		c.attributes["fill"] = "red"
+		c.attributes["fill"] = "blue"
 	end
 	
 	def start
