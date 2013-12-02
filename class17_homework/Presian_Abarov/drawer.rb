@@ -66,14 +66,14 @@ class Drawer
 		t.attributes["y"] = self.y - y
 		t.text = value
 	end
-	
+
 	def point x,y
 		circle x,y,5
 	end
 
 	def path x1, x2, offset, color = "red"
 		p = @el_svg.add_element "path"
-		p.attributes["d"] = "M#{self.x + x1},#{self.y} A#{offset},#{offset} 0 0,1 #{self.x + x2},#{self.y}"
+		p.attributes["d"] = "M#{self.x + x1},#{self.y} A#{offset},#{offset} 0 1,0 #{self.x + x2},#{self.y}"
 		p.attributes["stroke"] = color
 		p.attributes["stroke-width"] = "2"
 		p.attributes["fill"] = "none"
@@ -84,5 +84,4 @@ class Drawer
 			f.write(@doc.to_s)
 		end
 	end
-	
 end

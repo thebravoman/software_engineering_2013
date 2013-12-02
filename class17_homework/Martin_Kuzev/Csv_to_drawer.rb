@@ -1,19 +1,22 @@
 require_relative 'graph_drawer'
 require 'csv'
 
-class CsvToGraph
+class Csv_Vertexes
 
-        def initialize output="Kristian_Popov.svg",x=256,y=256
+        def initialize input,name="Martin_Kuzev.svg",x=300,y=350
+                @input = input
                 @text = []
                 @vertexes = []
                 @edges = []
-                @drawer = Drawer.new output,x,y
+                @drawer = Drawer.new name,x,y
                 @graph_drawer = GraphDrawer.new @drawer
         end
         
-        def draw
+        def draw_them
                 @drawer.start
-                read_csv
+                CSV.foreach(@input) do |line|
+                        @text << line
+                end
                 parse_vertexes
                 parse_edges
                 push_data
@@ -24,21 +27,21 @@ class CsvToGraph
 private
         
         def read_csv
-                CSV.foreach("Kristian_Popov/data.csv") do |line|
+                CSV.foreach(@input) do |line|
                         @text << line
                 end
         end
         
-        def        parse_vertexes
+        def	parse_vertexes
                 @text.each do |row|
-                        elem1 = row[0]
-                        elem2 = row[1]
-                        @vertexes << elem1 if @vertexes.index(elem1) == nil
-                        @vertexes << elem2 if @vertexes.index(elem2) == nil
+                        el1 = row[0]
+                        el2 = row[1]
+                        @vertexes << el1 if @vertexes.index(el1) == nil
+                        @vertexes << el2 if @vertexes.index(el2) == nil
                 end
         end
         
-        def parse_edges
+        def	parse_edges
                 @text.each do |row|
                         source = vertex_id row[0]
                         target = vertex_id row[1]
