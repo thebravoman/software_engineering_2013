@@ -8,7 +8,7 @@ class Drawer
 	attr_accessor :x
 	attr_accessor :y
 	
-	def initialize file_name="result.svg",x=200,y=200
+	def initialize file_name="Asen_Panayotov.svg",x=200,y=200
 		self.file_name = file_name
 		self.x = x
 		self.y = y
