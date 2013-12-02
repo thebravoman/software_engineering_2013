@@ -36,7 +36,7 @@ class Drawer
 		c.attributes["r"] = r
 		c.attributes["stroke"] = "black"
 		c.attributes["stroke-width"] = "2"
-		c.attributes["fill"] = "red"
+		c.attributes["fill"] = @fill_color
 	end
 	
 	def start
@@ -52,7 +52,8 @@ class Drawer
 	  l.attributes["x2"] = x2+self.x
 	  l.attributes["y1"] = self.y - y1
 	  l.attributes["y2"] = self.y - y2
-	  l.attributes["style"] = "stroke:black;stroke-width:2"
+	  l.attributes["stroke"] = @fill_color
+	  l.attributes["style"] = "stroke-width:2"
 	end
 	
 	def cs
