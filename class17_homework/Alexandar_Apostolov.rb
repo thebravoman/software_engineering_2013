@@ -1,4 +1,4 @@
-require './Drawers/graph_drawer.rb'
+require './Alexandar_Apostolov/graph_drawer.rb'
 require 'csv'
 
 file_name = ARGV[0]
