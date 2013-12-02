@@ -23,8 +23,8 @@ class GraphDrawer
 	private
 	def calculate_positions
 		count = vs.count
-		radius = count * 30
-		radius = 400 if radius > 400
+		radius = count * 40
+		radius = 500 if radius > 500
 		vs.each_index do |n|
 			rads = 6.28 * (n / count)
 			vs[n].x = Math.cos(rads) * radius
