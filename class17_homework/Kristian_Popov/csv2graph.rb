@@ -24,7 +24,7 @@ class CsvToGraph
 private
         
         def read_csv
-                CSV.foreach("data.csv") do |line|
+                CSV.foreach("Kristian_Popov/data.csv") do |line|
                         @text << line
                 end
         end
