@@ -1,4 +1,4 @@
-require_relative "Ivaylo_Hristov/graph_drawer"
+require_relative "../class16_homework/Ivaylo_Hristov/graph_drawer"
 require "csv"
 
 d = Drawer.new "Ivaylo_Hristov.svg", 300, 350
