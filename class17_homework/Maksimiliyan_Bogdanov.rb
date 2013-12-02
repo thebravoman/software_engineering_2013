@@ -1,6 +1,6 @@
-require_relative 'Luben_Temelakiev/graph_drawer.rb'
+require_relative 'Maksimiliyan_Bogdanov/graph_drawer.rb'
 
-d = Drawer.new "Luben_Temelakiev.svg", 300, 300
+d = Drawer.new "Maksimiliyan_Bogdanov.svg", 300, 300
 d.start
 
 graph = GraphDrawer.new d
