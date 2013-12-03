@@ -11,7 +11,7 @@ class Vertex
 	end
 	
 	def draw drawer
-		drawer.circle self.x,self.y,40
-		drawer.text name, self.x+40,self.y+40
+		drawer.circle self.x,self.y,10
+		drawer.text name, self.x+10,self.y+10
 	end
 end

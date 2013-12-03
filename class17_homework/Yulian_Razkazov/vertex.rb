@@ -1,4 +1,4 @@
-require "drawer"
+require_relative "drawer"
 
 class Vertex
 	
@@ -11,7 +11,7 @@ class Vertex
 	end
 	
 	def draw drawer
-		drawer.circle self.x,self.y,40
-		drawer.text name, self.x+40,self.y+40
+		drawer.circle self.x,self.y,20
+		drawer.text name, self.x+20,self.y+20
 	end
 end
