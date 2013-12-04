@@ -1,5 +1,5 @@
 <Excluding already known information>
 
-IP adress: 94.26.41.102
+IP address: 94.26.41.102
 ISP: Traffic Broadband Communications Ltd. (tbc.bg)
 Prefered browser: Mozilla Firefox
