@@ -1,5 +1,4 @@
-
-public class GetProperty {
+public class Alexander_Iliev {
 	public static void main(String[] args){
 		int check = 0;
 		if (args.length == 0){
