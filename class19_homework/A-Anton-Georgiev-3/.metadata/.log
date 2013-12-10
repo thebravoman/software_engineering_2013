@@ -1,0 +1,29 @@
+!SESSION 2013-12-09 16:08:33.425 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=bg_BG
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.help.base 4 0 2013-12-09 16:42:01.803
+!MESSAGE Errors while indexing
+!STACK 0
+java.lang.IllegalArgumentException: invalid format: 
+	at org.osgi.framework.Version.<init>(Version.java:150)
+	at org.eclipse.help.internal.search.SearchIndex.isLuceneCompatible(SearchIndex.java:721)
+	at org.eclipse.help.internal.search.PluginIndex.isCompatible(PluginIndex.java:152)
+	at org.eclipse.help.internal.search.PluginIndex.resolve(PluginIndex.java:83)
+	at org.eclipse.help.internal.search.PluginIndex.getPaths(PluginIndex.java:231)
+	at org.eclipse.help.internal.search.PrebuiltIndexes.trim(PrebuiltIndexes.java:46)
+	at org.eclipse.help.internal.search.PrebuiltIndexes.getIndexes(PrebuiltIndexes.java:54)
+	at org.eclipse.help.internal.search.IndexingOperation.mergeIndexes(IndexingOperation.java:544)
+	at org.eclipse.help.internal.search.IndexingOperation.addNewDocuments(IndexingOperation.java:152)
+	at org.eclipse.help.internal.search.IndexingOperation.execute(IndexingOperation.java:106)
+	at org.eclipse.help.internal.search.LocalSearchManager.updateIndex(LocalSearchManager.java:671)
+	at org.eclipse.help.internal.search.LocalSearchManager.ensureIndexUpdated(LocalSearchManager.java:645)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:31)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.util.NoSuchElementException
+	at java.util.StringTokenizer.nextToken(StringTokenizer.java:349)
+	at org.osgi.framework.Version.<init>(Version.java:127)
+	... 13 more
