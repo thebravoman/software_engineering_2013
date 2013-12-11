@@ -14,7 +14,7 @@ class Drawer
 		self.y = y
 	end
 	
-	def rect w, h, x, y
+	def rect w, h
 		r= @el_svg.add_element "rect"
 		r.attributes["width"] = w
 		r.attributes["height"] = h

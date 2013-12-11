@@ -1,0 +1,16 @@
+files = Dir.glob("**/*.rb")
+files.each do |file_place|
+	if file.length > 2
+		if file[-1] == "graph_drawer.rb" || file[-1] == file[-2] + ".rb"
+			`ruby #{file_place}`
+		end
+	else
+		if file[-1] != "drawer.rb" && file[-1] != __FILE__
+			`ruby #{file_place}`
+			`firefox #[file[-1]}`
+		end
+	end
+	if file != __FILE__ && file[-1] != "drawer.rb"
+		puts file
+	end
+end
