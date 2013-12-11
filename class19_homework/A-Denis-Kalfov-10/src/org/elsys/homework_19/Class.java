@@ -14,14 +14,12 @@ public class Class {
 		this.number_student = number_student;
 	}
 
+
+	static ArrayList<Integer> marks_students= new ArrayList<Integer>(50);
 	
-	public static void main(String[] args) {
+	static ArrayList<String> names_students= new ArrayList<String>(50);
 	
-		ArrayList<Integer> marks_students= new ArrayList<Integer>(50);
-		
-		ArrayList<String> names_students= new ArrayList<String>(50);
-	
-	}
+
 }
 
 

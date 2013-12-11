@@ -28,13 +28,11 @@ public class School {
 	}
 	
 	
-	public static void main(String[] args) {
+	static ArrayList<String> students = new ArrayList<String>(200);
 
-		ArrayList<String> students = new ArrayList<String>(200);
-
-        ArrayList<String> teachers = new ArrayList<String>(20);
+        static ArrayList<String> teachers = new ArrayList<String>(20);
         
-        ArrayList<Integer> classes = new ArrayList<Integer>(5);
+        static ArrayList<Integer> classes = new ArrayList<Integer>(5);
         	
 	}
 }

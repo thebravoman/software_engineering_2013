@@ -4,7 +4,21 @@ public class School {
 	private String schoolName;
 	private String schoolAddress;
 	private int schoolPhoneNumber;
+	private Teacher[] teachers;
+	private Student[] students;
 	
+	public Teacher[] getTeachers() {
+		return teachers;
+	}
+	public void setTeachers(Teacher[] teachers) {
+		this.teachers = teachers;
+	}
+	public Student[] getStudents() {
+		return students;
+	}
+	public void setStudents(Student[] students) {
+		this.students = students;
+	}
 	public String getSchoolName() {
 		return schoolName;
 	}
