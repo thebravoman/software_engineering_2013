@@ -2,29 +2,12 @@ package org.elsys.se.class20_homework;
 
 public class AbsoluteEvaluatorFactory implements IEvaluatorFactory {
 
-	public class AbsoluteSumEvaluator extends SumEvaluator {
-		public void add(double d) {
-			super.add(Math.abs(d));
-		}
-	}
-
-	public class AbsolutePowerOnEvaluator extends PowerOnEvaluator {
-		public AbsolutePowerOnEvaluator(double power) {
-			super(power);
-		}
-		public void add(double d) {
-			super.add(Math.abs(d));
-		}
-	}
-
-	public class AbsoluteFibonacciEvaluator extends FibonacciEvaluator {
-		public void add(double d) {
-			super.add(Math.abs(d));
-		}
-	}
-
 	public IEvaluator createSumEvaluator() {
-		return new AbsoluteSumEvaluator();
+		return new SumEvaluator() {
+			public void add(double d) {
+				super.add(Math.abs(d));
+			}
+		};
 	}
 
 	public IEvaluator createPowerOnEvaluator() {
@@ -32,10 +15,19 @@ public class AbsoluteEvaluatorFactory implements IEvaluatorFactory {
 	}
 
 	public IEvaluator createPowerOnEvaluator(double power) {
-		return new AbsolutePowerOnEvaluator(power);
+		return new PowerOnEvaluator(power) {
+			public void add(double d) {
+				super.add(Math.abs(d));
+			}
+		};
 	}
 
 	public IEvaluator createFibonacciEvaluator() {
-		return new AbsoluteFibonacciEvaluator();
+		return new FibonacciEvaluator() {
+			public void add(double d) {
+				super.add(Math.abs(d));
+			}
+		};
 	}
+
 }
