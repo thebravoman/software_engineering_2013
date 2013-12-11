@@ -1,7 +1,11 @@
 require "drawer"
 require "vertex"
 
+<<<<<<< HEAD
+d = Drawer.new "graph.svg", 300, 350
+=======
 d = Drawer.new "Bogomil_Kolarov.svg", 300, 350
+>>>>>>> a46ce92c36dfb632d0e4c1182ebe371968fea8da
 d.start
 
 class GraphDrawer

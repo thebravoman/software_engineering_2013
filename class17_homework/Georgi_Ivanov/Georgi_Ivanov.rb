@@ -1,0 +1,1 @@
+`ruby graph_drawer.rb #{ARGV[0]}`
