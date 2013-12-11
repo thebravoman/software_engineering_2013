@@ -6,7 +6,21 @@ public class Student {
 	private int grade;
 	private int age;
 	private int phoneNumber;
+	private School school;
+	private Class schoolClass;
 	
+	public Class getSchoolClass() {
+		return schoolClass;
+	}
+	public void setSchoolClass(Class schoolClass) {
+		this.schoolClass = schoolClass;
+	}
+	public School getSchool() {
+		return school;
+	}
+	public void setSchool(School school) {
+		this.school = school;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
