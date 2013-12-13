@@ -1,0 +1,8 @@
+output_in_file = false
+File.open("Bozhidar_Nikolov_1.rb", "w").each do |line|
+	if line =~ /"w"/
+		output_in_file = true
+	end
+end
+
+puts output_in_file

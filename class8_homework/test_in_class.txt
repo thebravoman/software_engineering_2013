@@ -1,0 +1,7 @@
+Ivaylo Hristov,false
+Ivaylo Markov,false
+Kaloian Pavlov,true
+Kiril Kostadinov,false
+Kristian Popov,false
+Luben Temelakiev,false
+Luboslav Ivanov,false

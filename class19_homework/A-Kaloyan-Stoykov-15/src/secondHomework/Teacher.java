@@ -5,8 +5,15 @@ public class Teacher {
 	private String lastName;
 	private int age;
 	private int phoneNumber;
+	private School school;
 	
 	
+	public School getSchool() {
+		return school;
+	}
+	public void setSchool(School school) {
+		this.school = school;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
