@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class BallContainer {
 	protected double capacity;
-	private LinkedList<Ball> ballList = new LinkedList<Ball>();
+	protected LinkedList<Ball> ballList = new LinkedList<Ball>();
 	
 	public boolean add(Ball b){
 		if (ballList.add(b)){
