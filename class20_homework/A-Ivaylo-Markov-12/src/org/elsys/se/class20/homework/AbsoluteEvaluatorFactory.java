@@ -13,7 +13,13 @@ public class AbsoluteEvaluatorFactory implements IEvaluatorFactory {
 
 	@Override
 	public IEvaluator createPowerOnEvaluator() {
-		return new PowerOnEvaluator(2.0);
+		return new PowerOnEvaluator(2.0) {
+			public void add(double d) {
+				super.add(Maths.abs(d);
+			}
+		};
+	
+	
 	}
 
 	@Override
