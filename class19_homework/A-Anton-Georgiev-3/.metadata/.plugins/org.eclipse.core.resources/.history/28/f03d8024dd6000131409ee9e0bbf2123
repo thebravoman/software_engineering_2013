@@ -1,8 +1,0 @@
-package second;
-
-public class School {
-	private String name;
-	private String city;
-	private int number;
-	private String type;
-}
