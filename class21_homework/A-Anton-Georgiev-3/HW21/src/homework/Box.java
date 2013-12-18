@@ -15,7 +15,7 @@ public class Box extends BallContainer {
 	public void add(Ball ball) {
 		if(list.size()<boxCapacity) {
 			list.add(ball);
-			capacity++;
+			capacity+=ball.capacity;
 		}
 	}
 	

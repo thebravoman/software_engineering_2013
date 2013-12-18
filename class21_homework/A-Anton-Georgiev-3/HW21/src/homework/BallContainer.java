@@ -8,12 +8,12 @@ public class BallContainer {
 	
 	public void add(Ball ball) {
 		list.add(ball);
-		capacity++;
+		capacity+=ball.capacity;
 	}
 	
 	public void remove(Ball ball) {
 		list.remove(ball);
-		capacity--;
+		capacity-=ball.capacity;
 	}
 	
 	public double getCapacity() {
