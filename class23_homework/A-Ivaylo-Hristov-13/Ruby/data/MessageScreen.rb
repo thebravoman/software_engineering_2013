@@ -28,19 +28,19 @@ class MessageScreen
 	end
 	
 	def planeLogo
-	@message = <<-STRING.gsub("\t", "")
-	
-		_____
-		 \\ U \\__      _____
-		  \\   \\/_______\\___\\_____________
-		   < /_/   .....................  `-.
-		   `-----------,----,--------------'
-		             _/____/
+		@message = <<-STRING.gsub("\t", "")
 		
-		
-		
-		*** Plane is ready! All passengers get in line! ***
-	STRING
+			_____
+			 \\ U \\__      _____
+			  \\   \\/_______\\___\\_____________
+			   < /_/   .....................  `-.
+			   `-----------,----,--------------'
+			             _/____/
+			
+			
+			
+			*** Plane is ready! All passengers get in line! ***
+		STRING
 	end
 	
 	def printMessage
