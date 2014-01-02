@@ -8,8 +8,10 @@ public class Plane {
 	private int[][] seats;
 	private int seatcount;
 	private int[] freeseats;
+	private int freecount;
 	
 	public Plane(){
+		this.freecount = 27*6;
 		this.seats = new int[27][6];
 		this.seatcount = 0;
 		this.freeseats = new int[27];
@@ -29,6 +31,7 @@ public class Plane {
 		for (int i = free; i<free+size; i++){
 			System.out.printf("<Pasenger seated ROW:%d SEAT:%d>\n", count+1, i+1);
 			seats[count][i] = 1;
+			freecount -=1; 
 		}
 	}
 	
@@ -52,7 +55,7 @@ public class Plane {
 		for (int i=0;i<27;i++){
 			for(int j=0;j<6;j++){
 				if(seats[i][j] == 1){
-					System.out.printf("<ROW:%d|SEAT:%d - OCUPIED>\n",i+1,j+1);
+					System.out.printf("<ROW:%d|SEAT:%d - OCCUPIED>\n",i+1,j+1);
 				} else {
 					System.out.printf("<ROW:%d|SEAT:%d - FREE>\n",i+1,j+1);
 				}
@@ -62,7 +65,7 @@ public class Plane {
 	
 	public void getPlaneReady() {
 		Scanner scan = new Scanner(System.in);
-		while(this.seatcount<27){
+		while(this.freecount > 0){
 			System.out.println();
 			System.out.println("press ENTER...");
 			String readString =scan.nextLine();
