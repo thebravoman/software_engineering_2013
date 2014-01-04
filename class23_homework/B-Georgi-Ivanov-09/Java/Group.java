@@ -1,5 +1,6 @@
 package Homework23;
 
+// Bananas are good!
 public class Group {
 	private int peopleInGroup;	
 	
