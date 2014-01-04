@@ -1,6 +1,5 @@
 package Homework23;
 
-// It does work... It's just GitHub is showing the old message...
 public class Group {
 	private int peopleInGroup;	
 	
