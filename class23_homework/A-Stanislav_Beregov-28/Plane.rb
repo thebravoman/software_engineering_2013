@@ -4,7 +4,7 @@ def add_group gsize
 		0.upto $hash[row].size-1 do |seats|
 			if $hash[row][seats] <= 3-gsize
 				$hash[row][seats] += gsize
-				#p $hash
+				p $hash
 				return true
 			end
 		end
