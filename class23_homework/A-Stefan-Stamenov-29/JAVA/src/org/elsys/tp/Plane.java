@@ -77,7 +77,6 @@ public class Plane {
 
 			}
 			if (r == 26 && flag == 0) {
-				System.out.println("ERRRRRRRRRRRRRRRRRRRRRRR");
 				return flag;
 			}
 		}
