@@ -21,7 +21,6 @@ public class Plane {
 		int flag = 0;
 		for (int r = 0; r < 27; r++) {
 			flag = 0;
-			// int flag = 0;
 			if (group == 1) {
 				for (int pl = 0; pl < 6; pl++) {
 					if (seats[r][pl] == 0) {
