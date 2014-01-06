@@ -9,12 +9,12 @@ public class Plane {
 	}
 	
 	public void prepare() {
-		System.out.println("Preparing the passengers...");
+		System.out.println("Monkeys prepare...");
 		findSeats();
 	}
 
 	public void print() {
-		System.out.println("Passengers prepared.");
+		System.out.println("Monkeys prepared.");
 		for(int row = 0; row < seats.length; ++row) {
 			for(int i = 0; i < seats[row].length; ++i) {
 				System.out.print(seats[row][i]);
