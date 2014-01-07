@@ -72,8 +72,8 @@ public class Main {
                                
                            } else if (info>0){
                               System.out.println("seat N: "+one_TwoTogether[index]);
-                                  index--;
-                                  info--;
+                              index--;
+                              info--;
                               seat_num-=1;
                               
                           } else if (placeOnlyFor_1==1){
