@@ -1,0 +1,9 @@
+class MonkeyGenerator
+	monkeys = 0;
+
+	def generate(max)
+		@monkeys = 1 + rand(max)
+		return @monkeys
+	end
+
+end
