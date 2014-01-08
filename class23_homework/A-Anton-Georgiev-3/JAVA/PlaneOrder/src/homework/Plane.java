@@ -26,14 +26,14 @@ public class Plane {
 		}
 	}
 	
-	public void fillSeats(int passengers) {
+	public boolean fillSeats(int passengers) {
 		for(int i=0;i<54;i++) {
 			if(passengers==3) {
 				if(seats[i][0]==0 && seats[i][1]==0 && seats[i][2]==0) {
 					seats[i][0]=1;
 					seats[i][1]=1;
 					seats[i][2]=1;
-					break;
+					return true;
 				}
 			}
 			
@@ -41,26 +41,27 @@ public class Plane {
 				if(seats[i][0]==0 && seats[i][1]==0) {
 					seats[i][0]=1;
 					seats[i][1]=1;
-					break;
+					return true;
 				} else if(seats[i][1]==0 && seats[i][2]==0) {
 					seats[i][1]=1;
 					seats[i][2]=1;
-					break;
+					return true;
 				}
 			}
 			
 			if(passengers==1) {
 				if(seats[i][0]==0) {
 					seats[i][0]=1;
-					break;
+					return true;
 				} else if(seats[i][1]==0) {
 					seats[i][1]=1;
-					break;
+					return true;
 				} else if(seats[i][2]==0) {
 					seats[i][2]=1;
-					break;
+					return true;
 				}
 			}
+			return false;
 		}
 	}
 }

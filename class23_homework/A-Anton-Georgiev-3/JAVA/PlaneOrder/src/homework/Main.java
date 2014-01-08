@@ -11,9 +11,10 @@ public class Main {
 		while(people<162) {
 			System.in.read();
 			group=generator.generateHumans();
-			people+=group;
-			airbusA320.fillSeats(group);
-			airbusA320.writeSeats();
+			if(airbusA320.fillSeats(group)==true) {
+				airbusA320.writeSeats();
+				people+=group;
+			}
 		}
 	}
 	
