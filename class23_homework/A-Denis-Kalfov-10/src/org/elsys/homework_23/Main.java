@@ -19,7 +19,6 @@ public class Main {
            int placeOnlyFor_1SeatNum=0; 
               
            for (;all<=162;){
-        	   System.in.read();
         	   seat_num+=1;
                 
                ArrayList<Integer> l = new ArrayList<Integer>();
@@ -84,6 +83,7 @@ public class Main {
                       }
 			
                   System.out.println(l+"\n");
+                  System.in.read();
 
               if (seat_num>=162){
                   break;
