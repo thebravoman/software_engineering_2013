@@ -1,4 +1,5 @@
 Name : Anna Nesheva
+<<<<<<< HEAD
 Picture : https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-frc3/1174533_602690166449980_1900728086_n.jpg
 Blog : http://beautyandfashion.blog.bg/profile.php
 
@@ -11,3 +12,18 @@ Has a white pitbull
 Job : http://konsultant.rozali.com/moden-konsultant/p1107.html
 Boyfriend : Blagoi Ivanov
 ICQ
+=======
+Birth Date : 8 september 1987
+Picture :  https://www.facebook.com/anna.nesheva.7
+Blog : http://beautyandfashion.blog.bg/profile.php
+College : http://svariadna.com/
+Job : http://konsultant.rozali.com/moden-konsultant/p1107.html
+
+Info:
+Green eyes,piercing and freckles.
+Family members.
+White pitbull.
+Boyfriend Blagoi Ivanov.
+E-mail and phone numbers.
+FB page : https://www.facebook.com/pages/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BD-%D0%9A%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%82%D0%B0%D0%BD%D1%82-Annely/319639218136483
+>>>>>>> 43cfbec40666043e6ad25bbe4f1bacc3647b1c7d

@@ -1,0 +1,12 @@
+require 'csv'
+
+`cd Bozhidar_Nikolov_test_data`
+`mkdir test_folder`
+`cd ../class7_homework`
+
+do
+	Dir.glob("*.rb").each do |current_file|
+		if current_file[0] != "test"
+			Dir.chdir("../class8_homework/Bozhidar_Nikolov_test_data")
+			do
+				`cp #{current_file} Bozhidar_Nikolov_test_data`

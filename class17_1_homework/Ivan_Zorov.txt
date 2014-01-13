@@ -1,6 +1,7 @@
 Anna Nesheva
 picture : https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash3/534891_590813107637686_1481993182_n.jpg
 
+<<<<<<< HEAD
 She's a bulgarian muffin
 she likes to drink fragolino with her friends
 icq,phone number,email
@@ -8,3 +9,29 @@ her blog
 places she visits
 books she has read
 She will visit SCORPIONS concert in Sofia on 16 december 20:00
+=======
+Info:
+She's a bulgarian muffin
+she likes to drink fragolino with her friends
+
+age,birthday,college
+boyfriend
+
+Animals:
+white pitbull,cat
+
+Contacts :
+icq,phone number,email
+her blog
+facebook page and phone number for professional contacts
+her prodavalnik page
+
+
+Other:
+places she visited
+books she has read
+
+She will visit SCORPIONS concert in Sofia on 16 december 20:00
+
+PS: Links for evidence and for info ( that I dont think its appropriate to share in public) contact me on facebook.
+>>>>>>> 43cfbec40666043e6ad25bbe4f1bacc3647b1c7d

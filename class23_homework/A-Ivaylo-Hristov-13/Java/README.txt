@@ -1,0 +1,1 @@
+The program requires a console to run properly.
