@@ -16,7 +16,7 @@ public class BallContainer {
 	
 	public boolean remove(Ball ball) {
 		if(contents.remove(ball)) {
-			ball.capacity -= ball.capacity;
+			ball -= ball.capacity;
 			return true;
 		}
 			return false;
