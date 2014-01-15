@@ -1,14 +1,13 @@
-
 public class AbsoluteEvaluatorFactory implements IEvaluatorFactory {
 
 	@Override
 	public IEvaluator createSumEvaluator() {
-        return new SumEvaluator() {
-        	public void add(double d) {
-        		super.add(Math.abs(d));
-            }
-        };	
-    }
+		return new SumEvaluator() {
+        		public void add(double d) {
+        			super.add(Math.abs(d));
+            		}
+		};	
+	}
 
 	@Override
 	public IEvaluator createPowerOnEvaluator() {
