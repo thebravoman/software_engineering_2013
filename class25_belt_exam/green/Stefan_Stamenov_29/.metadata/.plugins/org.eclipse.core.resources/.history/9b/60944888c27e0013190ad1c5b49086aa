@@ -1,0 +1,9 @@
+package org.elsys.exam;
+
+public interface StefanStamenov2 {
+	public int stefan(int v1,int v2){
+		int num=v1-v2;
+		return num;
+	}
+
+}
