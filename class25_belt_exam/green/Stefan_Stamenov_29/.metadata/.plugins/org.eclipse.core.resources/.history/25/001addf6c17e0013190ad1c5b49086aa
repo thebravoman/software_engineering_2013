@@ -1,0 +1,7 @@
+package org.elsys.exam;
+
+public class PieChart {
+	private int value1;
+	private int value2;
+	private int value3;
+}
