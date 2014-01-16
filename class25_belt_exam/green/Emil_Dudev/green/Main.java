@@ -23,7 +23,7 @@ public class Main {
 		}
 		for( Chart ch : col ) {
 			if( ch instanceof PieChart && ((PieChart)ch).decrement() ) {
-				ch.print();
+				((PieChart)ch).emil();
 			}
 		}
 		for( Chart ch : col ) {
