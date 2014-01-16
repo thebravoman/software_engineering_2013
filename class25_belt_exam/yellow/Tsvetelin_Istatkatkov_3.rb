@@ -8,9 +8,7 @@ CSV.foreach(ARGV[0]) do |row|
 		girls << row
 	end
 end
-p girls
 girls.sort_by! {|a| a[1].to_i}
-p girls
 CSV.open("momicheta_result.csv","w") do |csv|
 	girls.each do |f|
 		csv << f
