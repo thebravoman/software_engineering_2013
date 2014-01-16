@@ -12,8 +12,7 @@ CSV.foreach("stats.csv") do |csv|
         arr << csv
 end
 
-arr.sort!{|a,b| b[0]<=>a[0]}
-arr.sort!{|a,b| b[1]<=>a[1]}
+arr = arr.sort_by{|a,b,c,d| d}
 arr = arr.first(count)
 
 CSV.open("top.csv", "w") do |csv|
