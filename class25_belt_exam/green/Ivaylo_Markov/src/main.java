@@ -43,7 +43,9 @@ public class main {
 		printChartValues();
 		for(Chart chart:charts) {
 			if(chart instanceof PieChart) {
-				((PieChart) chart).ivaylo();
+				if(chart.getValue2() > 0) {
+					((PieChart) chart).ivaylo();
+				}
 			}
 		}
 		printChartValues();
