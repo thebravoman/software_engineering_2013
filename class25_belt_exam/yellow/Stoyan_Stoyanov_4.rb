@@ -1,4 +1,3 @@
-
 require 'csv'
 require 'date'
 
@@ -25,4 +24,3 @@ CSV.open("top.csv","w") do |csv|
         end
 end
  
-Status API Training Shop Blog About
