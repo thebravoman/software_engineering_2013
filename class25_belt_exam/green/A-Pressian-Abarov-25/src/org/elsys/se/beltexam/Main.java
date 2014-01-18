@@ -8,13 +8,11 @@ public class Main {
 		int ret[] = new int[3];
 		String[] split = input.split(",");
 
-		if(split.length != 3) {
+		if(split.length != 3)
 			return null;
-		}
 
-		for(int i = 0; i < 3; i++) {
+		for(int i = 0; i < 3; i++) 
 			ret[i] = Integer.parseInt(split[i]);
-		}
 
 		return ret;
 	}
@@ -36,20 +34,15 @@ public class Main {
 				charts.add(new BarChart(vals[0], vals[1], vals[2]));
 		}
 
-		for(Chart ch : charts) {
+		for(Chart ch : charts)
 			ch.print();
-		}
 
-		for(Chart ch: charts) {
-			if(ch instanceof PieChart) {
-				if(ch.getValue2() > 0) {
+		for(Chart ch: charts)
+			if(ch instanceof PieChart)
+				if(ch.getValue2() > 0)
 					((PressianAbarov2)ch).presian();
-				}
-			}
-		}
 
-		for(Chart ch: charts) {
+		for(Chart ch: charts)
 			ch.print();
-		}
 	}
 }
