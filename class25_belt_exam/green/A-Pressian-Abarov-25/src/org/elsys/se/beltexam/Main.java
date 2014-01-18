@@ -20,9 +20,7 @@ public class Main {
 
 	public static void main(String[] args) {		
 		ArrayList<Chart> charts = new ArrayList<Chart>();
-        Scanner sc = new Scanner(System.in);
-
-		
+		Scanner sc = new Scanner(System.in);
 
 		while(true) {
 			int[] vals = parse(sc.next());
