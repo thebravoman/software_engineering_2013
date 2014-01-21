@@ -1,0 +1,12 @@
+public class PieChart extends Chart implements NedelchoDelchev2 {
+	
+	PieChart(int value1, int value2, int value3) {
+		super(value1, value2, value3);
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public void nedelcho() {
+		setValue2(getValue2() - getValue1());
+	}
+}

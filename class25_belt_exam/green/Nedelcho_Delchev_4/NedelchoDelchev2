@@ -1,0 +1,3 @@
+public interface NedelchoDelchev2 {
+	void nedelcho();
+}
