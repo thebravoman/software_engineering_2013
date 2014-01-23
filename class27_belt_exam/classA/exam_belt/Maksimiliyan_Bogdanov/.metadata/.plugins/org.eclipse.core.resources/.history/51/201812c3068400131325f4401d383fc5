@@ -1,0 +1,13 @@
+
+public class PieChart extends Chart{
+	
+	PieChart(int value1,int value2){
+		super(value1, value2);
+	}
+	
+	public void maksimiliyan(){
+		this.value1 = value1*2;
+		this.value2 = value2*4;
+	}
+	
+}

@@ -1,0 +1,4 @@
+#Thu Jan 23 10:04:11 EET 2014
+eclipse.preferences.version=1
+SdkRegistrants_1316499180576=com.google.appengine.eclipse.sdkbundle_1.5.1.r37v201106211634,com.google.gwt.eclipse.sdkbundle_2.3.0.r37v201106211634
+addedNewWizardActions1.2_org.eclipse.jst.j2ee.J2EEPerspective=com.google.gdt.eclipse.suite.wizards.newProjectWizard|com.google.gwt.eclipse.core.newModuleWizard|com.google.gwt.eclipse.core.newHostPageWizard|com.google.gwt.eclipse.core.newEntryPointWizard|com.google.gwt.eclipse.core.newClientBundleWizard|com.google.gwt.eclipse.core.newUiBinderWizard

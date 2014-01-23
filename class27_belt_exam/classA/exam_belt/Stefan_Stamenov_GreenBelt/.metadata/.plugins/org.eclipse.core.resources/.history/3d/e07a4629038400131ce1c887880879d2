@@ -1,0 +1,56 @@
+package org.elsys.greenbelt;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		ArrayList<Chart> collection=new ArrayList<Chart>();
+		Scanner scan=new Scanner(System.in);
+		int counter=1;
+		String[] input;	
+
+
+		while(true){	
+			input=(scan.next()).split(",");
+			if (input.length==1)
+				break;
+			
+			int val1=Integer.parseInt(input[0]);
+			int val2=Integer.parseInt(input[1]);
+			int val3=Integer.parseInt(input[2]);
+
+			if (counter%2==0){
+				PieChart pie=new PieChart(val1, val2, val3);
+				collection.add(pie);
+			}
+			else{
+				BarChart bar=new BarChart(val1, val2, val3);
+				collection.add(bar);
+			}
+		}
+		
+		for (Chart e : collection){
+			System.out.print(e.getValue1());
+			System.out.print(e.getValue2());
+			System.out.print(e.getValue3());
+			System.out.println();
+		}
+		for (Chart d: collection){
+			if (d instanceof PieChart){
+				if (d.getValue2()>0){
+					((PieChart) d).stefan();
+				}
+			}
+		}
+		
+		for (Chart s:collection){
+		int sum=0;
+		sum=s.getValue1()+s.getValue2()+s.getValue3();
+		System.out.println(sum);
+		}
+		
+		
+	}
+
+}

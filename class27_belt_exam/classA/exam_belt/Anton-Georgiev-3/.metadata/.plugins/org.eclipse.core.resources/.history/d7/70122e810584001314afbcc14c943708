@@ -1,0 +1,7 @@
+package green;
+
+public class Chart {
+	protected int value1;
+	protected int value2;
+	protected int value3;
+}
