@@ -1,0 +1,36 @@
+Alexander Bonev
+Metodi Todorinov
+
+3.1
+	Android app - Movie Informer
+	>Problem - Saves time for browsing different websites. Research takes some time. Our application saves time.
+	- UI
+	*How to use the application
+	*Info about us
+	*Buttons, lables, etc.
+	- Parse IMBD when user types genre/name/actor
+	*Title
+	*Picture
+	*Genre
+	*Description
+	*Rating
+	*Actors
+	*Youtube trailer (if any)
+	*Link to download
+	*Subtitles (if any)
+	
+3.2
+	Android app - MP3 Madness 
+	>Problem - Research and conversion take some time. Our application saves time. 
+	- UI
+	*Field to type song or singer's name
+	*Button Search
+	*Page with all singer's songs / the song the user is searching for.
+	- Download the chosen song
+	*Direct link to download the video converted to .mp3 song
+	*History with all downloaded songs
+	**Sort the history by user's choice
+	- Rate Us before closing the app
+	*Send this rate to a mail of ours.
+	
+	
