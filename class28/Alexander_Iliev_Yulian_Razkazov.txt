@@ -1,0 +1,16 @@
+﻿Alexander Iliev
+Yulian Razkazov
+
+	I - "Become rich" is java application for Android
+		- The purpose of the game is to challenge the user and teach him at the same time.
+		- Your goal is to answer all questions and to get 1million unexisting dollars.
+		- The user has to go through 25 challenging questions with only 3 jokers to help him.
+		- The game will have leaderboard with top 5 results.
+		- At the end of the game next to the score will be present a clock with the user's time.
+	
+	II - "Don't give up" is a platform desktop game 
+		- The purpose of the game is to test the user's quickness in mind and fingers and to provoke the user to go as far as he can.
+		- To start playing user has to pay 5 dollars.
+		- If the user makes it to the end he will be awarded with 25 dollars, BUT if he gives up he won't get his money back.
+		- The user has unlimited lives and time for completing the task.
+	
