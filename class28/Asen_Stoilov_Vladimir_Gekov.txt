@@ -1,0 +1,30 @@
+Asen Stoilov
+Vladimir Gekov
+
+Ideas:
+
+1.3D combat game ,similar to Mortal Combat 4  for Linux based on the Unity Engine that has:
+	*own story
+	*singleplayer with AI players
+	*multyplayer with multiple playable characters with different fighting style
+	*different levels of difficulty for the AI players
+	*singleplayer tournament where the player could fight bosses and more powerful enemies
+	*fullscreen for the game
+	*multiple maps where the players could fight
+	*menu where you could choose those features
+	*link were you could see Mortal Combat 4 gameplay http://www.youtube.com/watch?v=Je0k3YVzXn0
+
+2.Musical player
+	*playlists
+	*sorting by:
+		-alphabetical
+		-singer
+		-genre
+		-albums
+	*volume control
+	*play/pause/stop buttons
+	
+	
+	
+	
+		
