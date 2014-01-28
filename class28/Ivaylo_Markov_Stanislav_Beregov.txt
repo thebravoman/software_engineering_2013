@@ -1,0 +1,57 @@
+Ivaylo Markov
+Stanislav Beregov
+
+2.5D DUNGEON CRAWLER
+	Problem: Today's video games entertaintment industry is ruled by
+	multi-million dollar first person shooters which offer better and better
+	graphics with each new generation but never change the core gameplay.
+	In the last decade or so gamers have been filling the pockets of greedy
+	video game publishing companies receiving the same product in a different
+	packaging. Better graphics have become the Holy Grail of gaming - who
+	needs entertaining gameplay? Our goal is to provide them with a game that
+	offers simplistic graphics but focuses on the gameplay experience itself,
+	making it fun, providing customisation options but without demanding too
+	much attention and complex strategies - another disadvantage of modern
+	video games.
+	
+	Features:
+		-map:
+			The game will offer an endless procedurally generated map that will
+			have three different themes /basements, a futuristic city with
+			buildings, and the interior of the buildings/ that change up
+			randomly.
+		-RPG system:
+			Each creature will have a set of basic characteristics which will
+			affect their attacks and abilities. There will be four playable
+			classes with unique attacks, each playing a different role in
+			multiplayer, but equally capable of fighting the enemies by
+			themselves in single player mode. Killing monsters will give
+			experience points which will allow the characters to level up and
+			upgrade their skills. The total amount of XP points will compete
+			for a place in the highscore.
+		-item system:
+			Players will be able to buy weapons and ammo from vending machines.
+			They will also be able to buy cybernetic upgrades /which enhance
+			their characteristics/ from special stations.
+		-enemies:
+			There will be close combat enemies that will try to surround the
+			player/s/, while ranged enemies attack them from a safe distance.
+		-multiplayer
+			Up to eight players will be able to team up in fighting the
+			enemies. The average of their XP points will be considered for the
+			highscore. There will also be a deathmatch mode where everyone
+			plays against everyone.
+
+APRS weather station
+	Problem: With the growth of the amateur radio Automatic Packet Reporting
+	System, there is a growing demand for a cheap and easy to deploy weather
+	stations that can easily send packets through Ethernet.
+	
+	Features:
+		-temperature measurement:
+			Measurements of the outside temperature with an accuracy of .01
+			degrees. Output units can be C/F/K
+		-desktop control software:
+			The software will connect the weather station to a computer, will
+			plot graphics of the measurements and send the data to the APRS
+			Internet server.
