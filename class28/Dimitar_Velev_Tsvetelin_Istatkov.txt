@@ -1,0 +1,15 @@
+Tsvetelin Istatkov
+Dimitar Velev
+
+Simple type-racer application.
+-The app will show segments of random come which the user has to type.
+-The user has one minute to write as much code as he can.
+-The final score is detirmined by the amount of correct code he has written.
+-The idea of the app is to train new programers to write code faster.
+
+Education helper - application.
+-First you type in your weekly classes.
+-Then after every homework or test you get notified about, you write down the task and its deadline in the diary. 
+-Three days before the deadline of every task you get notification about it,
+two days before - your acces to browsers is denied, except if the task is about programing.In the last day
+if the task is not done, you will be flamed by the app.
