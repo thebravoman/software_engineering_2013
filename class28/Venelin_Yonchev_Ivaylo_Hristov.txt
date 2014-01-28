@@ -1,0 +1,11 @@
+Venelin Yonchev
+Ivaylo Hristov
+
+  1 - 2D Side Scroller Action Adventure Game. With the Indie genre becoming more and more popular our game will be the next big thing. It will feature an options menu where you can set your key bindings, multiple levels, big boss fights, lots of attack moves and game progress. You will have an equipment menu and a stats base system for the character. Most of the equipment, the world and monsters designs will be made by ourselves (the rest will be made by people that offer free sprites).
+  The main unique feature of the game will be the 'switch' reality move. What this will do is change how the world and the monsters look and behave but it will also enhance your power for a short period of time. The harder levels will be impossible to beat without using the 'switch' move properly.
+  Features that might be added:
+          - 1v1 Battle Arenas. The players have access to the strongest equipment and spells and they make their own build and fight in intense 1v1 battles for glory.
+          - Web site where people can check their ranking and talk with friends (from the 1v1 arenas).
+ 
+  2 - 2D MOBA Game. League of Legends, Dota 2 and soon Heroes of the Storm, all MOBA games that are taking over the game market. But people don't always have time to play a full 30-60 minute game and there are many people that like the old style retro graphics. Our game will combine the MOBA and Indie genre to make something unique, fast, fun and replayable.
+  The game will have 1v1 and 3v3 battles and will feature 10-20 playable characters upon release. People will be able to talk via client and join games quickly. Every character will have his own 3 original spells and one ultimate ability. All of the sprites will be made by us.
