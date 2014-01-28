@@ -1,0 +1,35 @@
+Nedko Boshkilov
+Kaloyan Stoykov
+
+2D Shooter Game
+	Problem:		Giving people other choices to waste their time.
+	Features:		Sidescrolling
+					Keyboard (and possibly Mouse) Input
+					Checkpoints
+					Different Weapons
+					Enemies
+	Description:	You move through a level from left to right. Enemies approach from the right.
+					Each killed enemy gives you cash to spend on new weapons and weapon upgrades
+					at the shop. If enemies reach you they start taking your health. You may heal
+					from random drops during the level.
+					
+2D Attack/Defence Game
+	Problem:		Helping people to take decisions based on the current events.
+	Features:		Local (possibly Online) Multiplayer
+					Keyboard Input
+					possibly Defending Towers
+					Spawning small NPCs which assist your team
+	Description:	Two enemy teams having 1 player who evolves throughout the game. They gain
+					different skills to help them in the battle. The goal is to destroy the
+					enemy Castle. On the way there will be enemy towers to defend their
+					territory(not final). Small NPCs will spawn to help you destroy those towers
+					and the Castle. You will have a shop to upgrade your skills. Killed enemies
+					drop cash to spend in the shop.
+					
+Music Visualiser
+	Problem:		Aiding people in seeing the music.
+	Features:		Different effects
+					Toggleable track info
+	Description:	It detects music from the current default audio output device and performs
+					an analysis on the music to choose what effect to use and where on the
+					screen to display it.
