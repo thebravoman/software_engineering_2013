@@ -1,0 +1,16 @@
+Ivo Ivanov
+Vasil Momchilov
+
+1.Fanart site
+	-features:
+		a)different categories and sub-categories
+		b)you can upload, like, comment, share on the social medias and favourite pictures
+		c)if you are looking at a picture on the right side of it you can see the poplar pictures from the same category
+		d)the most liked picture of the week is on the front page for the next one
+
+2.Naruto themed platformer game
+	-features:
+		a)different playable characters
+		b)interesting storyline
+		c)dialogues
+		d)boss battles
