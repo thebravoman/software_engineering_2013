@@ -1,0 +1,17 @@
+Stoyan_Stoyanov_Petur_pelovski.txt
+
+UTF-8 without BOM
+
+Stoyan Stoyanov 1
+
+Petar Pelovski 2
+
+1 - Software that communicates with the board computer of a car, and shows the moment data of the engine.
+
+2 - Software that reads the engine rpms and plays, the corresponding turbo noise, true the laptop speakers.
+
+3 - Developing a mp3 player for Windows.
+
+4 - Developing a training application for the theoretic car exam.
+
+Stoyan_Stoyanov_Petur_pelovski.txt
