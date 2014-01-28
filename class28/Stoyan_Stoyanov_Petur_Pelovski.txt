@@ -1,4 +1,4 @@
-Stoyan_Stoyanov_Petur_pelovski.txt
+Stoyan_Stoyanov_Petur_Pelovski.txt
 
 UTF-8 without BOM
 
@@ -14,4 +14,4 @@ Petar Pelovski 2
 
 4 - Developing a training application for the theoretic car exam.
 
-Stoyan_Stoyanov_Petur_pelovski.txt
+Stoyan_Stoyanov_Petur_Pelovski.txt
