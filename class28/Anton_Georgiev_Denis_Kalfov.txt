@@ -1,0 +1,25 @@
+Anton Georgiev N3
+Denis Kalfov N10
+
+1) Sudoku solver
+    The first feature will be sudoku checker.
+        The sudoku checker will check if the grid is a valid sudoku.
+    
+    The second feature will be a sudoku generator.
+        The sudoku generator will generate a sudoku with 3 different difficulties.
+
+    The third feature will be a sudoku solver.
+        The sudoku solver will have two options.
+        The first one is to give you a hint(only one number).
+        And the second option will solve the entire sudoku.
+
+    The sudoku solver will help people who are new to sudoku to get the basics of sudoku down.
+
+2) Web site
+    In the menu in the upper section the user will choose what he want to do:
+        - solve quadratic equation
+        - solve logarithm task   
+
+    The website will save a lot of time for the users who are interested in the area of maths.
+    
+
