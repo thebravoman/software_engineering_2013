@@ -1,0 +1,23 @@
+Bozhidar Nikolov
+Kiril Kostadinov
+
+Desktop application, Instant Messaging Service
+We've had terrible experience with IM clients like Skype running on Linux (and maybe even on Windows) - they crash all the time for no apparent reason.
+Main features:
+ - Simple UI;
+ - Low resource usage;
+ - Contact list (isn't it obvious);
+ - Desktop popup alerts for incoming messages;
+ - Group discussions.
+
+Android application (written in Java), 2-player versus game
+Main features:
+ - Game consists of several simple minigames;
+ - Players play several random minigames against each other each match;
+ - Players get points based on their performance in each minigame;
+ - After a set amount of games played each match the player with the most points wins;
+ - Multiplayer is local - 2 players play on the same device;
+ - Features of each minigame:
+ 	- Each minigame must be relatively short (players don't want to play a 30-minute match);
+ 	- Each minigame must use a maximum of 2 fingers from each player (since many devices can track a maximum of 5 touches at any given time);
+ 	- Some phone features (such as motion sensor) are not very practical for such a game (we don't want the players wrestling to tilt the phone);
