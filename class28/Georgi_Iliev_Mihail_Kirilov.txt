@@ -1,0 +1,8 @@
+Georgi Iliev
+Mihail Kirilov
+
+1.1 Java Program for little kids
+1.2 The program will be like a drawbook .Kids can draw with a tablet (or mouse) on the computer thus reducing the trees cut for making draw books.
+1.3 It will be like a game fist the kid will be given basic outlines of shapes and on the persentage that they have drawn they will pass the 'level'
+1.4 The first leves will not reduce the inline persentage of the shape if the kid has drawn out of the shapes outline, but in the next levels as shapes get more complex the inline percentage will decrease as the kid paints away from the shape.
+1.5 There are possibilities that the kid will upload pictures and thus coloring his own picture, but this will be in the paid version
