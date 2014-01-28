@@ -1,0 +1,19 @@
+Martin Ivanov
+Hristiqn Zarkov
+
+1)Calendar for series
+
+Im sick and tired of searching information when will my favourite series be 
+aired. Our application will solve this problem.
+
+The application will parse the IMDB website and use the gained information
+in apropriate format for using it in a calender. The calender will have a user
+panel where you can choose which series you want to get information for.
+The information will be shown in a window when you move your mouse on the concrete day.	
+
+2)Our Game
+
+This will be a game for programing students.The player will play with one little character
+and he will walk and find a persons in the game who need of a program and the player must do it.
+We will make automatic tests for the code.We will add many programing languages like C,C++,Java,Ruby.
+The game will have a internet connecton with server to update the game with new tasks.
