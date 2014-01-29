@@ -25,10 +25,7 @@ Stanislav Beregov
 			affect their attacks and abilities. There will be four playable
 			classes with unique attacks, each playing a different role in
 			multiplayer, but equally capable of fighting the enemies by
-			themselves in single player mode. Killing monsters will give
-			experience points which will allow the characters to level up and
-			upgrade their skills. The total amount of XP points will compete
-			for a place in the highscore.
+			themselves in single player mode.
 		-item system:
 			Players will be able to buy weapons and ammo from vending machines.
 			They will also be able to buy cybernetic upgrades /which enhance
@@ -36,6 +33,11 @@ Stanislav Beregov
 		-enemies:
 			There will be close combat enemies that will try to surround the
 			player/s/, while ranged enemies attack them from a safe distance.
+		-singleplayer:
+		 	Killing monsters will giv experience points which will allow the 
+		 	characters to level up and upgrade their skills. The total amount
+		 	of XP points will compete for a place in the highscore.
+			
 		-multiplayer
 			Up to eight players will be able to team up in fighting the
 			enemies. The average of their XP points will be considered for the
@@ -45,13 +47,25 @@ Stanislav Beregov
 APRS weather station
 	Problem: With the growth of the amateur radio Automatic Packet Reporting
 	System, there is a growing demand for a cheap and easy to deploy weather
-	stations that can easily send packets through Ethernet.
+	stations that can easily send packets through a number of physical media.
 	
 	Features:
-		-temperature measurement:
+		-various measurements:
 			Measurements of the outside temperature with an accuracy of .01
-			degrees. Output units can be C/F/K
-		-desktop control software:
-			The software will connect the weather station to a computer, will
-			plot graphics of the measurements and send the data to the APRS
-			Internet server.
+			degrees. Barrometric pressure, humidity, maybe wind speed.
+		-AFSK 1200 baud output:
+			Ready for a direct connection to a 144 MHz transmitter including adjustable
+			output level (for VOX) and PTT control.
+		-USB:
+			Will be used as a way to configure the device and receive measurements.
+		-desktop software:
+			Configures the device through USB, receives the data, plots it and also
+			submits it to the APRS-IS.
+		
+	
+			
+			
+			
+			
+			
+			
