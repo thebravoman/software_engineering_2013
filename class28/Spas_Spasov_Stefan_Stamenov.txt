@@ -6,7 +6,7 @@ School EDiary for teachers
 	-Diary for every class in the school
 	-Maybe e-mails for info to Parents
 	-Term evaluation for every student
-Musik player
+Music player
 	-Playlist
 	-Buttons - play,next,previous,pause,stop
 	-Sort by name

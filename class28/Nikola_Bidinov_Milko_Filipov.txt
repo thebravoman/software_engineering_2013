@@ -1,0 +1,24 @@
+Nikola Budinov
+Milko Filipov
+
+First Idea:
+
+The Day game!
+
+You play one day of a random person's life.  You will have to take decisions and depending on what you choose 
+you will get several completely different endings.
+
+Features:
+  - Sound and music.
+  - Decision making.
+  - Alternet endings.
+  
+
+Second Idea:
+
+Dress up game
+
+Features:
+  - Many different colours and styles of clothes
+  - Customizable characters
+  

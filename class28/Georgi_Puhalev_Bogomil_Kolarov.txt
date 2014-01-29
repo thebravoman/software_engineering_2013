@@ -1,0 +1,77 @@
+Georgi Puhalev
+Bogomil Kolarov
+
+---> VIC Note <---
+An Android note creator and editor with integrated voice recording, image attachment and camera support.
+
+This is how VIC Note will make your everyday life easier:
+	- Research smarter: snap photos of whiteboards and books
+	- Take meeting and class notes, draft agendas and research notes
+	- Plan a trip: keep track of travel plans, plane tickets and passports
+	- Organize and save recipes; search by ingredients later
+	- Create a grocery list or task list and check things off as you go
+	- Capture ideas and inspiration on the go
+	- Keep finances in order: save receipts, bills and contracts
+	- Reduce paper clutter by taking snapshots of restaurant menus, business cards and labels
+
+Features:
+	1. Text note
+		- text writing and editing
+		- multiple notes
+		- cool background
+		- .txt
+	2. Voice recording
+		- the user can attach a voice record to every note
+		- the voice record can be re-recorded multiple times
+		- the records' length is up to 30 seconds
+	3. Image attachment
+		- the user can attach an image (one) to every note
+		- the image can be replaced with another one or deleted
+		- the image is selected through the device's built-in gallery
+	4. Camera support
+		- the user can take an image with the device's built-in camera (if one is available)
+		- the image can be replaced with another one or deleted
+	5. URL support
+		- if there is an URL address in the note, upon clicking on it, it will be opened in the default browser
+
+
+
+
+
+
+---> MineCube <---
+The classic game Minesweeper to the next level! The mine field is a 3D cube that can be rotated in all directions. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

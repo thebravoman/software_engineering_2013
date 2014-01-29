@@ -1,0 +1,38 @@
+Kaloyan Pavlov
+Martin Kuzev
+
+Problem I : Video Player
+		Description:
+		A simple, yet stylish video player, which supports a big range of video formats.
+		The simple interface will allow every user to take full advantage of the features
+		we provide.
+		
+		
+		
+		Features:
+		-Wide range of video formats(mp4,wmv,avi,flv,etc,etc...); 
+		-All normal features - play,pause,fast forward,rewind,stop,skip,scaling;
+		-Subtitles;
+		-List of favourites(Add,remove,new list, order of play);
+		-SDASDsadsad
+		-We may also add a video converter to the video player in case of a format it
+		cannot play;
+		
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem II : Web site with mini-games
+		Description
+		Simple user interface, entartaining single-player mini-games.
+		
+		
+		
+		Features
+		-User accounts;
+		-Playable with no account;
+		-Highscores(ACC_ONLY);
+		-Ranking(ACC_ONLY);
+		-Games : 
+			* Brain games;
+			* Action games;	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

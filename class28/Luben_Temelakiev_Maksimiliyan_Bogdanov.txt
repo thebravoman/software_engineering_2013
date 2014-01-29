@@ -1,0 +1,21 @@
+Luben Temelakiev
+Maksimiliyan Bogdanov
+ 
+Project 1 : Fitness program developing web-site
+        Functions:
+                Develops a personal fitness and nutrition program based on your :
+                        -Age
+                        -Height
+                        -Weight
+                        -Body type
+                        -Body fat
+                        -Activity
+                        -Goals...
+                The program will include:
+                        -Sample workouts
+                        -Suitable Diet
+                        -Supplements that might help you reach your goal faster
+                        -Personal schedule
+                       
+                       
+Project 2 : Under development...
