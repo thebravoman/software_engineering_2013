@@ -5,20 +5,27 @@ Emil Dudev
 
 Tehnologies:
 	C++, Lua/Python, OpenGL(with GLEW, GLFW, GLM)
-Idea:
-1. Create a multiplayer battle arena where the player chooses a hero and fights monsters and other heroes.
+Ideas(choose one):
+1. Create a multiplayer battle arena where the player chooses a hero and fights monsters and/or other heroes.
 2. Multiplayer platformer(co-op) with campaign.
 
 Milestones:
 1st month: A scene with movable objects.
 	1. Add/Improve assert support.
-	2. Add property compiler with key-value pairs(csv file) and a system for queries.
+	2. Add property compiler for key-value pairs and a system for queries.
 	3. Add/Fix the resource loader based on 2.
-	4. Add support for texturing + PNG.
+	4. Add support for texturing. Maybe PNG decoder.
 	5. Automate the creation of objects.
-2nd month...
-
-
-...
-
-TO be continued.
+2nd month: Basic game logic.
+	6. Add a scripting language
+	7. Scene store/load
+	8. Seperate rendering from logic(threads). Add thread pool for general tasks.
+	9. Event handling, movable hero with basic controls and attacks
+	10. Sound system. Maybe opus decoder + playback.
+3rd month: A playable game.
+	11. Add at least 3 heroes and 2 arenas.(if idea 1)
+	11. Add 1 hero and 5 levels with storyline.(if idea 2)
+	12. Extend shader support and add post-processing.
+	13. Add loading screens & menus.
+	14. Add multiplayer support.
+	15. Automate the asset build process. Pack game resources. Make gold-master build.
