@@ -2,5 +2,5 @@ Pressian Abarov
 Ivan Zorov
 
 Multiplayer Pong with WebGL /
-Vacuum Cleaner Simulator /
+Vacuum Cleaner Simulator with WebGL /
 Web Crawler
