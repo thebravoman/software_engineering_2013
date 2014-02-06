@@ -3,4 +3,5 @@ Ivan Zorov
 
 Multiplayer Pong with WebGL /
 Vacuum Cleaner Simulator with WebGL /
+3D Avatar Chatroom with WebGL /
 Web Crawler
