@@ -38,11 +38,18 @@ Features:
 
 
 
-
 ---> MineCube <---
-The classic game Minesweeper to the next level! The mine field is a 3D cube that can be rotated in all directions. 
+The classic game Minesweeper to the next level for Android! The mine field is a 3D cube that can be rotated in all 
+directions. 
 
+Two options for tapping on screen: 
+-Flag
+-Mine
 
+Three field difficulties:
+-Small Cube
+-Medium Cube
+-Large Cube
 
 
 
