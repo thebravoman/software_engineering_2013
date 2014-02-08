@@ -1,7 +1,6 @@
 Pressian Abarov
 Ivan Zorov
 
-Multiplayer Pong with WebGL /
-Vacuum Cleaner Simulator with WebGL /
-3D Avatar Chatroom with WebGL /
-Web Crawler
+Vacuum Cleaner Simulator /
+3D Avatar Chatroom /
+3D Adventure Game 
