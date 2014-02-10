@@ -3,15 +3,12 @@ Milko Filipov
 
 First Idea:
 
-The Day game!
-
-You play one day of a random person's life.  You will have to take decisions and depending on what you choose 
-you will get several completely different endings.
+You will play through the life of a person starting from the very beggining.
+You will have to take many important decisions which will ultimately change the entire life of the character.
 
 Features:
   - Sound and music.
-  - Decision making.
-  - Alternet endings.
+  - 2D graphics.
   
 
 Second Idea:
@@ -21,4 +18,3 @@ Dress up game
 Features:
   - Many different colours and styles of clothes
   - Customizable characters
-  
