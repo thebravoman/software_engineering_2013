@@ -3,7 +3,7 @@ Vladimir Gekov
 
 Ideas:
 
-1.3D combat game ,similar to Mortal Combat 4  for Linux based on the Unity Engine that has:
+1.3D combat game ,similar to Mortal Combat 4  for Windows based on the Unity Engine that has:
 	*own story
 	*singleplayer with AI players
 	*multyplayer with multiple playable characters with different fighting style
