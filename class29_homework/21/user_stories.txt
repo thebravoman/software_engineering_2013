@@ -1,0 +1,40 @@
+Watch1t
+
+High priority:
+
+	---1---
+	Title: Searching for series.
+	Description: Find information about series by giving their name.
+
+	---2---
+	Title: Episodes air date.
+	Description: Analyse information about series for their episodes air date.
+
+	---3---
+	Title: Searching by date.
+	Description: Listing all episodes which are aired after a given date.
+
+Medium priority:
+
+	---1---
+	Title: Discussion.
+	Description: Comments about the episodes.
+
+	---2---
+	Title: User support.
+	Description: Everybody could give information about them and their favourite series.
+
+	---3---
+	Title: Subscription.
+	Description: Users should recieve massages about upcoming episodes.
+
+	---4---
+	Title: Comments feedback.
+	Description: Users should recieve massages, if there are any new comments.
+
+Low priority:
+
+	---1---
+	Title: Promos.
+	Description: Search youtube for episodes promos.
+
