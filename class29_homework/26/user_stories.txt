@@ -1,0 +1,32 @@
+<== High Priority ==>
+Title: 14-days weather forecast
+Description: One of the sections of the menu should provide information about the weather in the next 14 (by default) days.
+
+Title: Hourly Forecast
+Description: One section of the menu will display hourly weather forecast for the current day.
+
+Title: Localisation by IP
+Description: The app will get the user's current location from his IP address, in order to provide adequate weather data.
+
+<== Medium Priority ==>
+Title: Live Wallpaper
+Description: The weather data changes the device's wallpaper.
+
+Title: Different Weather Data
+Description: The user will be able to switch between different forecast modes by swiping left or right in the app.
+	
+Title: GPS Localisation
+Description: The app will be able to use the device's GPS (if available) to provide more accurate location data at the cost of reduced battery life.
+
+Title: Automatic refresh
+Description: The app will be able to automatically refresh it's content at an interval set by the user (default will be 1 hour).
+
+<== Low Priority ==>
+Title: Customizable forecast for the next days
+Description: The user will be able to select the number of days (default is 14) he wants to see for the forecast.
+
+Title: Refresh
+Description: The user will be able to refresh the weather data at any time by pressing a button on the main screen.
+
+Title: Change units
+Description: The user will be able to change between Imperial and Metric units.
