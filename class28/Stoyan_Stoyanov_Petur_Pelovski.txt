@@ -14,4 +14,6 @@ Petar Pelovski 2
 
 4 - Developing a training application for the theoretic car exam.
 
+5 - 2d game, sort of flappy bird foe Windows.
+
 Stoyan_Stoyanov_Petur_Pelovski.txt
