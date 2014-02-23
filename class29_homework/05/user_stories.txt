@@ -1,0 +1,40 @@
+2D RPG Game - 2SR Adventures
+
+	highPriority
+	{
+		- Title: Character
+		- Description: A customizable character which you can control
+
+		- Title: Environment
+		- Description: Many places which the character can visit
+
+		- Title: Non-Playable Characters
+		- Description: Characters that can interact with the player and vice-versa
+
+		- Title: Choices
+		- Description: Different choices in different situations that will change the world around you
+	}
+
+	mediumPriority
+	{
+		- Title: Mini-Games
+		- Description: A ton of different mini-games which the player can play only at certain places
+
+		- Title: Menu/User interface
+		- Description: A starting menu where the player can load games and a user interface which the player can access while playing
+
+		- Title: Journal
+		- Description: The player will have access to a diary where he can see the people he has met, the places he has went and the choices he has made
+
+		- Title: Player stats
+		- Description: The player will have different bars that show his abilities or needs (ex. stamina, hunger level)
+	}
+
+	lowPriority
+	{
+		- Title: Sounds
+		- Description: Sounds and background music
+
+		- Title: Map
+		- Description: The player will have access to a map that will get more complete the more he explores
+	}
