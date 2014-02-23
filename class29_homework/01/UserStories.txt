@@ -1,0 +1,39 @@
+Your fitness plan (Website)
+
+High priority:
+
+	---1---
+		Title: Login system.
+		Description: Being able to log in.
+
+	---2---
+		Title: Body parameters input.
+		Description: Being able to enter your body parameters.
+	
+	---3---
+		Title: Personal routine
+		Description: Based on your input it makes a routing that would fit you.
+
+Medium priority:
+
+	---1---
+		Title: Exercises
+		Description: Gives information and instructions about common exercises .
+
+	---2---
+		Title: Diet 
+		Description: What kind of food should you eat in order to reach your goals.
+
+	---3---
+		Title: Supplements
+		Description: Gives you an idea of which supplements will work best for you.
+
+Low priority:
+
+	---1---
+		Title: Common mistakes 
+		Description: Gives you and idea of how NOT to do exercises and why.
+
+	---2---
+		Title: Different sports suggestions
+		Description: Gives ideas about sports other than fitness that you could try out.
