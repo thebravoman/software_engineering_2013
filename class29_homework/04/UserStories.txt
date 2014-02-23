@@ -1,0 +1,33 @@
+High priority:
+
+	---1---
+		Title: Showing a question.
+		Description: Chooses question and showing it with it's own answers.
+
+	---2---
+		Title: Submitting answers.
+		Description: Check if the answer is true, choose next question and raise score number.
+		
+Medium priority:
+
+	---1---
+		Title: Jokers.
+		Description: Adding Jokers to help player advance in the game.
+
+	---2---
+		Title: Online Scoreboard.
+		Description: Online Scoreboard to compete with other players.
+
+	---3---
+		Title: Switch to camera.
+		Description: Players can fast switch to camera mode to take some fast photos, when they are in class.
+
+Low priority:
+
+	---1---
+		Title: Background change.
+		Description: Gives the player option to choose background color or even set his own picture as background.
+		
+	---2---
+		Title: Subscription.
+		Description: Players should recieve e-mails if they got their score beaten.
