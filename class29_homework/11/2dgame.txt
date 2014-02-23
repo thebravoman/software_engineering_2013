@@ -1,0 +1,33 @@
+High{
+		Title: Obsticles
+			Description: The game must have a moving obsticles.
+		
+		Title: Cat
+			Description: A cat that will be the main charecter of the game.
+			
+		Title: Cat control
+			Description: The cat has to be jump when you press a button.
+		
+		Title: Background
+			Description: Fixed background.
+	}
+	Medium{
+		Title: Sounds
+			Description: The game must have sounds with option of stoping them.
+			
+		Title: Different songs
+			Decsription: You must be able to choose diferent songs for the game.
+		
+		Title: Menu
+			Description: The game must have menu.
+			
+		Title: Gradation of hardness
+			Description: The game must become harder, at the end.
+	}
+	Low{
+		Title: Multiple controls
+			Description: The cat must be controled from several butons.
+		
+		Title: Several modes
+			Description: The game must have three levels of hardness(easy medium hard).
+	}
