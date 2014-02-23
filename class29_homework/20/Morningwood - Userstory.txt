@@ -1,0 +1,31 @@
+Morningwood (Android app)
+
+High Priority:
+Title: Chat System
+Real time chat system and message system 
+
+Title: Uploading photos
+Uploading photo will be required with registration.
+
+Medium priority:
+Title: Friendly user interface
+Menu with: my profile, search, vote, friend, etc.
+
+Title:Registration form
+Simple registration, log in and log out
+
+Title: Friends system
+Add/remove/block other profiles
+
+Title: Vote page
+All users will be shown in one page with 1-10 votes system
+
+Title: Search bar
+Searching by name or characteristics
+
+Low priority:
+Title: Phonebook integration
+If profile is added as friend and it's got a phone number in it it appears in phonebook
+
+Title: Social Media integration
+Facebook, twitter, instagram etc sharing
