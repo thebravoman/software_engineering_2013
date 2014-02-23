@@ -1,0 +1,28 @@
+Desktop application named "Math preparation" developed on JAVA:
+
+HIGH:
+
+1.
+  -Math Problems with optional answers
+  -Problems whitch have four optional answers and only one is the right one.
+2.
+  -Math Problems with open answers
+  -Problems whitch have text box in whitch user must put the answer he thinks is right.
+3.
+  -Combined problems
+  -Problems like a real exam: 10 optional answers and 4 or 5 open answers.
+4.
+  -Timelimit
+  -A timer for real simulator.
+
+MEDIUM:
+
+5.(optional)
+  -Grade
+  -Grade for the exam simulation.
+
+LOW:
+
+6.
+  -Design
+  -Background,Button Styles
