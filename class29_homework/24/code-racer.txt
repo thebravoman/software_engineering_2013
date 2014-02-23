@@ -1,0 +1,20 @@
+High:
+1.User Interface : a simple user interface with several options.
+
+2.The ability to chose between different programming languages.
+
+3.The ability to chose between different difficulties and time limit.
+
+4.The application must check if the code written by the user is correct.
+
+Medium:
+5.A button that resets the timer and swaps the current code with different code.
+
+6.A leaderboard that shows the top 10 highscores.
+
+7.At the end of the run the application must show how many correct words the user has gotten.
+
+Low:
+8.A more visually attractive interface with different colors.
+
+9.Practice mode in which there is no time limit.
