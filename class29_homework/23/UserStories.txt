@@ -1,0 +1,22 @@
+High priority:
+		Video playback : play, pause, stop, rewind, fast-forward (buttons)
+		Basic video types maintenance
+		Audio playback : volume up, volume down (buttons)		
+Medium priority:
+		Scaling
+		Menu where you can tweak the player, before you play a video
+		Main video playback screen
+		Subtitles
+Low priority:
+		Play list
+		Designs for each separate part of the video player	
+		Repeat
+		
+/* ********** Things to finish **********
+	*
+	* Video converter, inbuilt with the player
+	* Different  types of skins
+	* Volume booster
+	* Capture(Screen shot of video)
+	*
+***************	End things *********** */
