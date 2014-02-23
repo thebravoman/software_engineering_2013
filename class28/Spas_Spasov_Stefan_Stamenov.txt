@@ -1,15 +1,13 @@
 Spas Spasov
 Stefan Stamenov
 
-School EDiary for teachers
-	-Marks with different colors
-	-Diary for every class in the school
-	-Maybe e-mails for info to Parents
-	-Term evaluation for every student
-Music player
-	-Playlist
-	-Buttons - play,next,previous,pause,stop
-	-Sort by name
-	-Sort by added date
-	-Equalizer
-	-background
+Math preparation
+	-Practice problems
+	-Exam simulation with timer
+	-Combined type of problems
+	-GUI
+"National Lottery" with Unity
+	-The game "Road to the car"
+	-The game with safes
+	-The game Bigger or Lower number
+
