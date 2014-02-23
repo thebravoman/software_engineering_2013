@@ -1,0 +1,18 @@
+PROJECT THIRTEEN ( Amazon Delivery Drone simulator )
+Pressian Abarov, Ivan Zorov
+
+
+High Priority:
+  3D Model Loading
+  World Loading
+  Camera Controls
+  
+Medium Priority:
+  Pathfinding AI
+  Landing AI
+  Path Controls
+  
+Low Priority:
+  Visual and sound FX
+  Air flow physics
+  ???
