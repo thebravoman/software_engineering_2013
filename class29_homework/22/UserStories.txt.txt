@@ -1,0 +1,12 @@
+High priority:
+	  Drawing
+	  User interface
+	  Open/Save drawings
+Medium priority: 
+	  Swtiching Brush
+	  Changing Brush Size 
+	  Adding Shapes
+Low priority:
+	  Music
+	  Post drawings in social networks 
+	  Undo,Redo,Clear buttons
