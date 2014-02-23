@@ -1,0 +1,30 @@
+2D Adventure Game
+
+
+High Priority:
+
+  - Character
+      - Movable character which you can control.
+  
+  - Backgrounds
+      - Different backgrounds for the character
+      
+  - The story
+      - Think of the story of the game
+      
+      
+Medium Priority
+
+    - Character sheet
+        Different player stats varying according to the game's progress
+        
+    - Map  
+        A map where you can see where are you, which maps you have explored and which you haven't
+    
+    
+Low Priority
+
+    - Background Music
+    
+    - Different sound effects
+    
