@@ -3,7 +3,7 @@ Kaloyan Stoykov
 
 2D Shooter Game
 	Problem:		Giving people other choices to waste their time.
-	Features:		Sidescrolling
+	Features:		Scrolling Level
 					Keyboard (and possibly Mouse) Input
 					Checkpoints
 					Different Weapons
