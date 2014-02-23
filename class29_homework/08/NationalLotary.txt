@@ -1,0 +1,30 @@
+Unity Game
+
+National Lotary
+
+HIGH:
+3 types of games
+
+ * The way to the car
+    - The price of the car will be shown. Conter will rotate the digits of the price. 
+      And you, by clicking button must stop the counter on the correct digit. At first you'll have 3 coins.
+      On every click you'll loss coins, as much as the difference between the correct digit and yours.
+      The first, who loss his coins, he lost loss the game!
+      
+ * The safes
+    - There is 8 safes. In 3 of them are hidden 'X'. In the ohters are hidden different money.
+      The loser is this, who open the first 2 of the 3 'X'. 
+      
+ * Question roulette
+    - You will be asked questions. Every next question, will give you more money. There will be 10 question.
+      The winner is this, who answer more questions then the other.
+
+
+MEDIUM:
+ * Multiplayer 
+    -otherwise play against the PC
+
+
+LOW:
+ * Sound and better efeffects
+
