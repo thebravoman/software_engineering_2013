@@ -1,0 +1,24 @@
+High{
+		Title: Categories
+			Description: Tha app must have questions for diferent categories.
+		
+		Title: Random questions
+			Description: The app must ask random questions.
+			
+		Title: Background
+			Description: The app must have a background fon.
+	}
+	Medium{
+		Title: Pictures
+			Description: Showing pictures for the questions in wich they are needed.
+		
+		Title: Points
+			Description: Showing the sum of the points that yo have scored.
+	}
+	Low{
+		Title: Pass or not
+			Description: Showing you if you had passed or not the exam.
+		
+		TItle: Look back
+			Description: You must be able to look at your mistakes.
+	}
