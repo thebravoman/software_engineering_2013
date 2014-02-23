@@ -1,0 +1,42 @@
+VIC Note
+
+Georgi Puhalev & Bogomil Kolarov
+11a klas
+Project 06
+
+
+High priority{
+
+  --> 1 <--
+  Title:  Text editor
+  Description:  Creating a text editor to use when creating and editing notes
+  
+  --> 2 <--
+  Title:  Note
+  Description:  Entering and saving multiple notes
+
+}
+
+Medium priority{
+  
+  --> 1 <--
+  Title:  Camera
+  Description:  Taking or choosing an existing picture and attaching it to the note
+  
+  --> 2 <--
+  Title:  Voice recording
+  Description:  Making a voice record and attaching it to the note
+  
+  --> 3 <--
+  Title:  URL
+  Description: Opening a link in the default browser
+  
+}
+
+Low priority{
+  
+  --> 1 <--
+  Title: Interface
+  Description: Designing and implementing the GUI
+
+}
