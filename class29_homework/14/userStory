@@ -1,0 +1,29 @@
+HIGH
+title:Basic characters
+The models and animations of the firs two playable characters.
+
+title: physics
+The interaction between the characters.
+
+title: enemy AI
+The artificial intelligence of the enemy player.
+
+MEDIUM
+title:Maps
+Maps where the characters could fight.
+
+title:Other charcaters
+Two more characters
+
+title: Physics
+The interaction between the other characters.
+
+LOW
+title: Menu
+The game menu.
+
+title: Chalange
+Chalange with 3 levels that the player could play.
+
+title: Multyplayer
+Lan multyplayer.
