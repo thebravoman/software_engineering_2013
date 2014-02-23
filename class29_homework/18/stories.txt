@@ -1,0 +1,31 @@
+2D action adventure platformer(side-scroller)
+
+Major {
+	Main character {
+		Move horizontally, jump & other as required by the gameplay.
+	}
+	2d game world {
+		2d tile based world with dynamic objects(main char/creeps/some traps)
+	}
+	Enemies {
+		AI controlled creeps.
+	}
+	Music & sound { }
+}
+Minor {
+	User interface { 
+		1. Main menu
+		2. Level selection (Progress bar also)
+		3. Player stats while ingame
+		4. Loading screen
+		5. Options
+	}
+	Backgrounds { Draw something behind the tiles. }
+	Graphics {
+		Particle effects mainly for the combat movements.
+	}
+}
+
+Trivial {
+	Multiplayer { co-op.  }
+}
