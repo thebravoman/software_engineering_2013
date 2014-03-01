@@ -17,5 +17,5 @@ LOW
 	
 	
 EXTRA
-  Title:LAN support
-  Description:Local Area Network support versus play.
+  	Title:LAN support
+  	Description:Local Area Network support versus play.
