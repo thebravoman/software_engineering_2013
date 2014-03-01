@@ -55,5 +55,11 @@
             Title: Skills/Magic
             Description: Usable items that can be bought in the shops that have a special effect on the player and the enemies
         }
+        
+        №2
+        {
+            Title: Gamepad Support
+            Description: Input via a Gamepad
+        }
     }
 }
