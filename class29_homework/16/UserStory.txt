@@ -3,7 +3,8 @@ Duels of the Ancients - Card game based on DotA influenced by Yu-Gi-Oh
 HIGH
 
 	Title:Game Logic/Simulation
-	Description:Players receiving/picking cards, ability to play them.Implementing all the game situations such as attack/fight/heal/victory/defeat/etc
+	Description:Players receiving/picking cards, ability to play them.
+	Implementing all the game situations such as attack/fight/heal/victory/defeat/etc
 
 MEDIUM
 
