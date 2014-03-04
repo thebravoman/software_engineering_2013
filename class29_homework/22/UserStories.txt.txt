@@ -1,12 +1,34 @@
+DrawIt(Desktop) - Can be done on Android, not the final name.
+
 High priority:
-	  Drawing
-	  User interface
-	  Open/Save drawings
+
+	Title: Drawing
+	Description: You can draw
+	
+	Title: User interface
+	Description: Button, switches, sliders and all
+	
+	Title: Open/Save drawings
+	Description: You can open, edit picture, save picture
+
 Medium priority: 
-	  Swtiching Brush
-	  Changing Brush Size 
-	  Adding Shapes
+	
+	Title: Swtiching Brush
+	Description: Different shape brushes
+	
+	Title: Changing Brush Size 
+	Description: 
+	
+	Title: Adding Shapes
+	Description: Drawing not only with brushes, but with shapes as well.
+
 Low priority:
-	  Music
-	  Post drawings in social networks 
-	  Undo,Redo,Clear buttons
+
+	Title: Music
+	Description: There will be a music playing while you are in the 'App'.You can change the music if you don't like it.
+
+	Title: Post drawings in social networks 
+	Description: --
+
+	Title: Undo,Redo,Clear buttons
+	Description: Adding more functionality to the "App"
