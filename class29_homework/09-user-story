@@ -10,18 +10,14 @@ High priority:
 	Title: Uploading art
  	Description: Every user can upload his own arts.
 
-	3:
-	Title: Social media
- 	Description: Users can share their drawings in facebook,
-	twiter,google+ ,instagram etc.
-
 
 Medium priority:
 
 	1:
-	Title: User support
- 	Description:User can give information about them and 
-	their favourite arts and animes.
+	Title: Social media
+ 	Description: Users can share their drawings in facebook,
+	twiter,google+ ,instagram etc.
+
 	
 	2: 
 	Title: Discussion
@@ -34,7 +30,8 @@ Medium priority:
 Low priority:
 
 	1:
-	Title: 
- 	Description:	
+	Title: User support
+ 	Description:User can give information about them and 
+	their favourite arts and animes	
 
 	
