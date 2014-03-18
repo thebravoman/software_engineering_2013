@@ -1,5 +1,5 @@
 Title: Update of the information
-Description: You can get date information
+Description: You can get up to date information
 
   Task1 - Weekly update of the database. (Martin)
   
@@ -30,11 +30,4 @@ Description: There should be several types of users.
 
   Task1 - Different access to the application by the type of user account.
   
-  Task2 - To be continued.
-  ...
-
-----------------------------------------------------------------------------------------------------------
-Title: 
-
-
-
+  Task2 - Administrators can change the type of an account.
