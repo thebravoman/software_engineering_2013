@@ -11,7 +11,7 @@
         №2
         {
             Title: Enemies
-            Description: AI controlled enemies having for only purpose to kill the player
+            Description: Computer controlled enemies having for only purpose to kill the player
         }
         
         №3
