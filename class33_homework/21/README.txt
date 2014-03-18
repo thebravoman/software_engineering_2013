@@ -3,7 +3,7 @@ Description: You can get up to date information
 
   Task1 - Weekly update of the database. (Martin)
   
-  Task2 - Button for instant update of the information for a concreet serie. (Martin)
+  Task2 - Button for instant update of the information for a concrete serie. (Martin)
 
 ----------------------------------------------------------------------------------------------------------
 Title: Comments
