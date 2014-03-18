@@ -14,7 +14,7 @@
   
   --> 3 <--
   Title: Manage Favourites/Recordings
-  Description: A seperate "Favourites" menu where the user can view, play, sort and delete his favourite tracks.
+  Description: A seperate "Favourites/Recordings" menu where the user can view, play, sort and delete his favourite tracks.
     Task 1: Designing the menu(layout, buttons, scrollable area for the tracks) - Nedelcho Delchev
     Task 2: Adding to favourites - Georgi Ivanov
     Task 3: Switching the view between "favourites" and "recordings" and vice versa - Georgi Ivanov
