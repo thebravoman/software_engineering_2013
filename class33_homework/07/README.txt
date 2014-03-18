@@ -16,12 +16,12 @@
   Title: Add To Favourites
   Description: Adding the track that is playing to a favourites list.
     Task 1: "Add to favourites" button - Nedelcho Delchev
-    Task 2: Writing the tracks info in csv - Georgi Ivanov
+    Task 2: Writing the tracks info in a csv for the favourite tracks - Georgi Ivanov
   
   --> 4 <--
   Title: Favourites/Recordings menu
   Description: A seperate "Favourites/Recordings" menu where the user can view, sort, play, delete, his favourite tracks and his recordings.
-    Task 1: Designing the menu - Nedelcho Delchev
+    Task 1: Designing the menu(layout, buttons, scrollable area for the tracks) - Nedelcho Delchev
     Task 2: Making a sorting button from which the user can sort the tracks by "most played" - Georgi Ivanov
     Task 3: Adding a button for deleting tracks - Georgi Ivanov
     Task 4: Adding the option to be able to see the user's most commonly used choice of key, mode and style - Georgi Ivanov
