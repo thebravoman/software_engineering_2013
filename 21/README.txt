@@ -24,3 +24,17 @@ Description: User can send email to the application administrators.
   Task2 - User can choose which administrator to contact. (Hristiqn)
   
   Task3 - User can send an email to the choosen administrator. (Hristiqn)
+--------------------------------------------------------------------------------------------------------------------------
+Title: Account Management
+Description: There should be several types of users.
+
+  Task1 - Different access to the application by the type of user account.
+  
+  Task2 - To be continued.
+  ...
+
+-------------------------------------------------------------------------------------------------------------------------
+Title: 
+
+
+
