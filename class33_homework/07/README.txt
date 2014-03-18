@@ -22,11 +22,11 @@
     Task 5: Deleting tracks - Georgi Ivanov
     
   --> 4 <--
-	Title: Recording
-	Description: Being able to record your soloing over the track.
-		Task 1: Recoring from the mic - Nedelcho Delchev
-		Task 2: Saving the mp3 file in a local directory - Nedelcho Delchev
-		Task 3: Sharing your recordings in the web - Nedelcho Delchev
+  Title: Recording
+  Description: Being able to record your soloing over the track.
+    Task 1: Recoring from the mic - Nedelcho Delchev
+    Task 2: Saving the mp3 file in a local directory - Nedelcho Delchev
+    Task 3: Sharing your recordings in the web - Nedelcho Delchev
   
 Repo:
 https://github.com/georgi-ivanov-tues/guitar_backing_track_generator_for_android
