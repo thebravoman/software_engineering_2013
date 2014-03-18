@@ -31,3 +31,14 @@ Description: There should be several types of users.
   Task1 - Different access to the application by the type of user account.
   
   Task2 - Administrators can change the type of an account.
+----------------------------------------------------------------------------------------------------------
+Title: Series information
+Description: User can check the information for series.
+
+  Task1 - Description for the serial.(Martin)
+  
+  Task2 - User can download a torrent with all epizodes for concrete season of concrete serie.(Hristiqn)
+  
+  Task3 - User can download a torrent for concrete epizode.(Hristiqn)
+  
+  Task4 - Click to watch the embedded video from YouTube.(Martin)
