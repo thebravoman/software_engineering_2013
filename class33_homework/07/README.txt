@@ -22,9 +22,7 @@
   Title: Favourites menu
   Description: A seperate "Favourites" menu where the user can view, sort, play, delete, his favourite tracks.
     Task 1: Designing the menu(layout, buttons, scrollable area for the tracks) - Nedelcho Delchev
-    Task 2: Making a sorting button from which the user can sort the tracks by "most played" - Georgi Ivanov
-    Task 3: Adding a button for deleting tracks - Georgi Ivanov
-    Task 4: Adding the option to be able to see the user's most commonly used choice of key, mode and style - Georgi Ivanov
+    Task 2: Adding a button for deleting tracks and deleting them - Georgi Ivanov
   
 Repo:
 https://github.com/georgi-ivanov-tues/guitar_backing_track_generator_for_android
