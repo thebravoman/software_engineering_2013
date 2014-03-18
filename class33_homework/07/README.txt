@@ -13,13 +13,14 @@
     Task 4: Adding more and new tracks - Georgi Ivanov
   
   --> 3 <--
-  Title: Manage Favourites
+  Title: Manage Favourites/Recordings
   Description: A seperate "Favourites" menu where the user can view, play, sort and delete his favourite tracks.
     Task 1: Designing the menu(layout, buttons, scrollable area for the tracks) - Nedelcho Delchev
     Task 2: Adding to favourites - Georgi Ivanov
-    Task 3: Playing tracks from the favourites list - Georgi Ivanov
-    Task 4: Sorting your favourite tracks by "most played" - Georgi Ivanov
-    Task 5: Deleting tracks - Georgi Ivanov
+    Task 3: Switching the view between "favourites" and "recordings" and vice versa - Georgi Ivanov
+    Task 4: Playing tracks from the favourites list - Georgi Ivanov
+    Task 5: Sorting your favourite tracks by "most played" - Georgi Ivanov
+    Task 6: Deleting tracks - Georgi Ivanov
     
   --> 4 <--
   Title: Recording
