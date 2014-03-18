@@ -11,18 +11,22 @@
     Task 2: Designing custom buttons - Nedelcho Nedelchev
     Task 3: Adding a progress bar - Georgi Ivanov and Nedelcho Delchev
     Task 4: Adding more and new tracks - Georgi Ivanov
-    
-  --> 3 <--
-  Title: Add To Favourites
-  Description: Adding the track that is playing to a favourites list.
-    Task 1: "Add to favourites" button - Nedelcho Delchev
-    Task 2: Writing the tracks info in a csv for the favourite tracks - Georgi Ivanov
   
-  --> 4 <--
-  Title: Favourites menu
-  Description: A seperate "Favourites" menu where the user can view, sort, play, delete, his favourite tracks.
+  --> 3 <--
+  Title: Manage Favourites
+  Description: A seperate "Favourites" menu where the user can view, play, sort and delete his favourite tracks.
     Task 1: Designing the menu(layout, buttons, scrollable area for the tracks) - Nedelcho Delchev
-    Task 2: Adding a button for deleting tracks and deleting them - Georgi Ivanov
+    Task 2: Adding to favourites - Georgi Ivanov
+    Task 3: Playing tracks from the favourites list - Georgi Ivanov
+    Task 4: Sorting your favourite tracks by "most played" - Georgi Ivanov
+    Task 5: Deleting tracks - Georgi Ivanov
+    
+  --> 4 <--
+	Title: Recording
+	Description: Being able to record your soloing over the track.
+		Task 1: Recoring from the mic - Nedelcho Delchev
+		Task 2: Saving the mp3 file in a local directory - Nedelcho Delchev
+		Task 3: Sharing your recordings in the web - Nedelcho Delchev
   
 Repo:
 https://github.com/georgi-ivanov-tues/guitar_backing_track_generator_for_android
