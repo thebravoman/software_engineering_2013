@@ -19,3 +19,6 @@
     Task 1: Designing buttons. - Georgi Puhalev 
     Task 2: Designing application logo. - Georgi Puhalev
     Task 3: Applying the changes to the interface. - Bogomil Kolarov
+
+ Repository:
+  https://bitbucket.org/Crash-ID/vic_note/src
