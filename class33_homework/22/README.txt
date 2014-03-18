@@ -1,10 +1,28 @@
 Second Iteration - Paint like project
-	Jorec:
+	
+	Task 1: Reserch - G
+		Reserch on what kind of pictures are going to be supported by the platform (.jpeg;.jpg;.png)
+	Task 2: Open - G
+		Opening .jpeg pictures, that you can draw on.
 
-		1 - Open and Save drawings - opens like a picture, not a raw project.
-		2 - User can import Music and control the volume, mute.
+	Task 3: Save - G
+		Saving drawings in .jpeg format, and maybe other supported formats.
 
-	hidr0: 
+	Task 4: Naming - G
+		Naming the saved picture as the user would like.
+ 
+	Task 5: Pensil - M
+		Implement a pen tool.
+			Free hand drawing with mouse or other peripheral devices.
 
-		3 - Tools: Pen, Pensil, Shape, 'Spray tool from paint'
-		4 -	Taking care of the Interface: There must be a different layout, because you are going to access more things.
+	Task 6: Pen - M
+		Implement a pen tool:
+			Point to point drawing with the pen tool.
+	
+	Task 7: Shapes - M
+		Implement shapes:
+			You can draw rectangules and ovals by entering the with and heigth.
+
+	Task 8: User Interface - M
+		Managing the panel
+			You will have panels for: Music, Colors, Shapes, Tools.
