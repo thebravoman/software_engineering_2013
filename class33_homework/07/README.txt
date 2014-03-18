@@ -18,7 +18,7 @@
     Task 1: Designing the menu(layout, buttons, scrollable area for the tracks) - Nedelcho Delchev
     Task 2: Adding to favourites - Georgi Ivanov
     Task 3: Switching the view between "favourites" and "recordings" and vice versa - Georgi Ivanov
-    Task 4: Playing tracks from the favourites list - Georgi Ivanov
+    Task 4: Playing tracks from the favourites/recordings list - Georgi Ivanov
     Task 5: Sorting your favourite tracks by "most played" - Georgi Ivanov
     Task 6: Deleting tracks - Georgi Ivanov
     
