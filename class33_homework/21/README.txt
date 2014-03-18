@@ -5,7 +5,7 @@ Description: You can get date information
   
   Task2 - Button for instant update of the information for a concreet serie. (Martin)
 
---------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 Title: Comments
 Description: Users can comment the series
   
@@ -15,7 +15,7 @@ Description: Users can comment the series
   
   Task3 - Delete your comment about the serie. (Hristiqn)
   
---------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 Title: Contact Form
 Description: User can send email to the application administrators.
 
@@ -24,7 +24,7 @@ Description: User can send email to the application administrators.
   Task2 - User can choose which administrator to contact. (Hristiqn)
   
   Task3 - User can send an email to the choosen administrator. (Hristiqn)
---------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 Title: Account Management
 Description: There should be several types of users.
 
@@ -33,7 +33,7 @@ Description: There should be several types of users.
   Task2 - To be continued.
   ...
 
--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 Title: 
 
 
