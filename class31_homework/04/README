@@ -1,0 +1,13 @@
+	---1---
+		Title: Showing a question.
+		Description:There is a question and you have four answer from which you can choose the right one.After you choose your 			answer the application will show you if you are right or wrong.
+
+	---2---
+		Title:Going to the next question
+		Description: If your answer is true you will go on to the next question.There will be a counter showing how many questions  			you have answered right.
+
+	repo:https://github.com/YulianRazkazov/AndroidProject
+
+
+
+

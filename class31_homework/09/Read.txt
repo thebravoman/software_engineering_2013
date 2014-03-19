@@ -1,0 +1,15 @@
+1.
+Title:Regristration and login
+Description:The user can register and then login with his username and password. The user will recieve an e-mail 
+to confirm his/her registration.
+
+2.
+Title:Homepage
+Description:It will consist of drop-down menus, and information about the site. The menus will consist of "Categories";
+"Contact Us"; "Search"; "My Profile". When you click the banner on top of the page you will be taken to the Homepage.
+
+
+
+
+
+Repo: https://github.com/Kromosbg/TP-Fanart_site

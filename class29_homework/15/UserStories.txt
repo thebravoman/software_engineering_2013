@@ -1,0 +1,65 @@
+2D Shooter Game
+{
+    High Priority
+    {
+        №1
+        {
+            Title: Player Movement
+            Description: The ability to move the player in the desired direction via WASD
+        }
+        
+        №2
+        {
+            Title: Enemies
+            Description: Computer controlled enemies having for only purpose to kill the player
+        }
+        
+        №3
+        {
+            Title: Shooting
+            Description: A way to damage the enemies so that the player delays the inevitable
+        }
+    }
+    
+    Medium Priority
+    {
+        №1
+        {
+            Title: Weapons
+            Description: Changing weapons to deal with different enemies so that the player delays the inevitable even more
+        }
+        
+        №2
+        {
+            Title: Shops
+            Description: Places to buy different things to aid the player in delaying the inevitable
+        }
+        
+        №3
+        {
+            Title: Sound Effects
+            Description: Different sounds for different events
+        }
+        
+        №4
+        {
+            Title: User Interface (UI)
+            Description: Magical buttons that allow you to mess with the configuration files to enhance your experience
+        }
+    }
+    
+    Low Priority
+    {
+        №1
+        {
+            Title: Skills/Magic
+            Description: Usable items that can be bought in the shops that have a special effect on the player and the enemies
+        }
+        
+        №2
+        {
+            Title: Gamepad Support
+            Description: Input via a Gamepad
+        }
+    }
+}

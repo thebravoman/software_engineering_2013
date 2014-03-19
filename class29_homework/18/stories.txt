@@ -3,14 +3,22 @@
 Major {
 	Main character {
 		Move horizontally, jump & other as required by the gameplay.
+		Get the input from the keyboard(WASD + Space + ...).
 	}
 	2d game world {
-		2d tile based world with dynamic objects(main char/creeps/some traps)
+		The game world(the gameplay related part) should consist of 2d tiles with different textures.
+		Some of them may have additional functions if needed.
 	}
 	Enemies {
-		AI controlled creeps.
+		AI controlled creeps with different strenghts:
+			Static(stay on one spot - traps, or plants) - 2.
+			Dynamic(move, not required to make any forced state change if player nearby) - 3.
 	}
-	Music & sound { }
+	Music & sound { Background music + hit, move sounds/effects. }
+	Storyline {
+		Choose a basic storyline, and create at lesat 5 levels based on it.
+		Depends on: Main character, 2d game world & maybe on Enemies.
+	}
 }
 Minor {
 	User interface { 
@@ -20,12 +28,17 @@ Minor {
 		4. Loading screen
 		5. Options
 	}
-	Backgrounds { Draw something behind the tiles. }
+	Backgrounds {
+		Add background generation logic. - Layered backgrounds from amount of assets.
+		Some parts could be animated.
+		}
 	Graphics {
 		Particle effects mainly for the combat movements.
+		Blood particles on successful hit & blur/light on attack.
 	}
 }
 
 Trivial {
-	Multiplayer { co-op.  }
+	Multiplayer { Two players should be able to complete the game together. }
+	Change Bindings{ Add support for bindable keys.(Map action and key). + The GUI that is required. }
 }

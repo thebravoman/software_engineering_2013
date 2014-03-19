@@ -1,0 +1,12 @@
+Music & sound
+{
+	Background music + hit, move sounds/effects.
+}
+Main character
+{
+	Move horizontally, jump & other as required by the gameplay.
+	Get the input from the keyboard( WASD + Space + ... ).
+}
+
+https://bitbucket.org/battlearenaproject/battlearena.git
+
