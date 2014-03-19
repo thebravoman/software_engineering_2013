@@ -16,7 +16,6 @@ Task:
 	-Multiplayer-Spas
 	-multiplying safes-Stefan
 	-leaderboard-Stefan
-	-Multiplayer-Spas
 	
 US:
 	-Menu for the application
