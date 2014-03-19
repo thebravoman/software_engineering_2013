@@ -1,7 +1,7 @@
   --> 1 <--
   Title: User Choice
   Description: Taking the user choice of key, mode and style.
-    Task 1: Adding the option to randomize key, mode and style - Nedelcho Delchev
+    Task 1: Adding the option to randomize key, mode and style - Georgi Ivanov
     Task 2: Adding the option to clear key, mode and style - Georgi Ivanov
   
   --> 2 <--
@@ -15,7 +15,7 @@
   --> 3 <--
   Title: Manage Favourites/Recordings
   Description: A seperate "Favourites/Recordings" menu where the user can view, play, sort and delete his favourite tracks and his recordings.
-    Task 1: Designing the menu(layout, buttons, scrollable area for the tracks) - Nedelcho Delchev
+    Task 1: Designing the menu(layout, buttons, scrollable area for the tracks) - Georgi Ivanov and Nedelcho Delchev
     Task 2: Adding to favourites - Georgi Ivanov
     Task 3: Switching the view between "favourites" and "recordings" and vice versa - Georgi Ivanov
     Task 4: Playing tracks from the favourites/recordings list - Georgi Ivanov
@@ -27,6 +27,7 @@
   Description: Being able to record your soloing over the track.
     Task 1: Recoring from the mic - Nedelcho Delchev
     Task 2: Saving the mp3 file in a local directory - Nedelcho Delchev
+    Task 3: Writing the mp3's info in a csv - Nedelcho Delchev
     Task 3: Sharing your recordings in the web - Nedelcho Delchev
   
 Repo:
