@@ -1,19 +1,25 @@
-
 User story #1
 
   Title: Collision detection!
       
     Description: Interactiom between different objects.
     
-    Task:1 - You stop when you collide with solid objects. - |/|!|<0|_/-\
-    Task:2 - When you touch a lava tile you die and lose the game. -|/|!|<0|_/-\
+    Task:1 - You stop when you collide with solid objects. - Nikola Budinov
+    Task:2 - When you touch a lava tile you die and lose the game. - Nikola Budinov
     
 User story  #2
     
   Title: MOBs
   
-    Descrioption: 
+    Descrioption: Non Player Character which you can interact with.
     
-    Task1:
+    Task:  Create npcs which you can shoot and kill. - Milko Filipov
+    
+  Title: Shooting
+    
+    Task: The player character will be able to shoot fireballs
+    
+    
+    
     
  
