@@ -41,4 +41,4 @@ Description: User can check the information for series.
   
   Task3 - User can download a torrent for concrete epizode.(Hristiqn)
   
-  Task4 - Click to watch the embedded video from YouTube.(Martin)
+  Task4 - Click to watch the embedded trailer.(Martin)
