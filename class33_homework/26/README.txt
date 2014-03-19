@@ -13,7 +13,7 @@
     - Task - създаване на по-сложен WallpaperEngine - 3 дни
     
   = Title: Help Menu - 2 дни
-    Description: Provide a help menu with tips foe using the app and ability to send feedback
+    Description: Provide a help menu with tips for using the app and ability to send feedback
     - Task - създаване на layout и добавяне на съдържание в менюто - 1 ден - Божидар Николов
     - Task - добавяне на възможност за изпращане на отзиви - 1 ден - Kирил Костадинов
     
