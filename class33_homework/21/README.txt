@@ -28,9 +28,9 @@ Description: User can send email to the application administrators.
 Title: Account Management
 Description: There should be several types of users.
 
-  Task1 - Different access to the application by the type of user account.
+  Task1 - Different access to the application by the type of user account.(Hristiqn + Martin)
   
-  Task2 - Administrators can change the type of an account.
+  Task2 - Administrators can change the type of an account.(Hristiqn)
 ----------------------------------------------------------------------------------------------------------
 Title: Series information
 Description: User can check the information for series.
