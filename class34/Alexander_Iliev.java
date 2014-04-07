@@ -24,7 +24,7 @@ public class Main {
 			}
 			if (success == rand) break;
 		}
-		System.out.println(e);
+		System.out.println("public key is: " + n + "," + e);
 		
 	}
 	
