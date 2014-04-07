@@ -1,0 +1,65 @@
+import java.math.BigInteger;
+import java.util.Random;
+
+public class RSA_Crypting {
+	static int primeNumbers[] = {131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251};
+	public static int p;
+	public static int q;
+	public static int n;
+	public static int fn;
+	public static int e;
+	public static int d;
+	public static int m;
+	public static int cm;
+	public static int dm;
+	static int temp;
+
+	public static int randNum(int min, int max){
+		return min + (int)(Math.random() * ((max - min) + 1));
+	}
+
+	private static int gcdThing(int a, int b) {
+	    BigInteger b1 = new BigInteger(""+a);
+	    BigInteger b2 = new BigInteger(""+b);
+	    BigInteger gcd = b1.gcd(b2);
+	    return gcd.intValue();
+	}
+
+	public static void main(String[] args) {
+		Random random = new Random();
+		p = primeNumbers[random.nextInt(22)];
+		q = primeNumbers[random.nextInt(22)];
+		//p = 3;
+		//q = 11;
+		while (q==p) {
+			q = primeNumbers[random.nextInt(22)];
+		}
+		System.out.println("p = " + p + "\nq = " + q);
+		n = p*q;
+		fn = (p - 1)*(q - 1);
+
+		do{
+			e = randNum(1,360);
+			temp = gcdThing(e, fn);
+		}while(temp != 1);
+
+		while (true) {
+			if (e * d % fn == 1){
+				break;
+			}
+			d ++;
+		}
+
+		System.out.println("n = " + n + "\nfn = " + fn + "\ne = " + e);
+		System.out.println("D = " + d);
+		
+		System.out.println("public = " + e + ", " + n);
+		System.out.println("private = " + d + ", " + n);
+		
+		RSA_encrypt_decrypt p = new RSA_encrypt_decrypt();
+		cm = (int) p.encrypt();
+		System.out.println("encrypt = " + cm);
+		dm = (int) p.decrypt();
+		System.out.println("decryption = " + dm);
+		}
+	}
