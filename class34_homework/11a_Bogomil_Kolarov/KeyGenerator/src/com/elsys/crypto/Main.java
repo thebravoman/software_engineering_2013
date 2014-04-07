@@ -7,7 +7,7 @@ public class Main {
 		int[] publicKey = new int[2];
 		int[] privateKey = new int[2];
 		
-		Encryption enc = new Encryption(128, 512);
+		CreateKeys enc = new CreateKeys(128, 512);
 		
 		publicKey[0] = enc.getN();
 		publicKey[1] = enc.getE();
