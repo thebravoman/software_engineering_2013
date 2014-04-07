@@ -1,0 +1,16 @@
+import java.math.BigInteger;
+
+public class RSA_encrypt_decrypt {
+	public static double encrypt(){
+		RSA_Crypting rsa = new RSA_Crypting();
+		double message = 2; 
+		double encryption = Math.pow(message, rsa.e) % rsa.n;
+		return encryption;		
+	}
+	public static double decrypt(){
+		RSA_Crypting rsa = new RSA_Crypting();
+		System.out.println("rsa.n = " + rsa.n);
+		double decryption = Math.pow(encrypt(), rsa.d) % rsa.n;
+		return decryption;
+	}
+}
