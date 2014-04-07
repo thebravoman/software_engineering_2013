@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<pthread.h>
 
 int gcd (int x, int y) {
   int m,i;
@@ -32,6 +31,21 @@ int main(){
   while (gcd(e, fn) != 1) {
     e = (rand() % fn-2) + 2;  
   }
-  printf("%d,xaxa: %d",fn, e);
+  
+  int d = 1;
+  while(1){
+    if(d*e % fn == 1) {
+      break;
+    }
+    d++;
+  }
+  printf("p = %d\n",p);
+  printf("q = %d\n",q);
+  printf("n = %d\n",n);
+  printf("fn = %d\n",fn);
+  printf("e = %d\n",e);
+  printf("d = %d\n",d);
+  printf("publickey = %d, %d\n",n, e);
+  printf("privatekey = %d, %d\n",n, d);
   return 0;
 }
