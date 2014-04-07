@@ -1,4 +1,4 @@
-#!/usr/python
+#!/usr/bin/python
 
 import random
 
@@ -36,7 +36,8 @@ def generate_keys():
 	
 	return (n,e,d)
 
-keys = generate_keys()
-print "public:", keys[0], keys[1]
-print "private:", keys[0], keys[2]
+if __name__ == '__main__':
+	keys = generate_keys()
+	print "public:", keys[0], keys[1]
+	print "private:", keys[0], keys[2]
 
