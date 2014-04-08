@@ -6,7 +6,7 @@ public class Crypto {
 	
 	public void Encrypt(int n, int e, int m) {
 		BigInteger bi = new BigInteger(String.valueOf(m));
-		bi = bi.modPow(bi.valueOf(m), bi.valueOf(n));
+		bi = bi.modPow(bi.valueOf(e), bi.valueOf(n));
 		System.out.println("Encrypted: " + bi);
 	}
 	
