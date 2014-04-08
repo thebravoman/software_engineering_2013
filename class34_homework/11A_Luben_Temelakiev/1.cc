@@ -19,7 +19,7 @@ int getGCD(int a, int b)
 }
 
 int main(){
-	int p,q,n,fn,p1,q1,e,i,j;
+	int p,q,n,fn,p1,q1,e,i,j,d;
 	
 	int array[] = { 131   , 137    ,139,    149 ,   151 ,   157 ,   163 ,   167 ,   173, 
     179 ,   181 ,   191  ,  193  ,  197    ,199  ,  211   , 223   , 227  ,  229, 
@@ -50,13 +50,14 @@ int main(){
 	}
 	cout << e << endl;
 	
-	unsigned int d;
-	for(int j = 1; j < INT_MAX; ++j){
-		if(!((fn*j + 1)%e)){
-			d = (fn*j + 1)/e;
-			break;
+	for(int j=1; j<100; j++){
+		if (((fn+1)*n)%e==0){
+			d=j;
+		break;
 		}
 	}
+
+
 	cout << d << endl;
 	
 	cout << "pub "<<n<<", "<<e << endl;
