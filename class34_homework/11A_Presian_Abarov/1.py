@@ -7,42 +7,45 @@ def isPrime(x):
 	return True
 
 def genRandPrime():
-    index = random.randrange(65)
-    for i in range(128,512):
-        if isPrime(i):
-            if(index == 0):
-                return i
-            index -= 1
+	index = random.randrange(65)
+	for i in xrange(2,2**32):
+		if isPrime(i):
+			if(index == 0):
+				return i
+			index -= 1
+
 
 def genRsaKeys():
-    p = genRandPrime()
-    q = genRandPrime()
-    n = p*q
-    fn = (p-1)*(q-1)
+	q = p = genRandPrime()
+	while p == q:
+		q = genRandPrime()
+	n = p*q
+	fn = (p-1)*(q-1)
 
-    for i in reversed(range(2, fn)):
-        if gcd(i, fn) == 1:
-            e = i
-            break
+	e = 0
+	while e == 0:
+		i = random.randrange(0, fn)
+		if gcd(i, fn) == 1:
+			e = i
 
-    for i in reversed(xrange(1, fn)):
-        if (i*e-1)%fn == 1:
-            d = i
-            break
+	for i in reversed(range(1, fn)):
+		if (i*e)%fn == 1:
+			d = i
+			break
 
-    return {'public': [p, e], 'private': [q, d]}
+	return {'public': [e, n], 'private': [d, n]}
 
 from fractions import gcd
 if __name__ == "__main__":
-    print(genRsaKeys())
+	print(genRsaKeys())
 
 
-    
+	
 
-    
-    
-    
+	
+	
+	
 
 
 
-            
+			
