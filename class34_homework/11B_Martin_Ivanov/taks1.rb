@@ -1,5 +1,5 @@
 #ruby -v => 2.0.0
-require 'lib'
+require_relative 'lib'
 
 def encrypt num, pub_key, modulus
   return (num**pub_key)%modulus
