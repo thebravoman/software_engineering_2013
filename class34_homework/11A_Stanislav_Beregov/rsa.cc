@@ -26,7 +26,6 @@ int main(int argc, char** argv){
 		cout << c << endl;
 	}
 	else{
-		cout << "DADFUQ" << endl;
 		InfInt dm = power(m, d)%n;
 		cout << dm << endl;
 	}
