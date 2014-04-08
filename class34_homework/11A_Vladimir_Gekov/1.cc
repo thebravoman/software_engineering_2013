@@ -45,9 +45,7 @@ int d = 1;
     }
     d++;
   }
-   pub[]= {'n','e'};
-   priv[]= {'n','d'};
   cout <<"p="<< p <<" "<<"q="<< q <<" "<<"n="<< n <<" " << "fn=" << fn<<" "<<"e="<<e<<" "<<"d="<<" "<<d<<endl;
-  printf("Public: %s\n", pub);
-  printf("Private: %s\n", priv);
+  cout <<"Public:"<< n <<","<< e <<endl;
+  cout <<"Private:"<< n <<","<< d <<endl;
 }
