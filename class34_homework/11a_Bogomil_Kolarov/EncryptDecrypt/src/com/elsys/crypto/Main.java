@@ -43,10 +43,5 @@ public class Main {
 			
 			crypto.Decrypt(cm, d, n);
 		}
-
-		
-		
-		
 	}
-
 }
