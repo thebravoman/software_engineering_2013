@@ -45,11 +45,10 @@ end
 
 puts "Public key = #{n}, #{e}"
 puts "Private key = #{n}, #{d}"
-puts
-puts
+puts ""
+puts "Please, enter your message."
+m = gets.to_i
 
-
-m = 101
 
 cm = ((m**e) % n) 
 
