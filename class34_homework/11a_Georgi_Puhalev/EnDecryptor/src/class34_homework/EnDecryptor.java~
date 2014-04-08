@@ -1,11 +1,11 @@
 package class34_homework;
 
 import java.io.IOException;
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class EnDecryptor extends Main{
 	public static int intFromKb(){
+		@SuppressWarnings("resource")
 		Scanner keyboard = new Scanner(System.in);
 		int INT = keyboard.nextInt();
 		keyboard.nextLine();
@@ -13,6 +13,7 @@ public class EnDecryptor extends Main{
 	}
 	
 	public static String lineFromKb(){
+		@SuppressWarnings("resource")
 		Scanner keyboard = new Scanner(System.in);
 		String string = keyboard.nextLine();
 		return string;
@@ -21,7 +22,7 @@ public class EnDecryptor extends Main{
 	public static void Encrypting(long n, long e){
 		System.out.println("Insert the message to be encrypted");
 		int m = intFromKb();
-		BigInteger encrMessage = BigInteger.valueOf(m).modPow(BigInteger.valueOf(e),BigInteger.valueOf(n));
+		long encrMessage = (long)Math.pow(m,e)%n;
 		System.out.println("Your encrypted message is: " + encrMessage);
 		pressEnter();
 	}
@@ -29,21 +30,18 @@ public class EnDecryptor extends Main{
 	public static void Decrypting(long n, long d){
 		System.out.println("Insert the message to be decrypted");
 		int m = intFromKb();
-		BigInteger decrMessage = BigInteger.valueOf(m).modPow(BigInteger.valueOf(d),BigInteger.valueOf(n));
+		long decrMessage = (long)Math.pow(m,d)%n;
 		System.out.println("The decrypted message is:  " + decrMessage);
 		pressEnter();
 	}
 	
-	public static void NewKey(int choice){
+	public static void NewKey(){
 		System.out.println("Please, insert a key");
 		String kit = lineFromKb();
 		String[] kInput = kit.split(",");
 		long n = Integer.parseInt(kInput[0]);
 		long e = Integer.parseInt(kInput[1]);
-		if(choice == 2)
-			Encrypting(n, e);
-		else
-			Decrypting(n,e);
+		Encrypting(n, e);
 	}
 	
 	public static void pressEnter(){
@@ -61,18 +59,15 @@ public class EnDecryptor extends Main{
 			System.out.println("Enter 1 to encrypt а message with your public key");
 			System.out.println("Enter 2 to encrypt а message with someone elses public key");
 			System.out.println("Enter 3 to decrypt а message");
-			System.out.println("Enter 4 to decrypt a message with someone elses private key");
 			System.out.println("Enter anything else to close the program");
 	
 			int choice = intFromKb();
 			switch(choice){
 				case 1: Encrypting(n, e);
 					break;
-				case 2: NewKey(choice);
+				case 2: NewKey();
 					break;
 				case 3: Decrypting(n, d);
-					break;
-				case 4: NewKey(choice);
 					break;
 				default: System.out.println("Exiting program.");			
 			}
@@ -83,4 +78,3 @@ public class EnDecryptor extends Main{
 		}
 	}
 }
-
