@@ -16,10 +16,8 @@ public class GeorgiPuhalev11a {
 		, 947, 953, 967, 971, 977, 983, 991, 997,1009,1013,1019,1021};
 	
 	public static void main(String arg[]){
-		int n = 389371;
-		int e = 1351;
-		int counter = 0;
-		int i;;
+		int n = 389371, e = 1351, counter = 0, i;
+		
 		for (i = 0; i < AllPrimes.length; i ++){
 		    if (AllPrimes[i] > 0)
 		        counter ++;
@@ -30,16 +28,18 @@ public class GeorgiPuhalev11a {
 		}
 		System.out.println(AllPrimes[i]);
 		int p = n / AllPrimes[i];
+		System.out.println("p = " + p);
 		int q = n / p;
+		System.out.println("q = " + q);
 		int fn = (p-1)*(q-1);
-		System.out.println(fn);
-		int d = 0;
+		System.out.println("fn = " + fn);
 		for(i=1; i >0; i++){
 			if( ( fn * i + 1 ) % e == 0 ){
-				 d = (fn*i+1) / e;
+				 int d = (fn*i+1) / e;
+				 System.out.println("d = " + d);
 				break;
 			}
 		}
-		System.out.println(d);
+		
 	}
 }
