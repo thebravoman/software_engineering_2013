@@ -6,11 +6,16 @@ using namespace std;
 
 InfInt power(unsigned int num, unsigned int exp){
 	InfInt pow = 1;
-	for(int i = 0; i < exp; ++i){
-		pow *= num;
+	InfInt value = num;
+	InfInt power = exp;
+	while(power > 0){
+		if(power%2 == 1)pow = pow*value;
+		value = value*value;
+		power = power/2;
 	}
 	return pow;
 }
+
 
 int main(int argc, char** argv){
 	unsigned int n, e, d, m;
