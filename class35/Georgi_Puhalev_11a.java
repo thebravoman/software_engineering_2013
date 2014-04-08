@@ -26,7 +26,6 @@ public class GeorgiPuhalev11a {
 			if(n % AllPrimes[i] == 0)
 				break;
 		}
-		System.out.println(AllPrimes[i]);
 		int p = n / AllPrimes[i];
 		System.out.println("p = " + p);
 		int q = n / p;
