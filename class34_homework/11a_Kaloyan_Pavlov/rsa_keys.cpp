@@ -1,6 +1,6 @@
 #include <random>
 #include <iostream>
-#include "InfInt.h"
+//#include "InfInt.h"
 using namespace std;
 
 bool is_prime(int number)
@@ -91,16 +91,20 @@ void set_d(long long& d, long long e, long long fn)
 	}
 }
 
-int main() 
+void get_keys(long long& n, long long& e, long long& d)
 {
 	int p, q;
 	set_p_q(p, q);
-	long long n = p*q;
-	long long fn = (p-1)*(q-1);
-	long long e;
+	n = p*q;
+	long long fn = (p - 1)*(q - 1);
 	set_e(e, fn);
-	long long d;
 	set_d(d, e, fn);
+}
+
+int main() 
+{
+	long long n, e, d;
+	get_keys(n, e, d);
 	cout << "Public key: " << n << ' ' << e << endl;
 	cout << "Private key: " << n << ' ' << d << endl;
 }
