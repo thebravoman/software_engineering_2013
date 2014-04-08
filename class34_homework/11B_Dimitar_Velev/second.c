@@ -14,7 +14,7 @@ int main(){
 	int actual_d=1212;
 	int decrypt;
 	for(o=0;o<actual_d;o++){
-		actual_crypt*=actual_crypt;
+		actual_crypt=actual_crypt*//actual_crypt value
 	}
 	decrypt=actual_crypt%n;
 	
