@@ -4,14 +4,12 @@
 #include "InfInt.h"
 using namespace std;
 
-InfInt power(unsigned int num, unsigned int exp){
+InfInt power(InfInt value, InfInt power){
 	InfInt pow = 1;
-	InfInt value = num;
-	InfInt power = exp;
-	while(power > 0){
-		if(power%2 == 1)pow = pow*value;
-		value = value*value;
-		power = power/2;
+	while (power > 0){
+		if (power % 2 == 1)pow *= value;
+		value *= value;
+		power /= 2;
 	}
 	return pow;
 }
