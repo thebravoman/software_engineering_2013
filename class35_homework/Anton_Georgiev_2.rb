@@ -28,7 +28,7 @@ elsif check=="DSA"
 	begin
 		k=rand(q-1)+1
 		r=(g**k%p)%q
-		s=((Digest::SHA1.digest(m)+x*r)/k)%q
+		s=(((Digest::SHA1.digest(m.to_s)).to_i+x*r)/k)%q
 	end until(s!=0 and r!=0)
 	
 	printf "%d, %d\n", r, s
