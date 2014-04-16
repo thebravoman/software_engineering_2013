@@ -7,8 +7,8 @@
 2. Path controls
   Take user input for the source and destination of the flight of the drone.
   2.1 Start with freeflight controls until you choose the drone's destination, Pressian Abarov
-  2.2 Add clickable buildings to let you mark the drone's destination, Ivan Zorov 
+  2.2 Add clickable buildings to let you mark the drone's destination, Pressian Abarov
 
 3. Improve world generator
-  3.1 Expand the city, Ivan Zorov
+  3.1 Expand the world, Ivan Zorov
   3.2 Improve city material, Pressian Abarov
