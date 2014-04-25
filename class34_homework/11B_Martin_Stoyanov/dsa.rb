@@ -2,9 +2,9 @@ require 'prime'
 def prime_generation	
 	while (true)
 		number = rand(513)
-			if  Prime.prime?(number) == true && number > 128
-				return number
-			end
+		if  Prime.prime?(number) == true && number > 128
+			return number
+		end
 	end
 end
 
@@ -28,15 +28,15 @@ e = 2
 for i in 2..fn
 	if(i.gcd(fn) == 1)
    		e = i
-    	break
+    		break
   	end
 end
 
 d = 0
 for i in 1..(fn+1)
  	if (i * e - 1) % fn == 0
-    	d = i
-    	break
+    		d = i
+    		break
   	end
 end
 
