@@ -32,6 +32,6 @@ while(i <= fn+1)
 	i = i + 1
 end
 
-puts "Public key = #{d},#{n}"
-puts "Private key = #{e},#{n}"
+puts "Public key = #{e},#{n}"
+puts "Private key = #{d},#{n}"
 

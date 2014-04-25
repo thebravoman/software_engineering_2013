@@ -8,7 +8,6 @@ decrypted_message = ""
 t = ARGV[3]
 if(t == "encrypt")  
 	encrypted_message << ((message.to_i**public_key[0].to_i)%public_key[1].to_i).to_s
-	p message.to_i**public_key[0].to_i
 	puts "The message '#{message}' was Encrypted into '#{encrypted_message}' by the public_key = '#{public_key[0]},#{public_key[1]}'"
 elsif(t == "decrypt") 
 	decrypted_message << ((message.to_i**private_key[0].to_i)%private_key[1].to_i).to_s
@@ -20,3 +19,9 @@ else
 	puts "The third must be the message and the fourth my be encrypt or decrypt."
 
 end
+
+# Public key = 5,33389
+# Private key = 6605,33389
+
+# msg^e mod n 
+# msg^d mod n
