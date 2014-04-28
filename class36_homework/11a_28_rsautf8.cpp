@@ -65,7 +65,8 @@ vector<unsigned int> fromutf8(string msg){
 		else{
 			count = 0;
 			for(int j = 0; j < 8; ++j){
-				if( (msg[i] << j) & 0x80 == 0 ){
+				//cout << ((unsigned char)(msg[i] << j) & 0x80) << endl;
+				if( ((unsigned char)(msg[i] << j) & 0x80) == 0 ){
 					count = 0;
 					tmp = (msg[i] << j) >> j;
 					curr += tmp;
