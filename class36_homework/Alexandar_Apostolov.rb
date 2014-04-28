@@ -1,6 +1,6 @@
 # Arguments:
 # ruby Alexandar_Apostolov.rb message n e d
-# Example: n = 45173, e = 30959, d = 39851
+# Example values: n = 45173, e = 30959, d = 39851
 
 msg = ARGV[0].to_s
 n = ARGV[1].to_i
