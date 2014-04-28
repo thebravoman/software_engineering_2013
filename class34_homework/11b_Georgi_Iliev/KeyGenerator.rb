@@ -1,5 +1,4 @@
 
-
 primeNums = [131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251]
 
 
@@ -33,8 +32,8 @@ end
 i = i + 1
 end
 
-puts "Public key = #{d},#{n}"
-puts "Private key = #{e},#{n}"
+puts "Public key = #{e},#{n}"
+puts "Private key = #{d},#{n}"
 
 
 
