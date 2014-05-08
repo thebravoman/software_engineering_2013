@@ -48,7 +48,7 @@
     <title> Smart enemies </title>
     <desc> Increasing the enemies' ability to murder the player. </desc>
     <task responsible="slaviber"> Pathfinding algorithm. </task>
-    <task responsible="slaviber"> Different tactics against different classes. </task>
+    <task responsible="slaviber"> Different tactics from different monsters. </task>
     <task responsible="slaviber"> Calculating the Line Of Sight. </task>
     <task responsible="slaviber"> Self preservance instinct. </task>
   </us>
