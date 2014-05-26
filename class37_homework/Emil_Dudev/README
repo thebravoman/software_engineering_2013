@@ -1,0 +1,5 @@
+compile:
+javac -d bin/ -sourcepath src/ -classpath src/swt.jar src/org/elsys/se/class37_homework/CMainClass.java
+
+run:
+java -classpath bin:src/swt.jar org.elsys.se.class37_homework.CMainClass
