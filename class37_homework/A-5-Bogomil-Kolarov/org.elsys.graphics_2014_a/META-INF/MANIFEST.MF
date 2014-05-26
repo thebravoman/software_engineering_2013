@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Graphics_2014_a
+Bundle-SymbolicName: org.elsys.graphics_2014_a
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.elsys.graphics_2014_a.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
