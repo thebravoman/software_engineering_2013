@@ -1,0 +1,105 @@
+package org.elsys.graphics_2014_a;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.MouseEvent;
+import org.eclipse.swt.events.MouseListener;
+import org.eclipse.swt.events.MouseMoveListener;
+import org.eclipse.swt.events.PaintEvent;
+import org.eclipse.swt.events.PaintListener;
+import org.eclipse.swt.graphics.GC;
+import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.widgets.Canvas;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+public class MainClass {
+	
+	private static Point fp;
+	
+	private static Point lp;
+	
+	private static boolean redraw = false;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Display d = new Display();
+		Shell shell = new Shell(d);
+
+		shell.setLayout(new FillLayout());
+		Canvas c = new Canvas(shell, SWT.NONE);
+		c.setSize(100, 100);
+		c.setBackground(Display.getCurrent().getSystemColor(SWT.COLOR_WHITE));
+		
+		shell.open();
+
+		createPaintListener(c);
+		createMouseListener(c);
+		createMoveListener(c);
+		while(!shell.isDisposed()) {
+			if(!d.readAndDispatch()) {
+				d.sleep();
+				
+			}
+		}
+		
+		d.dispose();
+	}
+
+	private static void createMoveListener(final Canvas c) {
+		// TODO Auto-generated method stub
+		c.addMouseMoveListener(new MouseMoveListener() {
+			
+
+			public void mouseMove(MouseEvent e) {
+				GC gc = new GC(c);
+				if(redraw){
+					//c.redraw();
+					if(lp!=null)gc.drawLine(fp.x, fp.y, lp.x, lp.y);
+					lp = new Point(e.x, e.y);
+				}
+				else if(fp!=null && lp!=null){
+					gc.drawLine(fp.x, fp.y, lp.x, lp.y);
+				}
+				gc.dispose();
+			}
+		});
+	}
+
+	private static void createMouseListener(final Canvas c) {
+		c.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseDoubleClick(MouseEvent e) {
+				c.redraw();
+			}
+
+			@Override
+			public void mouseDown(MouseEvent e) {
+				// TODO Auto-generated method stub
+				fp = new Point(e.x, e.y);
+				redraw = true;
+			}
+
+			@Override
+			public void mouseUp(MouseEvent e) {
+				// TODO Auto-generated method stub
+				redraw = false;
+				lp = new Point(e.x, e.y);
+			}
+			
+		});
+		
+	}
+
+	private static void createPaintListener(Canvas c) {
+		c.addPaintListener(new PaintListener() {
+			
+			@Override
+			public void paintControl(PaintEvent e) {
+				// TODO Auto-generated method stub
+			}
+		});
+	}
+
+}
